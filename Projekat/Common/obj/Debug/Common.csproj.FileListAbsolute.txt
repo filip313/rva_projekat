@@ -1,0 +1,6 @@
+C:\Users\Filip\Documents\faks\RVA\PROJEKAT\Projekat\Common\bin\Debug\Common.dll
+C:\Users\Filip\Documents\faks\RVA\PROJEKAT\Projekat\Common\bin\Debug\Common.pdb
+C:\Users\Filip\Documents\faks\RVA\PROJEKAT\Projekat\Common\obj\Debug\Common.csprojAssemblyReference.cache
+C:\Users\Filip\Documents\faks\RVA\PROJEKAT\Projekat\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+C:\Users\Filip\Documents\faks\RVA\PROJEKAT\Projekat\Common\obj\Debug\Common.dll
+C:\Users\Filip\Documents\faks\RVA\PROJEKAT\Projekat\Common\obj\Debug\Common.pdb

@@ -1,0 +1,61 @@
+﻿<Window x:Class="Client.Views.NewUserView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Client.Views"
+        mc:Ignorable="d"
+        Title="NewUserView" Height="350" Width="300">
+    <Window.Resources>
+        <BooleanToVisibilityConverter x:Key="boolToVis" />
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="40" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="40"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Column="1" Grid.Row="1" Text="Username:" Visibility="{Binding IsNew, Converter={StaticResource boolToVis}}"/>
+        <TextBox Grid.Column="1" Grid.Row="2" x:Name="Username" Visibility="{Binding IsNew, Converter={StaticResource boolToVis}}"/>
+
+        <TextBlock Grid.Column="1" Grid.Row="3" Text="Password:" Visibility="{Binding IsNew, Converter={StaticResource boolToVis}}"/>
+        <TextBox Grid.Column="1" Grid.Row="4" x:Name="Password" Visibility="{Binding IsNew, Converter={StaticResource boolToVis}}"/>
+
+        <TextBlock Grid.Column="1" Grid.Row="5" Text="Ime:" />
+        <TextBox Grid.Column="1" Grid.Row="6" x:Name="Ime"/>
+
+        <TextBlock Grid.Column="1" Grid.Row="7" Text="Prezime:" />
+        <TextBox Grid.Column="1" Grid.Row="8" x:Name="Prezime" />
+
+        <TextBlock Grid.Column="1" Grid.Row="9" Text="Email:" />
+        <TextBox Grid.Column="1" Grid.Row="10" x:Name="Email" />
+
+        <TextBlock Grid.Column="1" Grid.Row="11" Text="Tip korisnika (podrazumevani je User):" Visibility="{Binding IsNew, Converter={StaticResource boolToVis}}"/>
+        <ComboBox x:Name="TipoviKorisnika" Grid.Column="1" Grid.Row="12" SelectedItem="{Binding Path=TipKorisnika, Mode=OneWayToSource}" 
+                  Visibility="{Binding IsNew, Converter={StaticResource boolToVis}}"/>
+
+        <Button x:Name="AddNewUser" Grid.Column="1" Grid.Row="13" Content="Kreiraj Novog Korisnika"
+                Visibility="{Binding IsNew, Converter={StaticResource boolToVis}}"/>
+
+        <Button x:Name="ChangeUserData" Grid.Column="1" Grid.Row="13" Content="Izmeni podatke" Visibility="{Binding IsChange, Converter={StaticResource boolToVis}}" />
+        <TextBlock x:Name="Error" Grid.Row="14" Grid.Column="1" />
+    </Grid>
+</Window>
