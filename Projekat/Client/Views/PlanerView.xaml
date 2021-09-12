@@ -6,15 +6,17 @@
         xmlns:local="clr-namespace:Client.Views"
         xmlns:cal="http://caliburnmicro.com"
         mc:Ignorable="d"
-        Title="PlanerView" Height="450" Width="800">
+        Title="PlanerView" Height="500" Width="900">
     <Window.Resources>
         <BooleanToVisibilityConverter x:Key="boolToVis" />
     </Window.Resources>
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="30" />
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="30"/>
             <ColumnDefinition Width="auto" />
-            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto" />
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="auto" />
             <ColumnDefinition Width="auto" />
@@ -28,17 +30,17 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <Button Grid.Column="1" Grid.Row="0" Content="Undo" x:Name="UndoCommand" IsEnabled="{Binding}"/>
-        <Button Grid.Column="2" Grid.Row="0" Content="Redo" x:Name="RedoCommand" IsEnabled="{Binding}"/>
-        <Button Grid.Column="4" Grid.Row="0" Content="Napravi Plan" x:Name="CreatePlan"/>
+        <Button Grid.Column="3" Grid.Row="0" Content="Undo" x:Name="UndoCommand" IsEnabled="{Binding}"/>
+        <Button Grid.Column="4" Grid.Row="0" Content="Redo" x:Name="RedoCommand" IsEnabled="{Binding}"/>
+        <Button Grid.Column="6" Grid.Row="0" Content="Napravi Plan" x:Name="CreatePlan"/>
 
-        <Button Grid.Column="5" Grid.Row="0" Content="Dodaj Novog Korisnika" x:Name="AddNewUser" Visibility="{Binding IsAdmin, Converter={StaticResource boolToVis}}"/>
+        <Button Grid.Column="7" Grid.Row="0" Content="Dodaj Novog Korisnika" x:Name="AddNewUser" Visibility="{Binding IsAdmin, Converter={StaticResource boolToVis}}"/>
 
-        <Button Grid.Column="6" Grid.Row="0" Content="Promeni Svoje Podatke" x:Name="ChangeUserData"/>
+        <Button Grid.Column="8" Grid.Row="0" Content="Promeni Svoje Podatke" x:Name="ChangeUserData"/>
 
-        <Button Grid.Column="7" Grid.Row="0" Content="Logout" x:Name="Logout" />
+        <Button Grid.Column="9" Grid.Row="0" Content="Logout" x:Name="Logout" />
 
-        <DataGrid x:Name="PlanerModel_Planers" Grid.Column="1" Grid.ColumnSpan="7"  Grid.Row="1" AutoGenerateColumns="False" CanUserAddRows="False" SelectedItem="{Binding Path=SelectedPlaner, Mode=OneWayToSource}">
+        <DataGrid x:Name="PlanerModel_Planers" Grid.Column="3" Grid.ColumnSpan="7"  Grid.Row="1" AutoGenerateColumns="False" CanUserAddRows="False" SelectedItem="{Binding Path=SelectedPlaner, Mode=OneWayToSource}">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Naziv" Binding="{Binding Path=Naziv, Mode=OneWay}"/>
                 <DataGridTextColumn Header="Opis" Binding="{Binding Path=Opis, Mode=OneWay}" Width="*"/>
@@ -65,7 +67,27 @@
                 </DataGridTemplateColumn>
             </DataGrid.Columns>
         </DataGrid>
-        <ContentControl Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="7" x:Name="ActiveItem" />
-        
+        <ContentControl Grid.Row="2" Grid.Column="3" Grid.ColumnSpan="7" x:Name="ActiveItem" />
+
+        <StackPanel Grid.Row="1" Grid.Column="1" Grid.RowSpan="2" Orientation="Vertical">
+            <TextBlock TextAlignment="Center" Text="Pretraga:"/>
+            <TextBlock Text="Naizv:" Margin="0 5"/>
+            <TextBox x:Name="PretragaNaziv"/>
+            <TextBlock Text="Opis:" />
+            <TextBox x:Name="PretragaOpis" Margin="0 0 0 10"/>
+            <TextBlock Text="Datum pocetka :" />
+            <TextBlock Text="Od:"/>
+            <DatePicker x:Name="PretragaPocetakOd" />
+            <TextBlock Text="Do:"/>
+            <DatePicker x:Name="PretragaPocetakDo" Margin="0 0 0 10"/>
+            <TextBlock Text="Datum zavrsetka:" />
+            <TextBlock Text="Od:" />
+            <DatePicker x:Name="PretragaKrajOd" />
+            <TextBlock Text="Do:" />
+            <DatePicker x:Name="PretragaKrajDo"/>
+            <Button Content="Pretrazi" Margin="0 10" x:Name="Pretrazi"/>
+            <Button Content="Ponisti pretragu" x:Name="PonistiPretragu"/>
+        </StackPanel>
+
     </Grid>
 </Window>

@@ -51,6 +51,9 @@ namespace Client.ViewModels
         {
             CanUndo = false;
             CanRedo = false;
+
+            PretragaNaziv = string.Empty;
+            PretragaOpis = string.Empty;
             this.User = user;
             this.PlanerModel = planerModel;
             connection = new LoginServiceConnection();
@@ -89,7 +92,7 @@ namespace Client.ViewModels
         public void DeletePlaner()
         {
             var result = MessageBox.Show("Da li ste sigurni da zelite da obrisete " + SelectedPlaner.Naziv + " planer?", "Obrisi Planer", MessageBoxButton.YesNoCancel);
-            if(result == MessageBoxResult.Yes)
+            if (result == MessageBoxResult.Yes)
             {
                 CanUndo = User.AddAndExecute(new Client.Command.ObrisiPlaner(SelectedPlaner, PlanerModel));
             }
@@ -98,7 +101,7 @@ namespace Client.ViewModels
         public void DuplicatePlaner()
         {
             var result = MessageBox.Show("Da li ste sigurni da zelite da duplirate " + SelectedPlaner.Naziv + " planer?", "Dupliraj Planer", MessageBoxButton.YesNoCancel);
-            if(result == MessageBoxResult.Yes)
+            if (result == MessageBoxResult.Yes)
             {
                 CanUndo = User.AddAndExecute(new Client.Command.DuplirajPlaner(SelectedPlaner, PlanerModel));
             }
@@ -116,7 +119,58 @@ namespace Client.ViewModels
 
         public void Details()
         {
-             ActivateItemAsync(new EventsViewModel(SelectedPlaner.Events, SelectedPlaner.PlannerId, SelectedPlaner.DatumZavrsetka, SelectedPlaner.DatumPocetka));
+            ActivateItemAsync(new EventsViewModel(SelectedPlaner.Events, SelectedPlaner.PlannerId, SelectedPlaner.DatumZavrsetka, SelectedPlaner.DatumPocetka));
+        }
+
+        public string PretragaOpis { get; set; }
+        public string PretragaNaziv { get; set; }
+        public DateTime PretragaPocetakOd { get; set; }
+        public DateTime PretragaPocetakDo { get; set; }
+        public DateTime PretragaKrajOd { get; set; }
+        public DateTime PretragaKrajDo { get; set; }
+
+        public BindableCollection<Common.Models.Planner> temp { get; set; }
+
+        public void Pretrazi()
+        {
+            temp = new BindableCollection<Common.Models.Planner>(PlanerModel.Planers);
+            int planerCnt = PlanerModel.Planers.Count;
+            for(int i = 0; i < planerCnt; i++)
+            {
+                if (!PlanerModel.Planers[i].Naziv.Contains(PretragaNaziv))
+                {
+                    PlanerModel.Planers.RemoveAt(i);
+                    i--;
+                    planerCnt--;
+                    continue;
+                }
+                if (!PlanerModel.Planers[i].Opis.Contains(PretragaOpis))
+                {
+                    PlanerModel.Planers.RemoveAt(i);
+                    i--;
+                    planerCnt--;
+                    continue;
+                }
+                if(PlanerModel.Planers[i].DatumPocetka < PretragaPocetakOd || PlanerModel.Planers[i].DatumPocetka > PretragaPocetakDo)
+                {
+                    PlanerModel.Planers.RemoveAt(i);
+                    i--;
+                    planerCnt--;
+                    continue;
+                }
+                if(PlanerModel.Planers[i].DatumZavrsetka < PretragaKrajOd || PlanerModel.Planers[i].DatumZavrsetka > PretragaPocetakDo)
+                {
+                    PlanerModel.Planers.RemoveAt(i);
+                    i--;
+                    planerCnt--;
+                    continue;
+                }
+            }
+        }
+
+        public void PonistiPretragu()
+        {
+            PlanerModel.Planers = new BindableCollection<Common.Models.Planner>(temp);
         }
     }
 }
