@@ -70,7 +70,7 @@ namespace Common.Models
         }
 
         [DataMember]
-        public ICollection<Event> Events { get; set; }
+        public List<Event> Events { get; set; }
 
         public Planner(DateTime datumPocetka, DateTime datumZavrsetka, string naziv, string opis, User user)
         {

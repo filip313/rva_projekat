@@ -48,6 +48,7 @@
     <Compile Include="Interfaces\IEventService.cs" />
     <Compile Include="Interfaces\ILogin.cs" />
     <Compile Include="Interfaces\IPlanerService.cs" />
+    <Compile Include="Interfaces\ISync.cs" />
     <Compile Include="Interfaces\IUserService.cs" />
     <Compile Include="Models\Administrator.cs" />
     <Compile Include="Models\Event.cs" />

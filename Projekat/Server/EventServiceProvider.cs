@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using Common.Interfaces;
 using Common.Models;
@@ -11,6 +12,9 @@ namespace Server
 {
     public class EventServiceProvider : IEventService
     {
+        public static SyncConnection sync = new SyncConnection();
+
+
         public Event AddNewEvent(string naziv, string opis, DateTime pocetak, DateTime kraj, int planerId)
         {
             using (var context = new DataContext())
@@ -19,6 +23,8 @@ namespace Server
 
                 var ret = context.Events.Add(newEvent);
                 context.SaveChanges();
+
+                Task.Run(() => Ping(planerId));
 
                 return ret;
             }
@@ -33,6 +39,9 @@ namespace Server
                 {
                     context.Events.Remove(temp);
                     context.SaveChanges();
+
+                    Task.Run(() => Ping(temp.PlannerId));
+
                     return true;
                 }
 
@@ -52,10 +61,36 @@ namespace Server
                     toEdit.DatumVremePocetka = pocetak;
                     toEdit.DatumVremeZavrsetka = kraj;
                     context.SaveChanges();
+
+                    Task.Run(() => Ping(toEdit.PlannerId));
+
                     return true;
                 }
 
                 return false;
+            }
+        }
+
+        public IEnumerable<Event> GetEvents(int planerId)
+        {
+            using (var context = new DataContext())
+            {
+                var ret = context.Events.Where(x => x.PlannerId == planerId).ToList();
+
+                return ret;
+            }
+        }
+
+        private void Ping(int planerId)
+        {
+            Thread.Sleep(1000);
+            lock(new object())
+            {
+                foreach(var user in Program.ActiveUsers)
+                {
+                    sync.Connect(user.UserId);
+                    sync.proxy.PingEvent(planerId);
+                }
             }
         }
     }

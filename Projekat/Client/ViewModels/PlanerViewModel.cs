@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Client.Models;
 using System.Windows;
+using Client.Connections;
 
 namespace Client.ViewModels
 {
@@ -15,6 +16,7 @@ namespace Client.ViewModels
         public PlanerModel PlanerModel { get; set; }
         public Common.Models.Planner SelectedPlaner { get; set; }
         LoginServiceConnection connection;
+        public Sync server;
         IWindowManager manager;
 
         private bool _isAdmin;
@@ -51,12 +53,13 @@ namespace Client.ViewModels
         {
             CanUndo = false;
             CanRedo = false;
-
+            CanPonisti = false;
             PretragaNaziv = string.Empty;
             PretragaOpis = string.Empty;
             this.User = user;
             this.PlanerModel = planerModel;
             connection = new LoginServiceConnection();
+            server = new Sync(user.UserId);
             manager = new WindowManager();
             string tmp = connection.loginProxy.GetUserType(user.UserId);
             if (tmp == "Common.Models.Administrator")
@@ -103,13 +106,17 @@ namespace Client.ViewModels
             var result = MessageBox.Show("Da li ste sigurni da zelite da duplirate " + SelectedPlaner.Naziv + " planer?", "Dupliraj Planer", MessageBoxButton.YesNoCancel);
             if (result == MessageBoxResult.Yes)
             {
-                CanUndo = User.AddAndExecute(new Client.Command.DuplirajPlaner(SelectedPlaner, PlanerModel));
+                User.AddAndExecute(new Client.Command.DuplirajPlaner(SelectedPlaner, PlanerModel));
             }
         }
 
         public void UndoCommand()
         {
-            CanRedo = User.Undo();
+            bool uspeh = User.Undo();
+            if (!uspeh)
+            {
+                MessageBox.Show("Neuspesno ponistavanje komande", "Undo error", MessageBoxButton.OK);
+            }
         }
 
         public void RedoCommand()
@@ -128,12 +135,17 @@ namespace Client.ViewModels
         public DateTime PretragaPocetakDo { get; set; }
         public DateTime PretragaKrajOd { get; set; }
         public DateTime PretragaKrajDo { get; set; }
+        public bool CanPonisti { get; set; }
 
-        public BindableCollection<Common.Models.Planner> temp { get; set; }
+        public List<Common.Models.Planner> temp { get; set; }
 
         public void Pretrazi()
         {
-            temp = new BindableCollection<Common.Models.Planner>(PlanerModel.Planers);
+            temp = new List<Common.Models.Planner>();
+            foreach(var item in PlanerModel.Planers)
+            {
+                temp.Add(item);
+            }
             int planerCnt = PlanerModel.Planers.Count;
             for(int i = 0; i < planerCnt; i++)
             {
@@ -142,6 +154,7 @@ namespace Client.ViewModels
                     PlanerModel.Planers.RemoveAt(i);
                     i--;
                     planerCnt--;
+            CanPonisti = true;
                     continue;
                 }
                 if (!PlanerModel.Planers[i].Opis.Contains(PretragaOpis))
@@ -149,28 +162,69 @@ namespace Client.ViewModels
                     PlanerModel.Planers.RemoveAt(i);
                     i--;
                     planerCnt--;
+            CanPonisti = true;
                     continue;
                 }
-                if(PlanerModel.Planers[i].DatumPocetka < PretragaPocetakOd || PlanerModel.Planers[i].DatumPocetka > PretragaPocetakDo)
+                if(PretragaPocetakOd != DateTime.MinValue)
                 {
-                    PlanerModel.Planers.RemoveAt(i);
-                    i--;
-                    planerCnt--;
-                    continue;
+                    if(PlanerModel.Planers[i].DatumPocetka < PretragaPocetakOd)
+                    {
+                        PlanerModel.Planers.RemoveAt(i);
+                        i--;
+                        planerCnt--;
+            CanPonisti = true;
+                        continue;
+                    }
                 }
-                if(PlanerModel.Planers[i].DatumZavrsetka < PretragaKrajOd || PlanerModel.Planers[i].DatumZavrsetka > PretragaPocetakDo)
+                if(PretragaPocetakDo != DateTime.MinValue)
                 {
-                    PlanerModel.Planers.RemoveAt(i);
-                    i--;
-                    planerCnt--;
-                    continue;
+                    if(PlanerModel.Planers[i].DatumPocetka > PretragaPocetakDo)
+                    {
+                        PlanerModel.Planers.RemoveAt(i);
+                        i--;
+                        planerCnt--;
+            CanPonisti = true;
+                        continue;
+                    }
+                }
+                if (PretragaKrajOd != DateTime.MinValue)
+                {
+                    if(PlanerModel.Planers[i].DatumZavrsetka < PretragaKrajOd)
+                    {
+                        PlanerModel.Planers.RemoveAt(i);
+                        i--;
+                        planerCnt--;
+            CanPonisti = true;
+                        continue;
+                    }
+                }
+                if (PretragaKrajDo != DateTime.MinValue)
+                {
+                    if(PlanerModel.Planers[i].DatumZavrsetka > PretragaKrajDo)
+                    {
+                        PlanerModel.Planers.RemoveAt(i);
+                        i--;
+                        planerCnt--;
+            CanPonisti = true;
+                        continue;
+                    }
                 }
             }
+            NotifyOfPropertyChange(() => CanPonisti);
         }
 
         public void PonistiPretragu()
         {
-            PlanerModel.Planers = new BindableCollection<Common.Models.Planner>(temp);
+            CanPonisti = false;
+            NotifyOfPropertyChange(() => CanPonisti);
+            foreach(var item in temp)
+            {
+                if(PlanerModel.Planers.Where(x => x.PlannerId == item.PlannerId).FirstOrDefault() == null)
+                {
+                    PlanerModel.Planers.Add(item);
+                }
+            }
+            PlanerModel.Planers.Refresh();
         }
     }
 }

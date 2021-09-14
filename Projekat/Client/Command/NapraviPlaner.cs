@@ -38,7 +38,7 @@ namespace Client.Command {
 
 		}
 
-		public override void Redo(){
+		public override bool Redo(){
             var tempConnection = new UserServiceConnection();
             var temp = tempConnection.userServiceProxy.GetActiveUserData(UserId);
             PrethodniPlaner = new Common.Models.Planner(DatumPocetka, DatumZavrsetka, Naziv, Opis, temp);
@@ -46,13 +46,19 @@ namespace Client.Command {
             int planerId = connection.planerServiceProxy.SavePlaner(PrethodniPlaner);
             PrethodniPlaner.PlannerId = planerId;
             PlanerModel.Planers.Add(PrethodniPlaner);
+            return true;
         }
 
-		public override void Undo(){
+		public override bool Undo(){
 
-            PlanerId = PrethodniPlaner.PlannerId;
-            PlanerModel.Planers.Remove(PrethodniPlaner);
-            connection.planerServiceProxy.RemovePlaner(PrethodniPlaner);
+            var ret  = connection.planerServiceProxy.RemovePlaner(PrethodniPlaner);
+            if (ret)
+            {
+                PlanerId = PrethodniPlaner.PlannerId;
+                PlanerModel.Planers.Remove(PrethodniPlaner);
+            }
+
+            return ret;
         }
 
 	}//end NapraviPlaner

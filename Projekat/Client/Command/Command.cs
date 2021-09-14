@@ -24,9 +24,9 @@ namespace Client.Command {
 
 		}
 
-        public abstract void Redo();
+        public abstract bool Redo();
 
-        public abstract void Undo();
+        public abstract bool Undo();
 
 	}//end Command
 

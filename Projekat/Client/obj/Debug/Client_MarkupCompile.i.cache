@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\Filip\Documents\faks\RVA\PROJEKAT\Projekat\Client\obj\Debug\
+C:\Users\Filip\Documents\faks\RVA\RVAPROJEKAT\Projekat\Client\obj\Debug\
 Client
 none
 false
 DEBUG;TRACE
-C:\Users\Filip\Documents\faks\RVA\PROJEKAT\Projekat\Client\App.xaml
+C:\Users\Filip\Documents\faks\RVA\RVAPROJEKAT\Projekat\Client\App.xaml
 6-904575195
 
-42388937226
-134-1361193754
+44-1664843163
+134430469348
 Views\EventsView.xaml;Views\LoginView.xaml;Views\NewEventView.xaml;Views\NewPlanerView.xaml;Views\NewUserView.xaml;Views\PlanerView.xaml;
 
 False

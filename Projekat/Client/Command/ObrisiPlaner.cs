@@ -28,7 +28,7 @@ namespace Client.Command {
 
 		}
 
-		public override void Redo(){
+		public override bool Redo(){
             foreach (var planer in PlanerModel.Planers)
             {
                 if (planer.PlannerId == PrethodniPlaner.PlannerId)
@@ -36,17 +36,18 @@ namespace Client.Command {
                     connection.planerServiceProxy.RemovePlaner(planer);
                     PlanerModel.Planers.Remove(planer);
                     PlanerModel.Planers.Refresh();
-                    return;
+                    return true;
                 }
             }
+            return false;
         }
 
-		public override void Undo(){
+		public override bool Undo(){
             int planerId = connection.planerServiceProxy.SavePlaner(PrethodniPlaner);
             PrethodniPlaner.PlannerId = planerId;
             PlanerModel.Planers.Add(PrethodniPlaner);
             PlanerModel.Planers.Refresh();
-            return;
+            return true;
         }
 
     }//end ObrisiPlaner

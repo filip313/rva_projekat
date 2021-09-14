@@ -13,7 +13,12 @@ namespace Client.ViewModels
 {
     public class EventsViewModel : Screen
     {
-        public BindableCollection<EventModel> Events { get; set; }
+        public static BindableCollection<EventModel> _events;
+        public BindableCollection<EventModel> Events
+        {
+            get { return _events; }
+            set { _events = value; }
+        }
         public EventModel SelectedEvent { get; set; }
         public int PlanerId { get; set; }
         public DateTime MaxDate { get; set; }

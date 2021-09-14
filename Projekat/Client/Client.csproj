@@ -109,6 +109,8 @@
     <Compile Include="Command\IzmeniPlaner.cs" />
     <Compile Include="Connections\EventServiceConnection.cs" />
     <Compile Include="Connections\PlanerServiceConnection.cs" />
+    <Compile Include="Connections\Sync.cs" />
+    <Compile Include="Connections\SyncServiceProvider.cs" />
     <Compile Include="Connections\UserServiceConnection.cs" />
     <Compile Include="Models\EventModel.cs" />
     <Compile Include="Models\PlanerModel.cs" />

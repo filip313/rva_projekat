@@ -3,17 +3,18 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:pm="Client.Models"
         xmlns:local="clr-namespace:Client.Views"
         xmlns:cal="http://caliburnmicro.com"
         mc:Ignorable="d"
-        Title="PlanerView" Height="500" Width="900">
+        Title="PlanerView" Height="550" Width="1000">
     <Window.Resources>
         <BooleanToVisibilityConverter x:Key="boolToVis" />
     </Window.Resources>
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="30" />
-            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="150"/>
             <ColumnDefinition Width="30"/>
             <ColumnDefinition Width="auto" />
             <ColumnDefinition Width="auto" />
@@ -40,7 +41,7 @@
 
         <Button Grid.Column="9" Grid.Row="0" Content="Logout" x:Name="Logout" />
 
-        <DataGrid x:Name="PlanerModel_Planers" Grid.Column="3" Grid.ColumnSpan="7"  Grid.Row="1" AutoGenerateColumns="False" CanUserAddRows="False" SelectedItem="{Binding Path=SelectedPlaner, Mode=OneWayToSource}">
+        <DataGrid x:Name="PlanerModel_Planers"  Grid.Column="3" Grid.ColumnSpan="7"  Grid.Row="1" AutoGenerateColumns="False" CanUserAddRows="False" SelectedItem="{Binding Path=SelectedPlaner, Mode=OneWayToSource}" >
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Naziv" Binding="{Binding Path=Naziv, Mode=OneWay}"/>
                 <DataGridTextColumn Header="Opis" Binding="{Binding Path=Opis, Mode=OneWay}" Width="*"/>
@@ -76,17 +77,25 @@
             <TextBlock Text="Opis:" />
             <TextBox x:Name="PretragaOpis" Margin="0 0 0 10"/>
             <TextBlock Text="Datum pocetka :" />
-            <TextBlock Text="Od:"/>
-            <DatePicker x:Name="PretragaPocetakOd" />
-            <TextBlock Text="Do:"/>
-            <DatePicker x:Name="PretragaPocetakDo" Margin="0 0 0 10"/>
+            <StackPanel Orientation="Horizontal" Margin="0 0 0 5">
+                <TextBlock Text="Od:" Margin="0 0 10 0"/>
+                <DatePickerTextBox x:Name="PretragaPocetakOd" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0 0 0 10">
+                <TextBlock Text="Do:" Margin="0 0 10 0"/>
+                <DatePickerTextBox x:Name="PretragaPocetakDo" />
+            </StackPanel>
             <TextBlock Text="Datum zavrsetka:" />
-            <TextBlock Text="Od:" />
-            <DatePicker x:Name="PretragaKrajOd" />
-            <TextBlock Text="Do:" />
-            <DatePicker x:Name="PretragaKrajDo"/>
+            <StackPanel Orientation="Horizontal" Margin="0 0 0 5">
+                <TextBlock Text="Od:" Margin="0 0 10 0"/>
+                <DatePickerTextBox x:Name="PretragaKrajOd" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0 0 0 10">
+                <TextBlock Text="Do:" Margin="0 0 10 0"/>
+                <DatePickerTextBox x:Name="PretragaKrajDo"/>
+            </StackPanel>
             <Button Content="Pretrazi" Margin="0 10" x:Name="Pretrazi"/>
-            <Button Content="Ponisti pretragu" x:Name="PonistiPretragu"/>
+            <Button Content="Ponisti pretragu" x:Name="PonistiPretragu" IsEnabled="{Binding Path=CanPonisti}"/>
         </StackPanel>
 
     </Grid>

@@ -51,8 +51,8 @@ namespace Client.Models
                 return false;
             }
             trenutnaCmd++;
-            Commands[trenutnaCmd].Redo();
-            return CheckUndo();
+
+            return Commands[trenutnaCmd].Redo();
         }
 
         public bool Undo()
@@ -61,9 +61,9 @@ namespace Client.Models
             {
                 return false;
             }
-            Commands[trenutnaCmd].Undo();
+            var ret = Commands[trenutnaCmd].Undo();
             trenutnaCmd--;
-            return CheckRedo();
+            return ret;
         }
 
         private bool CheckRedo()

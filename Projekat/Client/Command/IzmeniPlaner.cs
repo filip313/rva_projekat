@@ -39,7 +39,7 @@ namespace Client.Command
 
 		}
 
-		public override void Redo(){
+		public override bool Redo(){
 
             foreach (var planer in PlanerModel.Planers)
             {
@@ -55,9 +55,11 @@ namespace Client.Command
                     break;
                 }
             }
+
+            return true;
         }
 
-		public override void Undo(){
+		public override bool Undo(){
 
             foreach (var planer in PlanerModel.Planers)
             {
@@ -72,7 +74,7 @@ namespace Client.Command
                     break;
                 }
             }
-
+            return true;
         }
 
 	}//end IzmeniPlaner

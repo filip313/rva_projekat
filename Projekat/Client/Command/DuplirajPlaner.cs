@@ -27,21 +27,24 @@ namespace Client.Command {
 
 		}
 
-		public override void Redo(){
+		public override bool Redo(){
             var noviPlaner = PrethodniPlaner.Clone() as Planner;
             int planerId = connection.planerServiceProxy.SavePlaner(noviPlaner);
             noviPlaner.PlannerId = planerId;
             PlanerModel.Planers.Add(noviPlaner);
             PrethodniPlaner = noviPlaner;
             PlanerModel.Planers.Refresh();
-            return;
+            return true;
         }
 
-		public override void Undo(){
-            connection.planerServiceProxy.RemovePlaner(PrethodniPlaner);
-            PlanerModel.Planers.Remove(PrethodniPlaner);
-            PlanerModel.Planers.Refresh();
-            return;
+		public override bool Undo(){
+            var ret = connection.planerServiceProxy.RemovePlaner(PrethodniPlaner);
+            if (ret)
+            {
+                PlanerModel.Planers.Remove(PrethodniPlaner);
+                PlanerModel.Planers.Refresh();
+            }
+            return ret;
         }
 
 	}//end DuplirajPlaner

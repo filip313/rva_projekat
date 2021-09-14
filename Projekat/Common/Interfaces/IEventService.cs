@@ -17,5 +17,7 @@ namespace Common.Interfaces
         bool RemoveEvent(Event toRemove);
         [OperationContract]
         bool EditEvent(string naziv, string opis, DateTime pocetak, DateTime kraj, int eventId);
+        [OperationContract]
+        IEnumerable<Event> GetEvents(int planerId);
     }
 }

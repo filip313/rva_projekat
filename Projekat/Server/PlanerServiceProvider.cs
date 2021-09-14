@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using Common.Interfaces;
 using Common.Models;
@@ -11,6 +12,7 @@ namespace Server
 {
     public class PlanerServiceProvider : IPlanerService
     {
+        public static SyncConnection sync = new SyncConnection();
         public int SavePlaner(Planner planer)
         {
             using (var context = new DataContext())
@@ -30,6 +32,8 @@ namespace Server
                 planer.PlannerId = id;
                 var temp = context.Planers.Add(planer);
                 context.SaveChanges();
+
+                Task.Run(() => Ping());
 
                 return temp.PlannerId;
             }
@@ -53,6 +57,9 @@ namespace Server
                 {
                     context.Planers.Remove(toRemove);
                     context.SaveChanges();
+
+                    Task.Run(() => Ping());
+
                     return true;
                 }
             }
@@ -72,11 +79,27 @@ namespace Server
                     toChange.Naziv = planer.Naziv;
                     toChange.Opis = planer.Opis;
                     context.SaveChanges();
+
+                    Task.Run(() => Ping());
+
                     return true;
                 }
             }
 
             return false;
+        }
+
+        public void Ping()
+        {
+            Thread.Sleep(5000);
+            lock(new Object())
+            {
+                foreach(var user in Program.ActiveUsers)
+                {
+                    sync.Connect(user.UserId);
+                    sync.proxy.Ping();
+                }
+            }
         }
     }
 }
