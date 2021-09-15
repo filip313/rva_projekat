@@ -23,6 +23,9 @@ namespace Common.Interfaces
         [OperationContract]
         bool SaveChanges(Planner planer);
 
+        [OperationContract]
+        bool Exists(int planerId);
+
 
     }
 }

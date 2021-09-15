@@ -33,10 +33,13 @@ namespace Client.Command {
             {
                 if (planer.PlannerId == PrethodniPlaner.PlannerId)
                 {
-                    connection.planerServiceProxy.RemovePlaner(planer);
-                    PlanerModel.Planers.Remove(planer);
-                    PlanerModel.Planers.Refresh();
-                    return true;
+                    var ret = connection.planerServiceProxy.RemovePlaner(planer);
+                    if (ret)
+                    {
+                        PlanerModel.Planers.Remove(planer);
+                        PlanerModel.Planers.Refresh();
+                    }
+                    return ret;
                 }
             }
             return false;

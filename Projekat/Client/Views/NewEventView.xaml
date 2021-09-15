@@ -6,7 +6,9 @@
         xmlns:local="clr-namespace:Client.Views"
         xmlns:wpfx="http://schemas.xceed.com/wpf/xaml/toolkit"
         mc:Ignorable="d"
-        Title="NewEventView" Height="300" Width="320">
+        Title="Event" Height="300" Width="320"
+        FontFamily="Century Gothic"
+        FontSize="14">
     <Window.Resources>
         <BooleanToVisibilityConverter x:Key="boolToVis" />
     </Window.Resources>

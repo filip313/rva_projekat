@@ -89,6 +89,20 @@ namespace Server
             return false;
         }
 
+        public bool Exists(int planerId)
+        {
+            using (var context = new DataContext())
+            {
+                var temp = context.Events.Where(x => x.PlannerId == planerId).FirstOrDefault();
+                if(temp == null)
+                {
+                    return false;
+                }
+
+                return true;
+            }
+        }
+
         public void Ping()
         {
             Thread.Sleep(5000);
@@ -97,7 +111,14 @@ namespace Server
                 foreach(var user in Program.ActiveUsers)
                 {
                     sync.Connect(user.UserId);
-                    sync.proxy.Ping();
+                    try
+                    {
+                        sync.proxy.Ping();
+                    }
+                    catch
+                    {
+                        Console.WriteLine("User sa id-em: " + user.UserId + " nije konentovan.");
+                    }
                 }
             }
         }

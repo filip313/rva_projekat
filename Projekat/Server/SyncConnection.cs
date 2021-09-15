@@ -18,7 +18,8 @@ namespace Server
 
         public void Connect(int id)
         {
-            string port = "700" + id.ToString();
+            int port = 7000 + id;
+
             string address = $"net.tcp://localhost:{port}/Sync";
             var binding = new NetTcpBinding();
             ChannelFactory<ISync> cf = new ChannelFactory<ISync>(binding, new EndpointAddress(address));

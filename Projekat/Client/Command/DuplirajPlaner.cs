@@ -28,13 +28,18 @@ namespace Client.Command {
 		}
 
 		public override bool Redo(){
-            var noviPlaner = PrethodniPlaner.Clone() as Planner;
-            int planerId = connection.planerServiceProxy.SavePlaner(noviPlaner);
-            noviPlaner.PlannerId = planerId;
-            PlanerModel.Planers.Add(noviPlaner);
-            PrethodniPlaner = noviPlaner;
-            PlanerModel.Planers.Refresh();
-            return true;
+            if (connection.planerServiceProxy.Exists(PrethodniPlaner.PlannerId))
+            {
+                var noviPlaner = PrethodniPlaner.Clone() as Planner;
+                int planerId = connection.planerServiceProxy.SavePlaner(noviPlaner);
+                noviPlaner.PlannerId = planerId;
+                PlanerModel.Planers.Add(noviPlaner);
+                PrethodniPlaner = noviPlaner;
+                PlanerModel.Planers.Refresh();
+                return true;
+            }
+
+            return false;
         }
 
 		public override bool Undo(){

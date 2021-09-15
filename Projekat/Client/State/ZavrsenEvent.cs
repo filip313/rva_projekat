@@ -12,7 +12,7 @@ namespace Client.State
     {
         public ZavrsenEvent(Event Event, EventModel model) : base(Event, model)
         {
-            BackgroundColor = "Red";
+            BackgroundColor = "#d34a4a";
             TekstStanja = "ZAVRSEN";
             IsEditable = false;
             IsRemovable = false;

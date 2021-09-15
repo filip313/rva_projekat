@@ -6,9 +6,12 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Caliburn.Micro;
+
 namespace Client.Models
 {
-    public class UserModel
+    
+    public class UserModel 
     {
         public List<Command.Command> Commands;
         private int trenutnaCmd;
@@ -40,6 +43,7 @@ namespace Client.Models
                 Commands.RemoveRange(trenutnaCmd + 1, Commands.Count - trenutnaCmd - 1);
             }
             trenutnaCmd--;
+
             return Redo();
 
         }
@@ -51,6 +55,7 @@ namespace Client.Models
                 return false;
             }
             trenutnaCmd++;
+            ViewModels.PlanerViewModel.CanUndo = true;
 
             return Commands[trenutnaCmd].Redo();
         }
@@ -63,26 +68,14 @@ namespace Client.Models
             }
             var ret = Commands[trenutnaCmd].Undo();
             trenutnaCmd--;
+            
             return ret;
         }
 
-        private bool CheckRedo()
+        public void RemoveFailedCommand()
         {
-            if (trenutnaCmd + 1 >= Commands.Count || (trenutnaCmd < 0 && Commands.Count == 0))
-            {
-                return false;
-            }
-            return true;
-        }
-
-        private bool CheckUndo()
-        {
-            if (trenutnaCmd < 0)
-            {
-                return false;
-            }
-
-            return true;
+            Commands.RemoveAt(trenutnaCmd);
+            trenutnaCmd--;
         }
     }
 }

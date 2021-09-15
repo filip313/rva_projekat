@@ -14,7 +14,10 @@ namespace Server
         public int Login(string username, string password)
         {
             Console.WriteLine($"{username} : {password} ");
-
+            if(Program.ActiveUsers.Where(x => x.Username == username).FirstOrDefault() != null)
+            {
+                return -2;
+            }
             using (var context = new DataContext())
             {
                 var Users = context.Users.ToList();

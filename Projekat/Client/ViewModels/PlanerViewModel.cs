@@ -21,25 +21,19 @@ namespace Client.ViewModels
 
         private bool _isAdmin;
 
+        private static bool _canUndo;
+
+        public static bool CanUndo
+        {
+            get { return _canUndo; }
+            set { _canUndo = value; }
+        }
+
+
         public bool IsAdmin
         {
             get { return _isAdmin; }
             set { _isAdmin = value; NotifyOfPropertyChange(); }
-        }
-
-        private bool _canRedo;
-
-        public bool CanRedo
-        {
-            get { return _canRedo; }
-            set { _canRedo = value; NotifyOfPropertyChange(); }
-        }
-        private bool _canUndo;
-
-        public bool CanUndo
-        {
-            get { return _canUndo; }
-            set { _canUndo = value; NotifyOfPropertyChange(); }
         }
 
         public void Logout()
@@ -51,8 +45,6 @@ namespace Client.ViewModels
 
         public PlanerViewModel(UserModel user, PlanerModel planerModel)
         {
-            CanUndo = false;
-            CanRedo = false;
             CanPonisti = false;
             PretragaNaziv = string.Empty;
             PretragaOpis = string.Empty;
@@ -94,34 +86,42 @@ namespace Client.ViewModels
 
         public void DeletePlaner()
         {
-            var result = MessageBox.Show("Da li ste sigurni da zelite da obrisete " + SelectedPlaner.Naziv + " planer?", "Obrisi Planer", MessageBoxButton.YesNoCancel);
+            var result = MessageBox.Show("Da li ste sigurni da zelite da obrisete " + SelectedPlaner.Naziv + " planer?", "Obrisi Planer", MessageBoxButton.YesNoCancel, MessageBoxImage.Warning);
             if (result == MessageBoxResult.Yes)
             {
-                CanUndo = User.AddAndExecute(new Client.Command.ObrisiPlaner(SelectedPlaner, PlanerModel));
+                bool uspeh = User.AddAndExecute(new Client.Command.ObrisiPlaner(SelectedPlaner, PlanerModel));
+                if (!uspeh)
+                {
+                    User.RemoveFailedCommand();
+                    MessageBox.Show("Brisanje planera NIJE uspelo (planer je vec obrisan)!", "Brisanje planera", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
             }
         }
 
         public void DuplicatePlaner()
         {
-            var result = MessageBox.Show("Da li ste sigurni da zelite da duplirate " + SelectedPlaner.Naziv + " planer?", "Dupliraj Planer", MessageBoxButton.YesNoCancel);
+            var result = MessageBox.Show("Da li ste sigurni da zelite da duplirate " + SelectedPlaner.Naziv + " planer?", "Dupliraj Planer", MessageBoxButton.YesNoCancel, MessageBoxImage.Warning);
             if (result == MessageBoxResult.Yes)
             {
-                User.AddAndExecute(new Client.Command.DuplirajPlaner(SelectedPlaner, PlanerModel));
+                bool uspeh = User.AddAndExecute(new Client.Command.DuplirajPlaner(SelectedPlaner, PlanerModel));
+                if (!uspeh)
+                {
+                    User.RemoveFailedCommand();
+                    MessageBox.Show("Nije moguce dupliratri planer (trazeni planer NE postoji u bazi podataka)!", "Dupliraj planer error", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
             }
         }
 
         public void UndoCommand()
         {
             bool uspeh = User.Undo();
-            if (!uspeh)
-            {
-                MessageBox.Show("Neuspesno ponistavanje komande", "Undo error", MessageBoxButton.OK);
-            }
+            
         }
 
         public void RedoCommand()
         {
-            CanUndo = User.Redo();
+            bool uspeh = User.Redo();
+            
         }
 
         public void Details()

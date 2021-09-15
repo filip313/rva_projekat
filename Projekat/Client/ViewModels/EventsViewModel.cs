@@ -47,8 +47,6 @@ namespace Client.ViewModels
             {
                 var tempModel = new EventModel(item);
                 tempModel.EventState.CheckState();
-                //NotifyOfPropertyChange("tempModel.EventState.IsEditable");
-                //NotifyOfPropertyChange(() => tempModel.EventState.IsRemovable);
                 temp.Add(tempModel);
             }
 
@@ -62,12 +60,16 @@ namespace Client.ViewModels
 
         public void RemoveEvent()
         {
-            var result = MessageBox.Show("Da li sigurno zelite da obrisete '" + SelectedEvent.Event.Naziv + "' event?", "Izbrisi Event", MessageBoxButton.YesNoCancel);
+            var result = MessageBox.Show("Da li sigurno zelite  odabrisete '" + SelectedEvent.Event.Naziv + "' event?", "Izbrisi Event", MessageBoxButton.YesNoCancel, MessageBoxImage.Warning);
             if(result == MessageBoxResult.Yes)
             {
                 if (Connection.eventServiceProxy.RemoveEvent(SelectedEvent.Event))
                 {
                     Events.Remove(SelectedEvent);
+                }
+                else
+                {
+                    MessageBox.Show("NIJE moguce obrisati event (event je obrisan)!", "Izbrisi Event Error", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
             }
         }

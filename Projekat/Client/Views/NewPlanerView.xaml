@@ -5,7 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Client.Views"
         mc:Ignorable="d"
-        Title="NewPlanerView" Height="300" Width="320">
+        Title="Planer" Height="300" Width="320"
+        FontFamily="Century Gothic"
+        FontSize="14">
         <Window.Resources>
             <BooleanToVisibilityConverter x:Key="boolToVis" />
         </Window.Resources>

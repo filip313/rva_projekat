@@ -19,7 +19,8 @@ namespace Client.Connections
 
         public void StartSyncService(int id)
         {
-            string port = "700" + id.ToString();
+            int port = 7000 + id;
+
             string address = $"net.tcp://localhost:{port}/Sync";
             syncServiceHost = new ServiceHost(typeof(SyncServiceProvider));
             var binding = new NetTcpBinding();

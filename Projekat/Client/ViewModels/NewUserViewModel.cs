@@ -95,12 +95,12 @@ namespace Client.ViewModels
 
                 if (connection.userServiceProxy.AddNewUser(userFactory.CreateUser(Username, Password, Ime, Prezime, Email)))
                 {
-                    MessageBox.Show("Korisnik uspesno kreiran!");
+                    MessageBox.Show("Korisnik uspesno kreiran!", "Create New User", MessageBoxButton.OK, MessageBoxImage.Information);
                     this.TryCloseAsync();
                 }
                 else
                 {
-                    MessageBox.Show("Korisnik sa odabranim korisnickim imenom vec postoji!");
+                    MessageBox.Show("Korisnik sa odabranim korisnickim imenom vec postoji!", "Create New User", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
 
                 return;
@@ -114,7 +114,7 @@ namespace Client.ViewModels
         {
             if(CheckIfValid(Ime) && CheckIfValid(Prezime) && CheckIfValid(Email))
             { 
-                MessageBoxResult result = MessageBox.Show("Da li ste sigurni da zelite da primenite izmene?", "Izmena podataka", MessageBoxButton.YesNo);
+                MessageBoxResult result = MessageBox.Show("Da li ste sigurni da zelite da primenite izmene?", "Izmena podataka", MessageBoxButton.YesNo, MessageBoxImage.Warning);
                 if(result == MessageBoxResult.Yes)
                 {
                     connection.userServiceProxy.ChangeUserData(id, Ime, Prezime, Email);

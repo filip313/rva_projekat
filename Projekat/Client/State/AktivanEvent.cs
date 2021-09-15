@@ -13,7 +13,7 @@ namespace Client.State
     {
         public AktivanEvent(Event Event, EventModel model) : base(Event, model)
         {
-            BackgroundColor = "Green";
+            BackgroundColor = "#6bd672";
             TekstStanja = "AKTIVAN";
             IsRemovable = false;
             IsEditable = false;

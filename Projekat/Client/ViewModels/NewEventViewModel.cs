@@ -63,7 +63,7 @@ namespace Client.ViewModels
             {
                 var ubacenEvent = Connection.eventServiceProxy.AddNewEvent(Naziv, Opis, Pocetak, Kraj, PlannerId);
                 Events.Add(new EventModel(ubacenEvent));
-                MessageBox.Show("Uspesno kreiran Event", "Kreiraj novi Event");
+                MessageBox.Show("Uspesno kreiran Event", "Kreiraj novi Event", MessageBoxButton.OK, MessageBoxImage.Information);
                 this.TryCloseAsync();
             }
 

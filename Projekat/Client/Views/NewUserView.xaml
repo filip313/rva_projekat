@@ -5,7 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Client.Views"
         mc:Ignorable="d"
-        Title="NewUserView" Height="350" Width="300">
+        Title="Korisnik" Height="350" Width="300"
+        FontFamily="Century Gothic"
+        FontSize="14">
     <Window.Resources>
         <BooleanToVisibilityConverter x:Key="boolToVis" />
     </Window.Resources>

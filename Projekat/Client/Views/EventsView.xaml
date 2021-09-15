@@ -18,6 +18,16 @@
             <RowDefinition Height="10" />
         </Grid.RowDefinitions>
         <DataGrid x:Name="Events" CanUserAddRows="False" AutoGenerateColumns="False" Grid.Column="0" Grid.Row="1" SelectedItem="{Binding Path=SelectedEvent, Mode=OneWayToSource}">
+            <DataGrid.CellStyle>
+                <Style TargetType="DataGridCell">
+                    <Setter Property="TextBlock.TextAlignment" Value="Center"/>
+                </Style>
+            </DataGrid.CellStyle>
+            <DataGrid.ColumnHeaderStyle>
+                <Style TargetType="DataGridColumnHeader">
+                    <Setter Property="Label.HorizontalContentAlignment" Value="Center"/>
+                </Style>
+            </DataGrid.ColumnHeaderStyle>
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Naziv" Binding="{Binding Path=Event.Naziv, Mode=OneWay}" />
                 <DataGridTextColumn Header="Opis" Binding="{Binding Path=Event.Opis, Mode=OneWay}" Width="*" />
@@ -26,7 +36,8 @@
                 <DataGridTextColumn Header="Stanje Eventa" Binding="{Binding Path=EventState.TekstStanja, Mode=OneWay}" >
                     <DataGridTextColumn.CellStyle>
                         <Style TargetType="DataGridCell">
-                            <Setter Property="Background" Value="{Binding Path=EventState.BackgroundColor}" />
+                            <Setter Property="Background" Value="{Binding Path=EventState.BackgroundColor}"/>
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
                         </Style>
                     </DataGridTextColumn.CellStyle>
                 </DataGridTextColumn>
@@ -34,14 +45,21 @@
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
                             <StackPanel Orientation="Horizontal">
-                                <Button x:Name="EditEvent" Content="Edit" cal:Bind.Model="{Binding DataContext, RelativeSource={RelativeSource AncestorType=DataGrid}}" cal:Message.Attach="EditButton" >
+                                <Button x:Name="EditEvent" Content="Edit" cal:Bind.Model="{Binding DataContext, RelativeSource={RelativeSource AncestorType=DataGrid}}" cal:Message.Attach="EditButton"  Margin="5 5 5 5">
+                                    <Button.Background>
+                                        <SolidColorBrush Color="#FF5BC0DE" Opacity="0.6"/>
+                                    </Button.Background>
                                     <Button.Style>
                                         <Style TargetType="{x:Type Button}">
                                             <Setter Property="IsEnabled" Value="{Binding EventState.IsEditable}" />
                                         </Style>
                                     </Button.Style>
                                 </Button>
-                                <Button x:Name="RemoveEvent" Content="Remove" cal:Bind.Model="{Binding DataContext, RelativeSource={RelativeSource AncestorType=DataGrid}}" cal:Message.Attach="RemoveButton" IsEnabled="{Binding Path=EventState.IsRemovable, Mode=OneWay}"/>
+                                <Button x:Name="RemoveEvent" Content="Remove" cal:Bind.Model="{Binding DataContext, RelativeSource={RelativeSource AncestorType=DataGrid}}" cal:Message.Attach="RemoveButton" IsEnabled="{Binding Path=EventState.IsRemovable, Mode=OneWay}" Margin="0 5 5 5">
+                                    <Button.Background>
+                                        <SolidColorBrush Color="#FFF04124" Opacity="0.6"/>
+                                    </Button.Background>
+                                </Button>
                             </StackPanel>
                         </DataTemplate>
                     </DataGridTemplateColumn.CellTemplate>

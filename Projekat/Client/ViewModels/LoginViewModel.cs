@@ -61,9 +61,12 @@ namespace Client.ViewModels
                     manager.ShowWindowAsync(new PlanerViewModel(new Models.UserModel() { UserId = id }, new Models.PlanerModel(id)));
                     this.TryCloseAsync();
                 }
-                else
+                else if(id == -1)
                 {
                     Error = "Korisnicko ime ili sifra nisu dobri !";
+                }else if(id == -2)
+                {
+                    Error = "Korisnik je vec ulogovan!";
                 }
                 
             }

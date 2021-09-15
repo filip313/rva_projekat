@@ -49,16 +49,26 @@ namespace Client.ViewModels
 
         public void CreateNewPlaner()
         {
-            User.AddAndExecute(new NapraviPlaner(DatumPocetka, DatumZavrsetka, Naziv, Opis, User.UserId, PlanerModel));
+            if (!User.AddAndExecute(new NapraviPlaner(DatumPocetka, DatumZavrsetka, Naziv, Opis, User.UserId, PlanerModel)))
+            {
+                MessageBox.Show("Doslo je do greske prilikom kreiranja novog planera!", "Novi Planer Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
             
             this.TryCloseAsync();
         }
 
         public void EditPlaner()
         {
-            User.AddAndExecute(new IzmeniPlaner(PlanerId, DatumPocetka, DatumZavrsetka, Naziv, Opis, PlanerModel));
+            var result = MessageBox.Show("Da li ste sigurni da zelite da primenite ove izmene", "Izmena Planera", MessageBoxButton.YesNoCancel, MessageBoxImage.Warning);
+            if(result == MessageBoxResult.Yes)
+            {
+                if(!User.AddAndExecute(new IzmeniPlaner(PlanerId, DatumPocetka, DatumZavrsetka, Naziv, Opis, PlanerModel)))
+                {
+                    MessageBox.Show("Doslo je do greske prilikom izmene podataka planera!", "Izmeni Planer Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+                this.TryCloseAsync();
+            }
 
-            this.TryCloseAsync();
         }
     }
 }
