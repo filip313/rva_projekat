@@ -7,7 +7,8 @@
         mc:Ignorable="d"
         Title="Planer" Height="300" Width="320"
         FontFamily="Century Gothic"
-        FontSize="14">
+        FontSize="14"
+        Background="#dee2e6">
         <Window.Resources>
             <BooleanToVisibilityConverter x:Key="boolToVis" />
         </Window.Resources>
@@ -40,10 +41,12 @@
         <DatePicker x:Name="DatumPocetka" Grid.Column="1" Grid.Row="6" FirstDayOfWeek="Monday" />
 
         <TextBlock Text="Datum zavrsetka: " Grid.Column="1" Grid.Row="7"/>
-        <DatePicker x:Name="DatumZavrsetka" Grid.Column="1" Grid.Row="8" FirstDayOfWeek="Monday"/>
+        <DatePicker x:Name="DatumZavrsetka" Grid.Column="1" Grid.Row="8" FirstDayOfWeek="Monday" Margin="0 0 0 10"/>
 
-        <Button Content="Napravi novi planer!" x:Name="CreateNewPlaner" Grid.Column="1" Grid.Row="9" Visibility="{Binding IsNew, Converter={StaticResource boolToVis}}"/>
-        <Button Content="Izmeni planer!" x:Name="EditPlaner" Grid.Column="1" Grid.Row="9" Visibility="{Binding IsChange, Converter={StaticResource boolToVis}}"/>
+        <Button Content="Napravi novi planer!" x:Name="CreateNewPlaner" Grid.Column="1" Grid.Row="9" 
+                Visibility="{Binding IsNew, Converter={StaticResource boolToVis}}" Background="#5bc0de" BorderBrush="#008cba"/>
+        <Button Content="Izmeni planer!" x:Name="EditPlaner" Grid.Column="1" Grid.Row="9" 
+                Visibility="{Binding IsChange, Converter={StaticResource boolToVis}}" Background="#5bc0de" BorderBrush="#008cba"/>
 
     </Grid>
 </Window>

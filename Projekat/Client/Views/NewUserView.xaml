@@ -7,7 +7,8 @@
         mc:Ignorable="d"
         Title="Korisnik" Height="350" Width="300"
         FontFamily="Century Gothic"
-        FontSize="14">
+        FontSize="14"
+        Background="#dee2e6">
     <Window.Resources>
         <BooleanToVisibilityConverter x:Key="boolToVis" />
     </Window.Resources>
@@ -45,19 +46,20 @@
         <TextBox Grid.Column="1" Grid.Row="6" x:Name="Ime"/>
 
         <TextBlock Grid.Column="1" Grid.Row="7" Text="Prezime:" />
-        <TextBox Grid.Column="1" Grid.Row="8" x:Name="Prezime" />
+        <TextBox Grid.Column="1" Grid.Row="8" x:Name="Prezime"/>
 
         <TextBlock Grid.Column="1" Grid.Row="9" Text="Email:" />
-        <TextBox Grid.Column="1" Grid.Row="10" x:Name="Email" />
+        <TextBox Grid.Column="1" Grid.Row="10" x:Name="Email"  Margin="0 0 0 10"/>
 
         <TextBlock Grid.Column="1" Grid.Row="11" Text="Tip korisnika (podrazumevani je User):" Visibility="{Binding IsNew, Converter={StaticResource boolToVis}}"/>
         <ComboBox x:Name="TipoviKorisnika" Grid.Column="1" Grid.Row="12" SelectedItem="{Binding Path=TipKorisnika, Mode=OneWayToSource}" 
-                  Visibility="{Binding IsNew, Converter={StaticResource boolToVis}}"/>
+                  Visibility="{Binding IsNew, Converter={StaticResource boolToVis}}" Margin="0 0 0 10"/>
 
         <Button x:Name="AddNewUser" Grid.Column="1" Grid.Row="13" Content="Kreiraj Novog Korisnika"
-                Visibility="{Binding IsNew, Converter={StaticResource boolToVis}}"/>
+                Visibility="{Binding IsNew, Converter={StaticResource boolToVis}}" Background="#5bc0de" BorderBrush="#008cba" />
 
-        <Button x:Name="ChangeUserData" Grid.Column="1" Grid.Row="13" Content="Izmeni podatke" Visibility="{Binding IsChange, Converter={StaticResource boolToVis}}" />
+        <Button x:Name="ChangeUserData" Grid.Column="1" Grid.Row="13" Content="Izmeni podatke" 
+                Visibility="{Binding IsChange, Converter={StaticResource boolToVis}}" Background="#5bc0de" BorderBrush="#008cba"/>
         <TextBlock x:Name="Error" Grid.Row="14" Grid.Column="1" />
     </Grid>
 </Window>

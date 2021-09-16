@@ -17,7 +17,7 @@ namespace Client.Connections
             StartSyncService(id);
         }
 
-        public void StartSyncService(int id)
+        private void StartSyncService(int id)
         {
             int port = 7000 + id;
 

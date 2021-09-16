@@ -14,14 +14,14 @@ namespace Client.Models
     public class UserModel 
     {
         public List<Command.Command> Commands;
-        private int trenutnaCmd;
+        private int _trenutnaCmd;
         private int _userId;
 
 
         public UserModel()
         {
             Commands = new List<Command.Command>();
-            trenutnaCmd = -1;
+            _trenutnaCmd = -1;
         }
 
         public int UserId
@@ -32,17 +32,17 @@ namespace Client.Models
 
         public bool AddAndExecute(Command.Command komanda)
         {
-            trenutnaCmd++;
-            if(trenutnaCmd == Commands.Count)
+            _trenutnaCmd++;
+            if(_trenutnaCmd == Commands.Count)
             {
                 Commands.Add(komanda);
             }
             else
             {
-                Commands[trenutnaCmd] = komanda;
-                Commands.RemoveRange(trenutnaCmd + 1, Commands.Count - trenutnaCmd - 1);
+                Commands[_trenutnaCmd] = komanda;
+                Commands.RemoveRange(_trenutnaCmd + 1, Commands.Count - _trenutnaCmd - 1);
             }
-            trenutnaCmd--;
+            _trenutnaCmd--;
 
             return Redo();
 
@@ -50,32 +50,32 @@ namespace Client.Models
 
         public bool Redo()
         {
-            if (trenutnaCmd + 1 >= Commands.Count || (trenutnaCmd < 0 && Commands.Count == 0))
+            if (_trenutnaCmd + 1 >= Commands.Count || (_trenutnaCmd < 0 && Commands.Count == 0))
             {
                 return false;
             }
-            trenutnaCmd++;
+            _trenutnaCmd++;
             ViewModels.PlanerViewModel.CanUndo = true;
 
-            return Commands[trenutnaCmd].Redo();
+            return Commands[_trenutnaCmd].Redo();
         }
 
         public bool Undo()
         {
-            if (trenutnaCmd < 0)
+            if (_trenutnaCmd < 0)
             {
                 return false;
             }
-            var ret = Commands[trenutnaCmd].Undo();
-            trenutnaCmd--;
+            var ret = Commands[_trenutnaCmd].Undo();
+            _trenutnaCmd--;
             
             return ret;
         }
 
         public void RemoveFailedCommand()
         {
-            Commands.RemoveAt(trenutnaCmd);
-            trenutnaCmd--;
+            Commands.RemoveAt(_trenutnaCmd);
+            _trenutnaCmd--;
         }
     }
 }

@@ -58,7 +58,7 @@ namespace Client.ViewModels
                 {
                     Error = String.Empty;
                     IWindowManager manager = new WindowManager();
-                    manager.ShowWindowAsync(new PlanerViewModel(new Models.UserModel() { UserId = id }, new Models.PlanerModel(id)));
+                    manager.ShowWindowAsync(new PlanerViewModel(new Models.UserModel() { UserId = id }, new Models.PlanerModel()));
                     this.TryCloseAsync();
                 }
                 else if(id == -1)

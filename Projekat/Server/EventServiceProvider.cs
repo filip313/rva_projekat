@@ -83,7 +83,7 @@ namespace Server
 
         private void Ping(int planerId)
         {
-            Thread.Sleep(1000);
+            Thread.Sleep(500);
             lock(new object())
             {
                 foreach(var user in Program.ActiveUsers)

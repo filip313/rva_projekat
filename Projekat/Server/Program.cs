@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Common.Models;
+using DataAccess;
 
 namespace Server
 {
@@ -12,7 +13,12 @@ namespace Server
         public static List<User> ActiveUsers = new List<User>();
         static void Main(string[] args)
         {
-            ServiceProvider server = new ServiceProvider();
+            using (var context = new DataContext())
+            {
+                context.InitDatabase();
+                context.SaveChanges();
+            }
+                ServiceProvider server = new ServiceProvider();
             Console.ReadLine();
         }
     }

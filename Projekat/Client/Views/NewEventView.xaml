@@ -8,7 +8,8 @@
         mc:Ignorable="d"
         Title="Event" Height="300" Width="320"
         FontFamily="Century Gothic"
-        FontSize="14">
+        FontSize="14"
+        Background="#dee2e6">
     <Window.Resources>
         <BooleanToVisibilityConverter x:Key="boolToVis" />
     </Window.Resources>
@@ -45,8 +46,10 @@
         <TextBlock Text="Kraj:" Grid.Row="7" Grid.Column="1" />
         <wpfx:DateTimePicker x:Name="Kraj" Grid.Row="8" Grid.Column="1" Value="{Binding Path=Kraj}"/>
 
-        <Button Content="Kreiraj novi Event!" x:Name="AddNewEvent" Grid.Row="9" Grid.Column="1" Margin="0 10" Visibility="{Binding Path=IsNew, Converter={StaticResource boolToVis}}"/>
-        <Button Content="Izmeni Event" x:Name="EditEvent" Grid.Row="9" Grid.Column="1" Margin="0 10" Visibility="{Binding Path=IsChange, Converter={StaticResource boolToVis}}" />
+        <Button Content="Kreiraj novi Event!" x:Name="AddNewEvent" Grid.Row="9" Grid.Column="1" Margin="0 10" 
+                Visibility="{Binding Path=IsNew, Converter={StaticResource boolToVis}}" Background="#5bc0de" BorderBrush="#008cba"/>
+        <Button Content="Izmeni Event" x:Name="EditEvent" Grid.Row="9" Grid.Column="1" Margin="0 10" 
+                Visibility="{Binding Path=IsChange, Converter={StaticResource boolToVis}}" Background="#5bc0de" BorderBrush="#008cba"/>
 
         <TextBlock x:Name="Error" Grid.Row="10" Grid.Column="1" />
 

@@ -122,12 +122,12 @@
     <Compile Include="State\EventState.cs" />
     <Compile Include="State\ZakazanEvent.cs" />
     <Compile Include="State\ZavrsenEvent.cs" />
-    <Compile Include="ViewModels\EventsViewModel.cs" />
+    <Compile Include="ViewModels\EventViewModel.cs" />
     <Compile Include="ViewModels\NewEventViewModel.cs" />
     <Compile Include="ViewModels\NewPlanerViewModel.cs" />
     <Compile Include="ViewModels\NewUserViewModel.cs" />
-    <Compile Include="Views\EventsView.xaml.cs">
-      <DependentUpon>EventsView.xaml</DependentUpon>
+    <Compile Include="Views\EventView.xaml.cs">
+      <DependentUpon>EventView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\NewEventView.xaml.cs">
       <DependentUpon>NewEventView.xaml</DependentUpon>
@@ -178,7 +178,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Page Include="Views\EventsView.xaml">
+    <Page Include="Views\EventView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -91,7 +91,7 @@ namespace Client.Connections
                 }
 
                 PlanerModel._planers.Refresh();
-                ViewModels.EventsViewModel._events.Refresh();
+                ViewModels.EventViewModel._events.Refresh();
             }
         }
     }

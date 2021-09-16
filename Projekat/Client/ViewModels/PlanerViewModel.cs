@@ -7,6 +7,8 @@ using System.Threading.Tasks;
 using Client.Models;
 using System.Windows;
 using Client.Connections;
+using System.Threading;
+using System.ComponentModel;
 
 namespace Client.ViewModels
 {
@@ -124,9 +126,10 @@ namespace Client.ViewModels
             
         }
 
-        public void Details()
+        public void OnClose(CancelEventArgs args)
         {
-            ActivateItemAsync(new EventsViewModel(SelectedPlaner.Events, SelectedPlaner.PlannerId, SelectedPlaner.DatumZavrsetka, SelectedPlaner.DatumPocetka));
+            connection.loginProxy.Logout(User.UserId);
+            this.TryCloseAsync();
         }
 
         public string PretragaOpis { get; set; }
@@ -141,6 +144,8 @@ namespace Client.ViewModels
 
         public void Pretrazi()
         {
+
+            PopuniListu();
             temp = new List<Common.Models.Planner>();
             foreach(var item in PlanerModel.Planers)
             {
@@ -217,14 +222,40 @@ namespace Client.ViewModels
         {
             CanPonisti = false;
             NotifyOfPropertyChange(() => CanPonisti);
-            foreach(var item in temp)
+
+            PopuniListu();
+
+            PretragaNaziv = string.Empty;
+            NotifyOfPropertyChange(() => PretragaNaziv);
+
+            PretragaOpis = string.Empty;
+            NotifyOfPropertyChange(() => PretragaOpis);
+
+            PretragaKrajDo = DateTime.MinValue;
+            NotifyOfPropertyChange(() => PretragaKrajDo);
+
+            PretragaKrajOd = DateTime.MinValue;
+            NotifyOfPropertyChange(() => PretragaKrajOd);
+
+            PretragaPocetakDo = DateTime.MinValue;
+            NotifyOfPropertyChange(() => PretragaPocetakDo);
+
+            PretragaPocetakOd = DateTime.MinValue;
+            NotifyOfPropertyChange(() => PretragaPocetakOd);
+
+            PlanerModel.Planers.Refresh();
+        }
+
+        private void PopuniListu()
+        {
+            if(temp != null)
             {
-                if(PlanerModel.Planers.Where(x => x.PlannerId == item.PlannerId).FirstOrDefault() == null)
+                PlanerModel.Planers.Clear();
+                foreach (var item in temp)
                 {
                     PlanerModel.Planers.Add(item);
                 }
             }
-            PlanerModel.Planers.Refresh();
         }
     }
 }

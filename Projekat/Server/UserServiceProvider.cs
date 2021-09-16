@@ -42,7 +42,7 @@ namespace Server
             {
                 ret = new ObicanUser() { UserId = temp.UserId, Ime = temp.Ime, Prezime = temp.Prezime, Email = temp.Email, Username = temp.Username};
             }
-            return ret;
+            return ret.Clone() as User;
         }
 
         public bool ChangeUserData(int id , string ime, string prezime, string email)

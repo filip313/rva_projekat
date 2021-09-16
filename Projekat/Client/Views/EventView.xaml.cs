@@ -18,9 +18,9 @@ namespace Client.Views
     /// <summary>
     /// Interaction logic for EventsView.xaml
     /// </summary>
-    public partial class EventsView : UserControl
+    public partial class EventView : UserControl
     {
-        public EventsView()
+        public EventView()
         {
             InitializeComponent();
         }

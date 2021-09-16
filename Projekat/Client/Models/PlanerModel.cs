@@ -24,7 +24,7 @@ namespace Client.Models
         //public  BindableCollection<Planner> Planers { get; set; }
         public PlanerServiceConnection connection;
 
-        public PlanerModel(int id)
+        public PlanerModel()
         {
             connection = new PlanerServiceConnection();
             Planers = new BindableCollection<Planner>(connection.planerServiceProxy.GetAllPlaners());

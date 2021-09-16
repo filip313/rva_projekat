@@ -43,7 +43,7 @@ namespace Client.Command {
             var temp = tempConnection.userServiceProxy.GetActiveUserData(UserId);
             PrethodniPlaner = new Common.Models.Planner(DatumPocetka, DatumZavrsetka, Naziv, Opis, temp);
             PrethodniPlaner.PlannerId = PlanerId;
-            int planerId = connection.planerServiceProxy.SavePlaner(PrethodniPlaner);
+            int planerId = PlanerModel.connection.planerServiceProxy.SavePlaner(PrethodniPlaner);
             PrethodniPlaner.PlannerId = planerId;
             PlanerModel.Planers.Add(PrethodniPlaner);
             return true;

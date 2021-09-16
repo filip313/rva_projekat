@@ -11,7 +11,7 @@ using Client.Connections;
 
 namespace Client.ViewModels
 {
-    public class EventsViewModel : Screen
+    public class EventViewModel : Screen
     {
         public static BindableCollection<EventModel> _events;
         public BindableCollection<EventModel> Events
@@ -25,7 +25,7 @@ namespace Client.ViewModels
         public DateTime MinDate { get; set; }
         public EventServiceConnection Connection { get; set; }
 
-        public EventsViewModel(ICollection<Common.Models.Event> Events, int planerId, DateTime max, DateTime min)
+        public EventViewModel(ICollection<Common.Models.Event> Events, int planerId, DateTime max, DateTime min)
         {
             LoadData(Events);
             this.PlanerId = planerId;

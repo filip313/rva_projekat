@@ -294,7 +294,6 @@ C:\Users\Filip\Documents\faks\RVA\RVAPROJEKAT\Projekat\Client\bin\Debug\sv\Xceed
 C:\Users\Filip\Documents\faks\RVA\RVAPROJEKAT\Projekat\Client\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
 C:\Users\Filip\Documents\faks\RVA\RVAPROJEKAT\Projekat\Client\obj\Debug\Client.csprojAssemblyReference.cache
 C:\Users\Filip\Documents\faks\RVA\RVAPROJEKAT\Projekat\Client\obj\Debug\Client.exe.config
-C:\Users\Filip\Documents\faks\RVA\RVAPROJEKAT\Projekat\Client\obj\Debug\Views\EventsView.g.cs
 C:\Users\Filip\Documents\faks\RVA\RVAPROJEKAT\Projekat\Client\obj\Debug\Views\LoginView.g.cs
 C:\Users\Filip\Documents\faks\RVA\RVAPROJEKAT\Projekat\Client\obj\Debug\Views\NewEventView.g.cs
 C:\Users\Filip\Documents\faks\RVA\RVAPROJEKAT\Projekat\Client\obj\Debug\Views\NewPlanerView.g.cs
@@ -305,7 +304,6 @@ C:\Users\Filip\Documents\faks\RVA\RVAPROJEKAT\Projekat\Client\obj\Debug\Generate
 C:\Users\Filip\Documents\faks\RVA\RVAPROJEKAT\Projekat\Client\obj\Debug\Client_MarkupCompile.cache
 C:\Users\Filip\Documents\faks\RVA\RVAPROJEKAT\Projekat\Client\obj\Debug\Client_MarkupCompile.lref
 C:\Users\Filip\Documents\faks\RVA\RVAPROJEKAT\Projekat\Client\obj\Debug\App.baml
-C:\Users\Filip\Documents\faks\RVA\RVAPROJEKAT\Projekat\Client\obj\Debug\Views\EventsView.baml
 C:\Users\Filip\Documents\faks\RVA\RVAPROJEKAT\Projekat\Client\obj\Debug\Views\LoginView.baml
 C:\Users\Filip\Documents\faks\RVA\RVAPROJEKAT\Projekat\Client\obj\Debug\Views\NewEventView.baml
 C:\Users\Filip\Documents\faks\RVA\RVAPROJEKAT\Projekat\Client\obj\Debug\Views\NewPlanerView.baml
@@ -318,3 +316,5 @@ C:\Users\Filip\Documents\faks\RVA\RVAPROJEKAT\Projekat\Client\obj\Debug\Client.c
 C:\Users\Filip\Documents\faks\RVA\RVAPROJEKAT\Projekat\Client\obj\Debug\Client.csproj.CopyComplete
 C:\Users\Filip\Documents\faks\RVA\RVAPROJEKAT\Projekat\Client\obj\Debug\Client.exe
 C:\Users\Filip\Documents\faks\RVA\RVAPROJEKAT\Projekat\Client\obj\Debug\Client.pdb
+C:\Users\Filip\Documents\faks\RVA\RVAPROJEKAT\Projekat\Client\obj\Debug\Views\EventView.g.cs
+C:\Users\Filip\Documents\faks\RVA\RVAPROJEKAT\Projekat\Client\obj\Debug\Views\EventView.baml

@@ -103,9 +103,9 @@ namespace Server
             }
         }
 
-        public void Ping()
+        private void Ping()
         {
-            Thread.Sleep(5000);
+            Thread.Sleep(500);
             lock(new Object())
             {
                 foreach(var user in Program.ActiveUsers)

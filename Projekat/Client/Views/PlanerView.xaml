@@ -9,7 +9,8 @@
         mc:Ignorable="d"
         Title="Planeri" Height="550" Width="1200"
         FontFamily="Century Gothic"
-        FontSize="14">
+        FontSize="14" Background="#dee2e6"
+        cal:Message.Attach="[Event Closing] = [Action OnClose($eventArgs)]">
     <Window.Resources>
         <BooleanToVisibilityConverter x:Key="boolToVis" />
     </Window.Resources>
@@ -22,6 +23,7 @@
             <ColumnDefinition Width="auto" />
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="auto"/>
             <ColumnDefinition Width="30"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
@@ -31,12 +33,12 @@
         </Grid.RowDefinitions>
 
 
-        <Menu Grid.Column="3" Grid.Row="0" FontSize="14">
-            <MenuItem Header="Undo" x:Name="UndoCommand" cal:Bind.Model="{Binding DataContext, RelativeSource={RelativeSource AncestorType=Menu}}" BorderThickness="1 0 0 0" BorderBrush="#008cba" Background="#5bc0de"/>
-            <MenuItem Header="Redo" x:Name="RedoCommand" cal:Bind.Model="{Binding DataContext, RelativeSource={RelativeSource AncestorType=Menu}}" BorderThickness="1 0 0 0" BorderBrush="#008cba" Background="#5bc0de"/>
+        <Menu Grid.Column="3" Grid.Row="0" FontSize="14" Background="#dee2e6">
+            <MenuItem Header="Undo" x:Name="UndoCommand" cal:Bind.Model="{Binding DataContext, RelativeSource={RelativeSource AncestorType=Menu}}" BorderThickness="0 0 1 0" BorderBrush="#008cba" Background="#5bc0de"/>
+            <MenuItem Header="Redo" x:Name="RedoCommand" cal:Bind.Model="{Binding DataContext, RelativeSource={RelativeSource AncestorType=Menu}}" BorderThickness="0 0 1 0" BorderBrush="#008cba" Background="#5bc0de"/>
         </Menu>
 
-        <Menu Grid.Column="6" Grid.Row="0" FontSize="14">
+        <Menu Grid.Column="6" Grid.Row="0" FontSize="14" Grid.ColumnSpan="2" Background="#dee2e6">
             <MenuItem Header="Napravi Plan" x:Name="CreatePlan" cal:Bind.Model="{Binding DataContext, RelativeSource={RelativeSource AncestorType=Menu}}" BorderThickness="1 0 0 0" BorderBrush="#008cba" Background="#5bc0de"/>
             <MenuItem Header="Dodaj Novog Korisnika" x:Name="AddNewUser" Visibility="{Binding IsAdmin, Converter={StaticResource boolToVis}}" cal:Bind.Model="{Binding DataContext, RelativeSource={RelativeSource AncestorType=Menu}}" BorderThickness="1 0 0 0" BorderBrush="#008cba" Background="#5bc0de"/>
             <MenuItem Header="Promeni Svoje Podatke" x:Name="ChangeUserData" cal:Bind.Model="{Binding DataContext, RelativeSource={RelativeSource AncestorType=Menu}}" BorderThickness="1 0 0 0" BorderBrush="#008cba" Background="#5bc0de"/>
@@ -45,8 +47,8 @@
 
 
 
-        <DataGrid x:Name="PlanerModel_Planers"  Grid.Column="3" Grid.ColumnSpan="4"  Grid.Row="1" AutoGenerateColumns="False" 
-                  CanUserAddRows="False" SelectedItem="{Binding Path=SelectedPlaner, Mode=OneWayToSource}" Margin="0 10 0 0">
+        <DataGrid x:Name="PlanerModel_Planers"  Grid.Column="3" Grid.ColumnSpan="5" AutoGenerateColumns="False" Grid.Row="1" Margin="0 10"
+                  CanUserAddRows="False" SelectedItem="{Binding Path=SelectedPlaner, Mode=OneWayToSource}" Background="#dee2e6">
             <DataGrid.CellStyle>
                 <Style TargetType="DataGridCell">
                     <Setter Property="TextBlock.TextAlignment" Value="Center"/>
@@ -99,9 +101,9 @@
                 </DataGridTemplateColumn>
             </DataGrid.Columns>
         </DataGrid>
-        <ContentControl Grid.Row="2" Grid.Column="3" Grid.ColumnSpan="4" x:Name="ActiveItem" />
+        <ContentControl Grid.Column="3" Grid.ColumnSpan="5" x:Name="ActiveItem" Grid.Row="2" Grid.RowSpan="3" />
 
-        <StackPanel  Orientation="Vertical" Margin="0 10" Grid.Row="1" Grid.Column="1" Grid.RowSpan="2">
+        <StackPanel  Orientation="Vertical"  Grid.Column="1" Grid.Row="1" Grid.RowSpan="2" Margin="0 10">
             <Border BorderThickness="1 1 1 1" BorderBrush="Gray" Padding="5">
                 <StackPanel>
                     <TextBlock TextAlignment="Center" Text="Pretraga:"/>
@@ -127,8 +129,8 @@
                         <TextBlock Text="Do:" Margin="0 0 10 0"/>
                         <DatePickerTextBox x:Name="PretragaKrajDo"/>
                     </StackPanel>
-                    <Button Content="Pretrazi" Margin="0 10" x:Name="Pretrazi" cal:Bind.Model="{Binding DataContext, RelativeSource={RelativeSource AncestorType=StackPanel}}" Background="#5bc0de"/>
-                    <Button Content="Ponisti pretragu" x:Name="PonistiPretragu" IsEnabled="{Binding Path=CanPonisti}" Background="#5bc0de"/>
+                    <Button Content="Pretrazi" Margin="0 10" x:Name="Pretrazi" cal:Bind.Model="{Binding DataContext, RelativeSource={RelativeSource AncestorType=StackPanel}}" Background="#5bc0de" BorderBrush="#008cba"/>
+                    <Button Content="Ponisti pretragu" x:Name="PonistiPretragu" IsEnabled="{Binding Path=CanPonisti}" Background="#5bc0de" BorderBrush="#008cba"/>
                 </StackPanel>
             </Border>
         </StackPanel>
