@@ -51,7 +51,7 @@ namespace Client.Command
                     planer.DatumPocetka = DatumPocetka;
                     planer.DatumZavrsetka = DatumZavrsetka;
                     PlanerModel.Planers.Refresh();
-                    connection.planerServiceProxy.SaveChanges(planer);
+                    PlanerModel.connection.planerServiceProxy.SaveChanges(planer);
                     break;
                 }
             }
@@ -70,7 +70,7 @@ namespace Client.Command
                     planer.DatumPocetka = PrethodniPlaner.DatumPocetka;
                     planer.DatumZavrsetka = PrethodniPlaner.DatumZavrsetka;
                     PlanerModel.Planers.Refresh();
-                    connection.planerServiceProxy.SaveChanges(PrethodniPlaner);
+                    PlanerModel.connection.planerServiceProxy.SaveChanges(PrethodniPlaner);
                     break;
                 }
             }

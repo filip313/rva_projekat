@@ -51,7 +51,7 @@ namespace Client.Command {
 
 		public override bool Undo(){
 
-            var ret  = connection.planerServiceProxy.RemovePlaner(PrethodniPlaner);
+            var ret  = PlanerModel.connection.planerServiceProxy.RemovePlaner(PrethodniPlaner);
             if (ret)
             {
                 PlanerId = PrethodniPlaner.PlannerId;

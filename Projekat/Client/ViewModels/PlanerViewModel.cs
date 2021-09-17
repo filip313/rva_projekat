@@ -126,6 +126,11 @@ namespace Client.ViewModels
             
         }
 
+        public void Details()
+        {
+            ActivateItemAsync(new EventViewModel(SelectedPlaner.Events, SelectedPlaner.PlannerId, SelectedPlaner.DatumZavrsetka, SelectedPlaner.DatumPocetka));
+        }
+
         public void OnClose(CancelEventArgs args)
         {
             connection.loginProxy.Logout(User.UserId);

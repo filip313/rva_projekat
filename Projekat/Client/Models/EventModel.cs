@@ -16,7 +16,7 @@ namespace Client.Models
         public EventModel(Event Event)
         {
             this.Event = Event;
-            EventState = new ZakazanEvent(this.Event, this);
+            EventState = new ZakazanEvent(this);
         }
     }
 }

@@ -10,7 +10,7 @@ namespace Client.State
 {
     public class ZakazanEvent : EventState
     {
-        public ZakazanEvent(Event Event, EventModel model) : base(Event, model)
+        public ZakazanEvent(EventModel model) : base( model)
         {
             BackgroundColor = "#fcad46";
             TekstStanja = "ZAKAZAN";
@@ -20,13 +20,13 @@ namespace Client.State
         }
         public override void CheckState()
         {
-            if(Event.DatumVremePocetka < DateTime.Now && Event.DatumVremeZavrsetka > DateTime.Now)
+            if(Model.Event.DatumVremePocetka < DateTime.Now && Model.Event.DatumVremeZavrsetka > DateTime.Now)
             {
-                Model.EventState = new AktivanEvent(Event, Model);
+                Model.EventState = new AktivanEvent(Model);
             }
-            else if(Event.DatumVremeZavrsetka < DateTime.Now)
+            else if(Model.Event.DatumVremeZavrsetka < DateTime.Now)
             {
-                Model.EventState = new ZavrsenEvent(Event, Model);
+                Model.EventState = new ZavrsenEvent(Model);
             } 
         }
     }

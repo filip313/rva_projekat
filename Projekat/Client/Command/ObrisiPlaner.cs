@@ -33,7 +33,7 @@ namespace Client.Command {
             {
                 if (planer.PlannerId == PrethodniPlaner.PlannerId)
                 {
-                    var ret = connection.planerServiceProxy.RemovePlaner(planer);
+                    var ret = PlanerModel.connection.planerServiceProxy.RemovePlaner(planer);
                     if (ret)
                     {
                         PlanerModel.Planers.Remove(planer);
@@ -46,7 +46,7 @@ namespace Client.Command {
         }
 
 		public override bool Undo(){
-            int planerId = connection.planerServiceProxy.SavePlaner(PrethodniPlaner);
+            int planerId = PlanerModel.connection.planerServiceProxy.SavePlaner(PrethodniPlaner);
             PrethodniPlaner.PlannerId = planerId;
             PlanerModel.Planers.Add(PrethodniPlaner);
             PlanerModel.Planers.Refresh();

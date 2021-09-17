@@ -93,7 +93,7 @@ namespace Server
         {
             using (var context = new DataContext())
             {
-                var temp = context.Events.Where(x => x.PlannerId == planerId).FirstOrDefault();
+                var temp = context.Planers.Where(x => x.PlannerId == planerId).FirstOrDefault();
                 if(temp == null)
                 {
                     return false;

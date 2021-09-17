@@ -11,7 +11,7 @@ namespace Client.State
 {
     public class AktivanEvent :EventState
     {
-        public AktivanEvent(Event Event, EventModel model) : base(Event, model)
+        public AktivanEvent(EventModel model) : base(model)
         {
             BackgroundColor = "#6bd672";
             TekstStanja = "AKTIVAN";
@@ -22,9 +22,9 @@ namespace Client.State
 
         public override void CheckState()
         {
-            if(Event.DatumVremeZavrsetka < DateTime.Now)
+            if(Model.Event.DatumVremeZavrsetka < DateTime.Now)
             {
-                Model.EventState = new ZavrsenEvent(Event, Model);
+                Model.EventState = new ZavrsenEvent(Model);
             }
         }
     }

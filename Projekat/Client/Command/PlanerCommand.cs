@@ -23,10 +23,8 @@ namespace Client.Command {
 
         public PlanerModel PlanerModel { get; set; }
 
-        public PlanerServiceConnection connection { get; set; }
 
 		public PlanerCommand(){
-            connection = new PlanerServiceConnection();
 		}
 
 		~PlanerCommand(){
