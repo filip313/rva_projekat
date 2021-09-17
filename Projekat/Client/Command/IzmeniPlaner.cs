@@ -52,6 +52,7 @@ namespace Client.Command
                     planer.DatumZavrsetka = DatumZavrsetka;
                     PlanerModel.Planers.Refresh();
                     PlanerModel.connection.planerServiceProxy.SaveChanges(planer);
+                    log.Info($"Usepesno izvrsena komanda izmene Planera [ planerId = {PlanerId} ].");
                     break;
                 }
             }
@@ -71,6 +72,7 @@ namespace Client.Command
                     planer.DatumZavrsetka = PrethodniPlaner.DatumZavrsetka;
                     PlanerModel.Planers.Refresh();
                     PlanerModel.connection.planerServiceProxy.SaveChanges(PrethodniPlaner);
+                    log.Info($"Uspesno ponistena komanda izmene Planera [ planerId = {PlanerId} ].");
                     break;
                 }
             }

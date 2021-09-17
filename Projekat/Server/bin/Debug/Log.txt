@@ -1,0 +1,32 @@
+17 09 2021 20:18:20 ServiceProvider.cs [INFO] Svi servisi uspesno podignuti.
+17 09 2021 20:49:04 ServiceProvider [INFO] Login servis uspesno podignut.
+17 09 2021 20:49:04 ServiceProvider [INFO] User servis uspesno podignut
+17 09 2021 20:49:04 ServiceProvider [INFO] Podzianje Planer servisa uspesno.
+17 09 2021 20:49:04 ServiceProvider [INFO] Event servis uspesno podignut
+17 09 2021 20:49:20 LoginServisProvider [INFO] Korisniki [ admin ] uspesno prijavljen.
+17 09 2021 20:49:20 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+17 09 2021 20:49:20 LoginServisProvider [INFO] Uspesno dobavljen tip priavljenog korisnika.
+17 09 2021 21:13:11 ServiceProvider [INFO] Login servis uspesno podignut.
+17 09 2021 21:13:11 ServiceProvider [INFO] User servis uspesno podignut
+17 09 2021 21:13:11 ServiceProvider [INFO] Podzianje Planer servisa uspesno.
+17 09 2021 21:13:11 ServiceProvider [INFO] Event servis uspesno podignut
+17 09 2021 21:13:12 LoginServisProvider [INFO] Korisniki [ admin ] uspesno prijavljen.
+17 09 2021 21:13:12 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+17 09 2021 21:13:13 LoginServisProvider [INFO] Uspesno dobavljen tip priavljenog korisnika.
+17 09 2021 22:00:47 ServiceProvider [INFO] Login servis uspesno podignut.
+17 09 2021 22:00:47 ServiceProvider [INFO] User servis uspesno podignut
+17 09 2021 22:00:47 ServiceProvider [INFO] Podzianje Planer servisa uspesno.
+17 09 2021 22:00:47 ServiceProvider [INFO] Event servis uspesno podignut
+17 09 2021 22:00:49 LoginServisProvider [INFO] Korisniki [ admin ] uspesno prijavljen.
+17 09 2021 22:00:49 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+17 09 2021 22:00:49 LoginServisProvider [INFO] Uspesno dobavljen tip priavljenog korisnika.
+17 09 2021 22:02:26 ServiceProvider [INFO] Login servis uspesno podignut.
+17 09 2021 22:02:26 ServiceProvider [INFO] User servis uspesno podignut
+17 09 2021 22:02:26 ServiceProvider [INFO] Podzianje Planer servisa uspesno.
+17 09 2021 22:02:26 ServiceProvider [INFO] Event servis uspesno podignut
+17 09 2021 22:02:29 LoginServisProvider [INFO] Korisniki [ korisnik1 ] uspesno prijavljen.
+17 09 2021 22:02:29 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+17 09 2021 22:02:30 LoginServisProvider [INFO] Uspesno dobavljen tip priavljenog korisnika.
+17 09 2021 22:02:40 LoginServisProvider [INFO] Korisniki [ admin ] uspesno prijavljen.
+17 09 2021 22:02:40 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+17 09 2021 22:02:40 LoginServisProvider [INFO] Uspesno dobavljen tip priavljenog korisnika.

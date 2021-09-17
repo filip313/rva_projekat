@@ -16,6 +16,8 @@ namespace Client.State
             TekstStanja = "ZAVRSEN";
             IsEditable = false;
             IsRemovable = false;
+            log.Info($"Event [ eventId = {Model.Event.EventId} ] je promenio Stanje u Zavrsen.");
+
         }
 
         public override void CheckState() { }

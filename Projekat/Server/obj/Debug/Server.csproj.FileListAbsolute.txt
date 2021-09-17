@@ -66,3 +66,5 @@ C:\Users\Filip\Documents\faks\RVA\RVAPROJEKAT\Projekat\Server\obj\Debug\Server.c
 C:\Users\Filip\Documents\faks\RVA\RVAPROJEKAT\Projekat\Server\obj\Debug\Server.csproj.CopyComplete
 C:\Users\Filip\Documents\faks\RVA\RVAPROJEKAT\Projekat\Server\obj\Debug\Server.exe
 C:\Users\Filip\Documents\faks\RVA\RVAPROJEKAT\Projekat\Server\obj\Debug\Server.pdb
+C:\Users\Filip\Documents\faks\RVA\RVAPROJEKAT\Projekat\Server\bin\Debug\log4net.dll
+C:\Users\Filip\Documents\faks\RVA\RVAPROJEKAT\Projekat\Server\bin\Debug\log4net.xml

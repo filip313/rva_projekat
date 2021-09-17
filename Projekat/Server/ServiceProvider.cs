@@ -10,6 +10,7 @@ namespace Server
 {
     public class ServiceProvider
     {
+        private static readonly log4net.ILog log = log4net.LogManager.GetLogger("ServiceProvider");
         public ServiceHost loginServiceHost;
         public ServiceHost userServiceHost;
         public ServiceHost planerServiceHost;
@@ -31,10 +32,11 @@ namespace Server
             loginServiceHost.AddServiceEndpoint(typeof(ILogin), binding, new Uri("net.tcp://localhost:6000/LoginServiceProvider"));
             try{
                 loginServiceHost.Open();
-                Console.WriteLine("Login Servis Uspesno pokrenut.");
+                log.Info("Login servis uspesno podignut.");
             }
-            catch
+            catch(Exception e)
             {
+                log.Fatal("Podizanje Login servisa nije uspelo.", e);
                 Console.WriteLine("Nije moguce otvoriti vezu za Login Servis !");
             }
         }
@@ -47,10 +49,11 @@ namespace Server
             try
             {
                 userServiceHost.Open();
-                Console.WriteLine("User Service je uspesno pokrenut!");
+                log.Info("User servis uspesno podignut");
             }
-            catch
+            catch(Exception e)
             {
+                log.Fatal("Podizanje User servisa nije uspelo.", e);
                 Console.WriteLine("Nije uspelo pokretanje User Servisa");
             }
         }
@@ -63,10 +66,11 @@ namespace Server
             try
             {
                 planerServiceHost.Open();
-                Console.WriteLine("Planer Service uspesno pokrenut!");
+                log.Info("Podzianje Planer servisa uspesno.");
             }
-            catch
+            catch(Exception e)
             {
+                log.Fatal("Nije uspelo podizanje Planer servisa", e);
                 Console.WriteLine("Nije uspelo pokretanje Planer Servisa!");
             }
         }
@@ -79,10 +83,11 @@ namespace Server
             try
             {
                 eventServiceHost.Open();
-                Console.WriteLine("Event Service uspeno pokrenut!");
+                log.Info("Event servis uspesno podignut");
             }
-            catch
+            catch(Exception e)
             {
+                log.Fatal("Nije uspelo pokretanje Event servisa.", e);
                 Console.WriteLine("Nije uspelo pokretanje Event Servisa!");
             }
         }

@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using Common.Models;
 using DataAccess;
 
+[assembly: log4net.Config.XmlConfigurator(Watch = true)]
+
 namespace Server
 {
     class Program
@@ -18,7 +20,7 @@ namespace Server
                 context.InitDatabase();
                 context.SaveChanges();
             }
-                ServiceProvider server = new ServiceProvider();
+            ServiceProvider server = new ServiceProvider();
             Console.ReadLine();
         }
     }

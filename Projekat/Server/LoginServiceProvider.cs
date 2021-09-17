@@ -11,11 +11,15 @@ namespace Server
 {
     public class LoginServiceProvider : ILogin
     {
+        private static readonly log4net.ILog log = log4net.LogManager.GetLogger("LoginServisProvider");
+
         public int Login(string username, string password)
         {
             Console.WriteLine($"{username} : {password} ");
             if(Program.ActiveUsers.Where(x => x.Username == username).FirstOrDefault() != null)
             {
+                log.Error("Pokusaj prijavljivanja na vec prijavljen nalog.");
+
                 return -2;
             }
             using (var context = new DataContext())
@@ -26,11 +30,14 @@ namespace Server
                 {
                     var ret = Users.First(x => x.Username == username && x.Password == password);
                     Program.ActiveUsers.Add(ret);
-                    Console.WriteLine(ret.GetType());
+
+                    log.Info($"Korisniki [ {username} ] uspesno prijavljen.");
+
                     return ret.UserId;
                 }
                 catch
                 {
+                    log.Error("Neuspelo prijavljivanje korisnika.");
                     return -1;
                 }
             }
@@ -42,10 +49,14 @@ namespace Server
             {
                 var toRemove = Program.ActiveUsers.First(x => x.UserId == id);
                 Program.ActiveUsers.Remove(toRemove);
+
+                log.Info("Korisnik uspesno odjavljen.");
+                
                 return true;
             }
             catch
             {
+                log.Error("Doslo je do greske prilikom pokusaja odjavljivana korisnika.");
                 return false;
             }
 
@@ -57,10 +68,14 @@ namespace Server
             {
                 var user = Program.ActiveUsers.First(x => x.UserId == id);
                 string ret = user.GetType().ToString();
+
+                log.Info("Uspesno dobavljen tip priavljenog korisnika.");
+
                 return ret;
             }
             catch
             {
+                log.Error("Doslo je do greske prilikom dovaljanja tipa prijavljenog korisnika.");
                 return string.Empty;
             }
         }

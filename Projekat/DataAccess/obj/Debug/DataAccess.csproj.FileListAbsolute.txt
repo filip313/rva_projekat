@@ -64,3 +64,5 @@ C:\Users\Filip\Documents\faks\RVA\RVAPROJEKAT\Projekat\DataAccess\obj\Debug\Data
 C:\Users\Filip\Documents\faks\RVA\RVAPROJEKAT\Projekat\DataAccess\obj\Debug\DataAccess.csproj.CopyComplete
 C:\Users\Filip\Documents\faks\RVA\RVAPROJEKAT\Projekat\DataAccess\obj\Debug\DataAccess.dll
 C:\Users\Filip\Documents\faks\RVA\RVAPROJEKAT\Projekat\DataAccess\obj\Debug\DataAccess.pdb
+C:\Users\Filip\Documents\faks\RVA\RVAPROJEKAT\Projekat\DataAccess\bin\Debug\log4net.dll
+C:\Users\Filip\Documents\faks\RVA\RVAPROJEKAT\Projekat\DataAccess\bin\Debug\log4net.xml

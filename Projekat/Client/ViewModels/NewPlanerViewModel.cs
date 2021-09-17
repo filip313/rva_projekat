@@ -12,6 +12,9 @@ namespace Client.ViewModels
 {
     public class NewPlanerViewModel : Screen
     {
+        private static readonly log4net.ILog log = log4net.LogManager.GetLogger("NewPlanerViewModel");
+
+
         public UserModel User { get; set; }
         public PlanerModel PlanerModel { get; set; }
         public DateTime DatumPocetka { get; set; }
@@ -51,9 +54,10 @@ namespace Client.ViewModels
         {
             if (!User.AddAndExecute(new NapraviPlaner(DatumPocetka, DatumZavrsetka, Naziv, Opis, User.UserId, PlanerModel)))
             {
+                log.Error($"Doslo je do greske prilikom pokusaja kreiranja novog Planera.");
                 MessageBox.Show("Doslo je do greske prilikom kreiranja novog planera!", "Novi Planer Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
-            
+
             this.TryCloseAsync();
         }
 
@@ -64,6 +68,7 @@ namespace Client.ViewModels
             {
                 if(!User.AddAndExecute(new IzmeniPlaner(PlanerId, DatumPocetka, DatumZavrsetka, Naziv, Opis, PlanerModel)))
                 {
+                    log.Error($"Doslo je do greske prilikom pokusaja izmen Planera [ planerId = {PlanerId} ].");
                     MessageBox.Show("Doslo je do greske prilikom izmene podataka planera!", "Izmeni Planer Error", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
                 this.TryCloseAsync();

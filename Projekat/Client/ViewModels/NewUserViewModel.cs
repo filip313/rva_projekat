@@ -13,6 +13,9 @@ namespace Client.ViewModels
 {
     public class NewUserViewModel : Screen
     {
+        private static readonly log4net.ILog log = log4net.LogManager.GetLogger("NewUserViewModel");
+
+
         public IReadOnlyList<Tipovikorisnika> TipoviKorisnika { get; }
         public UserServiceConnection connection;
 
@@ -95,11 +98,13 @@ namespace Client.ViewModels
 
                 if (connection.userServiceProxy.AddNewUser(userFactory.CreateUser(Username, Password, Ime, Prezime, Email)))
                 {
+                    log.Info($"Korisnik [ {Username} ] uspesno kreiran.");
                     MessageBox.Show("Korisnik uspesno kreiran!", "Create New User", MessageBoxButton.OK, MessageBoxImage.Information);
                     this.TryCloseAsync();
                 }
                 else
                 {
+                    log.Error($"Doslo je do greske prilikom pokusaja kreiranja korisnika [ {Username}].");
                     MessageBox.Show("Korisnik sa odabranim korisnickim imenom vec postoji!", "Create New User", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
 
@@ -117,7 +122,14 @@ namespace Client.ViewModels
                 MessageBoxResult result = MessageBox.Show("Da li ste sigurni da zelite da primenite izmene?", "Izmena podataka", MessageBoxButton.YesNo, MessageBoxImage.Warning);
                 if(result == MessageBoxResult.Yes)
                 {
-                    connection.userServiceProxy.ChangeUserData(id, Ime, Prezime, Email);
+                    if(connection.userServiceProxy.ChangeUserData(id, Ime, Prezime, Email))
+                    {
+                        log.Info($"Uspena izmenjeni podaci korisnika [ userID = {id} ].");
+                    }
+                    else
+                    {
+                        log.Error($"Doslo je do greske prilikom pokusaja izmene podataka korisnika [ userID = {id} ].");
+                    }
                     this.TryCloseAsync();
                 }
             }

@@ -11,6 +11,8 @@ namespace Client.Connections
     public class Sync
     {
         public ServiceHost syncServiceHost;
+        public static readonly log4net.ILog log = log4net.LogManager.GetLogger("Sync");
+
 
         public Sync(int id)
         {
@@ -28,10 +30,11 @@ namespace Client.Connections
             try
             {
                 syncServiceHost.Open();
+                log.Info("Uspesno pokrenut Sync servis");
             }
-            catch
+            catch(Exception e)
             {
-
+                log.Error("Doslo je do greske prilikom pokretanja Sync servisa.", e);
             }
         }
     }

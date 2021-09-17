@@ -18,6 +18,7 @@ namespace Client.State
             IsRemovable = false;
             IsEditable = false;
             CheckState();
+            log.Info($"Event [ eventId = {Model.Event.EventId} ] je promenio Stanje U Aktivan.");
         }
 
         public override void CheckState()

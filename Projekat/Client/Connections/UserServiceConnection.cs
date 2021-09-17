@@ -11,6 +11,7 @@ namespace Client.Connections
     public class UserServiceConnection
     {
         public IUserService userServiceProxy;
+        public static readonly log4net.ILog log = log4net.LogManager.GetLogger("UserServiceConnection");
 
         public UserServiceConnection()
         {
@@ -22,6 +23,7 @@ namespace Client.Connections
             var binding = new NetTcpBinding();
             ChannelFactory<IUserService> cf = new ChannelFactory<IUserService>(binding, new EndpointAddress("net.tcp://localhost:6001/UserServiceProvider"));
             userServiceProxy = cf.CreateChannel();
+            log.Info("Usepesno povezan na User servis.");
         }
     }
 }

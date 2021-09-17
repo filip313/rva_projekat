@@ -10,6 +10,8 @@ namespace Client.Connections
 {
     public class SyncServiceProvider : ISync
     {
+        public static readonly log4net.ILog log = log4net.LogManager.GetLogger("SyncServiceProvider");
+
         public void Ping()
         {
             var connection = new PlanerServiceConnection();
@@ -48,6 +50,8 @@ namespace Client.Connections
             }
 
             PlanerModel._planers.Refresh();
+
+            log.Info("Osvezena lista planera");
         }
 
         public void PingEvent(int planerId)
@@ -92,6 +96,8 @@ namespace Client.Connections
 
                 PlanerModel._planers.Refresh();
                 ViewModels.EventViewModel._events.Refresh();
+
+                log.Info("Osvezeni planeri");
             }
         }
     }

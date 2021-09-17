@@ -11,6 +11,7 @@ namespace Client
     public class LoginServiceConnection
     {
         public ILogin loginProxy;
+        public static readonly log4net.ILog log = log4net.LogManager.GetLogger("LoginServiceConnection");
 
         public LoginServiceConnection()
         {
@@ -22,6 +23,7 @@ namespace Client
             var binding = new NetTcpBinding();
             ChannelFactory<ILogin> cf = new ChannelFactory<ILogin>(binding, new EndpointAddress("net.tcp://localhost:6000/LoginServiceProvider"));
             loginProxy = cf.CreateChannel();
+            log.Info("Uspesno povezan na Login service.");
         }
     }
 }

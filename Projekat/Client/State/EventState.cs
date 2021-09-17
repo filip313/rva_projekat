@@ -11,6 +11,8 @@ namespace Client.State
 {
     public abstract class EventState
     {
+        public static readonly log4net.ILog log = log4net.LogManager.GetLogger("EventState");
+
         public EventModel Model { get; set; }
         public string TekstStanja { get; set; }
         public abstract void CheckState();

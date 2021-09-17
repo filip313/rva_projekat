@@ -1,0 +1,14 @@
+17 09 2021 21:13:13 LoginViewModel [INFO] Korisnik [ admin ] uspesno ulogovan.
+17 09 2021 22:00:49 LoginServiceConnection [INFO] Uspesno povezan na Login service.
+17 09 2021 22:00:49 PlanerServiceConnection [INFO] Uspesno povezan na Planer servis.
+17 09 2021 22:00:49 LoginServiceConnection [INFO] Uspesno povezan na Login service.
+17 09 2021 22:00:49 Sync [INFO] Uspesno pokrenut Sync servis
+17 09 2021 22:00:50 LoginViewModel [INFO] Korisnik [ admin ] uspesno ulogovan.
+17 09 2021 22:02:29 LoginServiceConnection [INFO] Uspesno povezan na Login service.
+17 09 2021 22:02:29 PlanerServiceConnection [INFO] Uspesno povezan na Planer servis.
+17 09 2021 22:02:30 Sync [INFO] Uspesno pokrenut Sync servis
+17 09 2021 22:02:30 LoginViewModel [INFO] Korisnik [ korisnik1 ] uspesno ulogovan.
+17 09 2021 22:02:40 LoginServiceConnection [INFO] Uspesno povezan na Login service.
+17 09 2021 22:02:40 PlanerServiceConnection [INFO] Uspesno povezan na Planer servis.
+17 09 2021 22:02:40 Sync [INFO] Uspesno pokrenut Sync servis
+17 09 2021 22:02:41 LoginViewModel [INFO] Korisnik [ admin ] uspesno ulogovan.

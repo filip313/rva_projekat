@@ -13,7 +13,7 @@ namespace Server
     public class EventServiceProvider : IEventService
     {
         public static SyncConnection sync = new SyncConnection();
-
+        public static readonly log4net.ILog log = log4net.LogManager.GetLogger("EventServiceProvider");
 
         public Event AddNewEvent(string naziv, string opis, DateTime pocetak, DateTime kraj, int planerId)
         {
@@ -25,6 +25,8 @@ namespace Server
                 context.SaveChanges();
 
                 Task.Run(() => Ping(planerId));
+
+                log.Info($"Dodat novi Event [ eventId = {ret.EventId} ] u bazu podataka.");
 
                 return ret;
             }
@@ -41,10 +43,11 @@ namespace Server
                     context.SaveChanges();
 
                     Task.Run(() => Ping(temp.PlannerId));
-
+                    log.Info($"Izbrisan Event [ eventId = {temp.EventId} ] iz baze podataka.");
                     return true;
                 }
 
+                log.Error($"Doslo je do greske prilikom pokusaja brisanja Eventa [ eventId = {toRemove.EventId} ] iz baze podataka.");
                 return false;
             }
         }
@@ -64,8 +67,12 @@ namespace Server
 
                     Task.Run(() => Ping(toEdit.PlannerId));
 
+                    log.Info($"Uspesno izemenjen Event [ eventId = {eventId} ].");
+
                     return true;
                 }
+
+                log.Error($"Doslo je do greske prilikom pokusaja izmene Event-a [ eventId = {eventId} ].");
 
                 return false;
             }
@@ -76,6 +83,8 @@ namespace Server
             using (var context = new DataContext())
             {
                 var ret = context.Events.Where(x => x.PlannerId == planerId).ToList();
+
+                log.Info("Preuzeti Event-ovi iz baze podatka.");
 
                 return ret;
             }
@@ -89,7 +98,15 @@ namespace Server
                 foreach(var user in Program.ActiveUsers)
                 {
                     sync.Connect(user.UserId);
-                    sync.proxy.PingEvent(planerId);
+                    try
+                    {
+                        sync.proxy.PingEvent(planerId);
+                        log.Info($"Uspesno pingovan Korisnik [ userId = {user.UserId} ] za osvezavanje eventova.");
+                    }
+                    catch (Exception e)
+                    {
+                        log.Error($"Doslo je do greske prilikom pokusaja pingovanje Korisnika [ userId = {user.UserId} ] za osvezavanje eventova");
+                    }
                 }
             }
         }

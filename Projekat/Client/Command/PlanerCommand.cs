@@ -19,6 +19,8 @@ using Client.Connections;
 namespace Client.Command {
     public abstract class PlanerCommand : Command {
 
+        public static readonly log4net.ILog log = log4net.LogManager.GetLogger("EventState");
+
         public Planner PrethodniPlaner { get; set; }
 
         public PlanerModel PlanerModel { get; set; }

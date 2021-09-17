@@ -13,6 +13,8 @@ namespace Client.ViewModels
 {
     public class EventViewModel : Screen
     {
+        private static readonly log4net.ILog log = log4net.LogManager.GetLogger("EventViewModel");
+
         public static BindableCollection<EventModel> _events;
         public BindableCollection<EventModel> Events
         {
@@ -66,9 +68,11 @@ namespace Client.ViewModels
                 if (Connection.eventServiceProxy.RemoveEvent(SelectedEvent.Event))
                 {
                     Events.Remove(SelectedEvent);
+                    log.Info($"Event [ eventId = {SelectedEvent.Event.EventId} ] uspesno obrisan.");
                 }
                 else
                 {
+                    log.Error($"Doslo je do greske prilikom pokusaja brisanja Eventa [ eventId = {SelectedEvent.Event.EventId} ].");
                     MessageBox.Show("NIJE moguce obrisati event (event je obrisan)!", "Izbrisi Event Error", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
             }

@@ -8,6 +8,8 @@ using System.Windows.Controls;
 using Caliburn.Micro;
 using Client.ViewModels;
 
+[assembly:log4net.Config.XmlConfigurator(Watch = true)] 
+
 namespace Client
 {
     public class Bootstrapper : BootstrapperBase

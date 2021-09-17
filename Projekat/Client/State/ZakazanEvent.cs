@@ -17,6 +17,8 @@ namespace Client.State
             IsEditable = true;
             IsRemovable = true;
             CheckState();
+            log.Info($"Event [ eventId = {Model.Event.EventId} ] je promenio Stanje u Zakazan.");
+
         }
         public override void CheckState()
         {

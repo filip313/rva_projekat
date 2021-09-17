@@ -12,6 +12,7 @@ namespace Client.ViewModels
 {
     public class LoginViewModel : Screen
     {
+        private static readonly log4net.ILog log = log4net.LogManager.GetLogger("LoginViewModel");
         private string _username;
 
         public string Username
@@ -58,14 +59,19 @@ namespace Client.ViewModels
                 {
                     Error = String.Empty;
                     IWindowManager manager = new WindowManager();
-                    manager.ShowWindowAsync(new PlanerViewModel(new Models.UserModel() { UserId = id }, new Models.PlanerModel()));
+                    manager.ShowWindowAsync(new PlanerViewModel(new Models.UserModel() { UserId = id }, new Models.PlanerModel(), connection));
+
+                    log.Info($"Korisnik [ {Username} ] uspesno ulogovan.");
+
                     this.TryCloseAsync();
                 }
                 else if(id == -1)
                 {
+                    log.Error("Pokusaj logovanja sa ne ispravnim podacima.");
                     Error = "Korisnicko ime ili sifra nisu dobri !";
                 }else if(id == -2)
                 {
+                    log.Error("Pokusaj logovanja na vec ulogovan nalog.");
                     Error = "Korisnik je vec ulogovan!";
                 }
                 

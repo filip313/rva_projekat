@@ -9,6 +9,7 @@ namespace Server
 {
     public class SyncConnection
     {
+        private static log4net.ILog log = log4net.LogManager.GetLogger("SyncConnection");
         public ISync proxy;
 
         public SyncConnection()
@@ -24,6 +25,8 @@ namespace Server
             var binding = new NetTcpBinding();
             ChannelFactory<ISync> cf = new ChannelFactory<ISync>(binding, new EndpointAddress(address));
             proxy = cf.CreateChannel();
+
+            log.Info($"Uspesno povezan Sync sa klijentom na portu {port}");
         }
     }
 }

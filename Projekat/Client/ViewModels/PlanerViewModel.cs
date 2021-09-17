@@ -14,6 +14,9 @@ namespace Client.ViewModels
 {
     public class PlanerViewModel : Conductor<object>
     {
+        private static readonly log4net.ILog log = log4net.LogManager.GetLogger("PlanerViewModel");
+
+
         public UserModel User { get; set; }
         public PlanerModel PlanerModel { get; set; }
         public Common.Models.Planner SelectedPlaner { get; set; }
@@ -42,17 +45,18 @@ namespace Client.ViewModels
         {
             connection.loginProxy.Logout(User.UserId);
             manager.ShowWindowAsync(new LoginViewModel());
+            log.Info("Korisnik se uspesno odjavio sa sistema.");
             this.TryCloseAsync();
         }
 
-        public PlanerViewModel(UserModel user, PlanerModel planerModel)
+        public PlanerViewModel(UserModel user, PlanerModel planerModel, LoginServiceConnection connection)
         {
             CanPonisti = false;
             PretragaNaziv = string.Empty;
             PretragaOpis = string.Empty;
             this.User = user;
             this.PlanerModel = planerModel;
-            connection = new LoginServiceConnection();
+            this.connection = connection;
             server = new Sync(user.UserId);
             manager = new WindowManager();
             string tmp = connection.loginProxy.GetUserType(user.UserId);
@@ -95,6 +99,7 @@ namespace Client.ViewModels
                 if (!uspeh)
                 {
                     User.RemoveFailedCommand();
+
                     MessageBox.Show("Brisanje planera NIJE uspelo (planer je vec obrisan)!", "Brisanje planera", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
             }

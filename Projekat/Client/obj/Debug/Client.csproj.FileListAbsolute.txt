@@ -318,3 +318,5 @@ C:\Users\Filip\Documents\faks\RVA\RVAPROJEKAT\Projekat\Client\obj\Debug\Client.e
 C:\Users\Filip\Documents\faks\RVA\RVAPROJEKAT\Projekat\Client\obj\Debug\Client.pdb
 C:\Users\Filip\Documents\faks\RVA\RVAPROJEKAT\Projekat\Client\obj\Debug\Views\EventView.g.cs
 C:\Users\Filip\Documents\faks\RVA\RVAPROJEKAT\Projekat\Client\obj\Debug\Views\EventView.baml
+C:\Users\Filip\Documents\faks\RVA\RVAPROJEKAT\Projekat\Client\bin\Debug\log4net.dll
+C:\Users\Filip\Documents\faks\RVA\RVAPROJEKAT\Projekat\Client\bin\Debug\log4net.xml
