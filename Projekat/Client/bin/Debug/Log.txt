@@ -12,3 +12,248 @@
 17 09 2021 22:02:40 PlanerServiceConnection [INFO] Uspesno povezan na Planer servis.
 17 09 2021 22:02:40 Sync [INFO] Uspesno pokrenut Sync servis
 17 09 2021 22:02:41 LoginViewModel [INFO] Korisnik [ admin ] uspesno ulogovan.
+18 09 2021 19:54:47 LoginServiceConnection [INFO] Uspesno povezan na Login service.
+18 09 2021 19:54:48 PlanerServiceConnection [INFO] Uspesno povezan na Planer servis.
+18 09 2021 19:54:48 Sync [INFO] Uspesno pokrenut Sync servis
+18 09 2021 19:54:49 LoginViewModel [INFO] Korisnik [ admin ] uspesno ulogovan.
+18 09 2021 19:54:50 EventState [INFO] Event [ eventId = 32 ] je promenio Stanje U Aktivan.
+18 09 2021 19:54:50 EventState [INFO] Event [ eventId = 32 ] je promenio Stanje u Zakazan.
+18 09 2021 19:54:50 EventState [INFO] Event [ eventId = 32 ] je promenio Stanje U Aktivan.
+18 09 2021 19:54:50 EventServiceConnection [INFO] Uspesno povezan na Event servis.
+18 09 2021 19:54:51 EventServiceConnection [INFO] Uspesno povezan na Event servis.
+18 09 2021 19:54:52 EventState [INFO] Event [ eventId = 33 ] je promenio Stanje u Zakazan.
+18 09 2021 19:54:52 EventServiceConnection [INFO] Uspesno povezan na Event servis.
+18 09 2021 19:54:52 EventState [INFO] Event [ eventId = 32 ] je promenio Stanje U Aktivan.
+18 09 2021 19:54:52 EventState [INFO] Event [ eventId = 32 ] je promenio Stanje u Zakazan.
+18 09 2021 19:54:52 EventState [INFO] Event [ eventId = 32 ] je promenio Stanje U Aktivan.
+18 09 2021 19:54:52 EventServiceConnection [INFO] Uspesno povezan na Event servis.
+18 09 2021 19:54:52 EventState [INFO] Event [ eventId = 31 ] je promenio Stanje u Zakazan.
+18 09 2021 19:54:52 EventServiceConnection [INFO] Uspesno povezan na Event servis.
+18 09 2021 19:59:07 LoginServiceConnection [INFO] Uspesno povezan na Login service.
+18 09 2021 19:59:07 PlanerServiceConnection [INFO] Uspesno povezan na Planer servis.
+18 09 2021 19:59:07 Sync [INFO] Uspesno pokrenut Sync servis
+18 09 2021 19:59:07 LoginViewModel [INFO] Korisnik [ admin ] uspesno ulogovan.
+18 09 2021 20:12:35 LoginServiceConnection [INFO] Uspesno povezan na Login service.
+18 09 2021 20:12:35 PlanerServiceConnection [INFO] Uspesno povezan na Planer servis.
+18 09 2021 20:12:36 Sync [INFO] Uspesno pokrenut Sync servis
+18 09 2021 20:12:36 LoginViewModel [INFO] Korisnik [ admin ] uspesno ulogovan.
+18 09 2021 20:12:38 EventServiceConnection [INFO] Uspesno povezan na Event servis.
+18 09 2021 20:17:59 LoginServiceConnection [INFO] Uspesno povezan na Login service.
+18 09 2021 20:17:59 PlanerServiceConnection [INFO] Uspesno povezan na Planer servis.
+18 09 2021 20:18:00 Sync [INFO] Uspesno pokrenut Sync servis
+18 09 2021 20:18:00 LoginViewModel [INFO] Korisnik [ admin ] uspesno ulogovan.
+18 09 2021 20:19:09 LoginServiceConnection [INFO] Uspesno povezan na Login service.
+18 09 2021 20:19:09 PlanerServiceConnection [INFO] Uspesno povezan na Planer servis.
+18 09 2021 20:19:10 Sync [INFO] Uspesno pokrenut Sync servis
+18 09 2021 20:19:10 LoginViewModel [INFO] Korisnik [ admin ] uspesno ulogovan.
+18 09 2021 20:19:15 EventState [INFO] Event [ eventId = 32 ] je promenio Stanje U Aktivan.
+18 09 2021 20:19:15 EventState [INFO] Event [ eventId = 32 ] je promenio Stanje u Zakazan.
+18 09 2021 20:19:15 EventState [INFO] Event [ eventId = 32 ] je promenio Stanje U Aktivan.
+18 09 2021 20:19:15 EventServiceConnection [INFO] Uspesno povezan na Event servis.
+18 09 2021 20:19:21 EventState [INFO] Event [ eventId = 33 ] je promenio Stanje u Zakazan.
+18 09 2021 20:19:21 EventServiceConnection [INFO] Uspesno povezan na Event servis.
+18 09 2021 20:19:52 LoginServiceConnection [INFO] Uspesno povezan na Login service.
+18 09 2021 20:19:52 PlanerServiceConnection [INFO] Uspesno povezan na Planer servis.
+18 09 2021 20:19:52 Sync [INFO] Uspesno pokrenut Sync servis
+18 09 2021 20:19:52 LoginViewModel [INFO] Korisnik [ admin ] uspesno ulogovan.
+18 09 2021 20:26:23 LoginServiceConnection [INFO] Uspesno povezan na Login service.
+18 09 2021 20:26:23 PlanerServiceConnection [INFO] Uspesno povezan na Planer servis.
+18 09 2021 20:26:24 Sync [INFO] Uspesno pokrenut Sync servis
+18 09 2021 20:26:24 LoginViewModel [INFO] Korisnik [ admin ] uspesno ulogovan.
+18 09 2021 20:27:12 LoginServiceConnection [INFO] Uspesno povezan na Login service.
+18 09 2021 20:27:13 PlanerServiceConnection [INFO] Uspesno povezan na Planer servis.
+18 09 2021 20:27:13 Sync [INFO] Uspesno pokrenut Sync servis
+18 09 2021 20:27:13 LoginViewModel [INFO] Korisnik [ admin ] uspesno ulogovan.
+18 09 2021 20:27:44 LoginServiceConnection [INFO] Uspesno povezan na Login service.
+18 09 2021 20:27:44 PlanerServiceConnection [INFO] Uspesno povezan na Planer servis.
+18 09 2021 20:27:44 Sync [INFO] Uspesno pokrenut Sync servis
+18 09 2021 20:27:44 LoginViewModel [INFO] Korisnik [ admin ] uspesno ulogovan.
+18 09 2021 20:37:07 LoginServiceConnection [INFO] Uspesno povezan na Login service.
+18 09 2021 20:37:08 PlanerServiceConnection [INFO] Uspesno povezan na Planer servis.
+18 09 2021 20:37:08 Sync [INFO] Uspesno pokrenut Sync servis
+18 09 2021 20:37:08 LoginViewModel [INFO] Korisnik [ admin ] uspesno ulogovan.
+18 09 2021 20:44:03 LoginServiceConnection [INFO] Uspesno povezan na Login service.
+18 09 2021 20:44:03 PlanerServiceConnection [INFO] Uspesno povezan na Planer servis.
+18 09 2021 20:44:04 Sync [INFO] Uspesno pokrenut Sync servis
+18 09 2021 20:45:36 LoginServiceConnection [INFO] Uspesno povezan na Login service.
+18 09 2021 20:45:36 PlanerServiceConnection [INFO] Uspesno povezan na Planer servis.
+18 09 2021 20:45:36 Sync [INFO] Uspesno pokrenut Sync servis
+18 09 2021 20:45:36 EventState [INFO] Event [ eventId = 31 ] je promenio Stanje u Zakazan.
+18 09 2021 20:45:36 EventServiceConnection [INFO] Uspesno povezan na Event servis.
+18 09 2021 20:45:36 LoginViewModel [INFO] Korisnik [ admin ] uspesno ulogovan.
+18 09 2021 20:47:40 LoginServiceConnection [INFO] Uspesno povezan na Login service.
+18 09 2021 20:47:41 PlanerServiceConnection [INFO] Uspesno povezan na Planer servis.
+18 09 2021 20:47:41 Sync [INFO] Uspesno pokrenut Sync servis
+18 09 2021 20:47:41 EventState [INFO] Event [ eventId = 31 ] je promenio Stanje u Zakazan.
+18 09 2021 20:47:41 EventServiceConnection [INFO] Uspesno povezan na Event servis.
+18 09 2021 20:47:41 LoginViewModel [INFO] Korisnik [ admin ] uspesno ulogovan.
+18 09 2021 20:49:07 LoginServiceConnection [INFO] Uspesno povezan na Login service.
+18 09 2021 20:49:08 PlanerServiceConnection [INFO] Uspesno povezan na Planer servis.
+18 09 2021 20:49:08 Sync [INFO] Uspesno pokrenut Sync servis
+18 09 2021 20:49:08 EventState [INFO] Event [ eventId = 31 ] je promenio Stanje u Zakazan.
+18 09 2021 20:49:08 EventServiceConnection [INFO] Uspesno povezan na Event servis.
+18 09 2021 20:49:08 LoginViewModel [INFO] Korisnik [ admin ] uspesno ulogovan.
+18 09 2021 20:50:28 LoginServiceConnection [INFO] Uspesno povezan na Login service.
+18 09 2021 20:50:29 PlanerServiceConnection [INFO] Uspesno povezan na Planer servis.
+18 09 2021 20:50:29 Sync [INFO] Uspesno pokrenut Sync servis
+18 09 2021 20:50:29 EventState [INFO] Event [ eventId = 31 ] je promenio Stanje u Zakazan.
+18 09 2021 20:50:29 EventServiceConnection [INFO] Uspesno povezan na Event servis.
+18 09 2021 20:50:29 LoginViewModel [INFO] Korisnik [ admin ] uspesno ulogovan.
+18 09 2021 20:50:50 LoginServiceConnection [INFO] Uspesno povezan na Login service.
+18 09 2021 20:50:50 PlanerServiceConnection [INFO] Uspesno povezan na Planer servis.
+18 09 2021 20:50:50 Sync [INFO] Uspesno pokrenut Sync servis
+18 09 2021 20:50:50 EventState [INFO] Event [ eventId = 31 ] je promenio Stanje u Zakazan.
+18 09 2021 20:50:50 EventServiceConnection [INFO] Uspesno povezan na Event servis.
+18 09 2021 20:50:50 LoginViewModel [INFO] Korisnik [ admin ] uspesno ulogovan.
+18 09 2021 20:52:21 LoginServiceConnection [INFO] Uspesno povezan na Login service.
+18 09 2021 20:52:21 PlanerServiceConnection [INFO] Uspesno povezan na Planer servis.
+18 09 2021 20:52:21 Sync [INFO] Uspesno pokrenut Sync servis
+18 09 2021 20:52:21 EventState [INFO] Event [ eventId = 31 ] je promenio Stanje u Zakazan.
+18 09 2021 20:52:21 EventServiceConnection [INFO] Uspesno povezan na Event servis.
+18 09 2021 20:52:21 LoginViewModel [INFO] Korisnik [ admin ] uspesno ulogovan.
+18 09 2021 20:52:45 LoginServiceConnection [INFO] Uspesno povezan na Login service.
+18 09 2021 20:52:45 PlanerServiceConnection [INFO] Uspesno povezan na Planer servis.
+18 09 2021 20:52:46 Sync [INFO] Uspesno pokrenut Sync servis
+18 09 2021 20:52:46 EventState [INFO] Event [ eventId = 31 ] je promenio Stanje u Zakazan.
+18 09 2021 20:52:46 EventServiceConnection [INFO] Uspesno povezan na Event servis.
+18 09 2021 20:52:46 LoginViewModel [INFO] Korisnik [ admin ] uspesno ulogovan.
+18 09 2021 20:53:42 LoginServiceConnection [INFO] Uspesno povezan na Login service.
+18 09 2021 20:53:42 PlanerServiceConnection [INFO] Uspesno povezan na Planer servis.
+18 09 2021 20:53:43 Sync [INFO] Uspesno pokrenut Sync servis
+18 09 2021 20:53:43 EventState [INFO] Event [ eventId = 31 ] je promenio Stanje u Zakazan.
+18 09 2021 20:53:43 EventServiceConnection [INFO] Uspesno povezan na Event servis.
+18 09 2021 20:53:43 LoginViewModel [INFO] Korisnik [ admin ] uspesno ulogovan.
+18 09 2021 20:54:25 LoginServiceConnection [INFO] Uspesno povezan na Login service.
+18 09 2021 20:54:25 PlanerServiceConnection [INFO] Uspesno povezan na Planer servis.
+18 09 2021 20:54:25 Sync [INFO] Uspesno pokrenut Sync servis
+18 09 2021 20:54:25 EventState [INFO] Event [ eventId = 31 ] je promenio Stanje u Zakazan.
+18 09 2021 20:54:25 EventServiceConnection [INFO] Uspesno povezan na Event servis.
+18 09 2021 20:54:25 LoginViewModel [INFO] Korisnik [ admin ] uspesno ulogovan.
+18 09 2021 20:54:59 LoginServiceConnection [INFO] Uspesno povezan na Login service.
+18 09 2021 20:55:00 PlanerServiceConnection [INFO] Uspesno povezan na Planer servis.
+18 09 2021 20:55:00 Sync [INFO] Uspesno pokrenut Sync servis
+18 09 2021 20:55:00 EventState [INFO] Event [ eventId = 31 ] je promenio Stanje u Zakazan.
+18 09 2021 20:55:00 EventServiceConnection [INFO] Uspesno povezan na Event servis.
+18 09 2021 20:55:00 LoginViewModel [INFO] Korisnik [ admin ] uspesno ulogovan.
+18 09 2021 20:56:45 LoginServiceConnection [INFO] Uspesno povezan na Login service.
+18 09 2021 20:56:46 PlanerServiceConnection [INFO] Uspesno povezan na Planer servis.
+18 09 2021 20:56:46 Sync [INFO] Uspesno pokrenut Sync servis
+18 09 2021 20:56:46 EventState [INFO] Event [ eventId = 31 ] je promenio Stanje u Zakazan.
+18 09 2021 20:56:46 EventServiceConnection [INFO] Uspesno povezan na Event servis.
+18 09 2021 20:56:46 LoginViewModel [INFO] Korisnik [ admin ] uspesno ulogovan.
+18 09 2021 20:57:25 LoginServiceConnection [INFO] Uspesno povezan na Login service.
+18 09 2021 20:57:25 PlanerServiceConnection [INFO] Uspesno povezan na Planer servis.
+18 09 2021 20:57:25 Sync [INFO] Uspesno pokrenut Sync servis
+18 09 2021 20:57:25 EventState [INFO] Event [ eventId = 31 ] je promenio Stanje u Zakazan.
+18 09 2021 20:57:25 EventServiceConnection [INFO] Uspesno povezan na Event servis.
+18 09 2021 20:57:25 LoginViewModel [INFO] Korisnik [ admin ] uspesno ulogovan.
+18 09 2021 20:58:28 LoginServiceConnection [INFO] Uspesno povezan na Login service.
+18 09 2021 20:58:28 PlanerServiceConnection [INFO] Uspesno povezan na Planer servis.
+18 09 2021 20:58:29 Sync [INFO] Uspesno pokrenut Sync servis
+18 09 2021 20:58:29 EventState [INFO] Event [ eventId = 31 ] je promenio Stanje u Zakazan.
+18 09 2021 20:58:29 EventServiceConnection [INFO] Uspesno povezan na Event servis.
+18 09 2021 20:58:29 LoginViewModel [INFO] Korisnik [ admin ] uspesno ulogovan.
+18 09 2021 21:08:28 LoginServiceConnection [INFO] Uspesno povezan na Login service.
+18 09 2021 21:08:28 PlanerServiceConnection [INFO] Uspesno povezan na Planer servis.
+18 09 2021 21:08:29 Sync [INFO] Uspesno pokrenut Sync servis
+18 09 2021 21:08:29 EventState [INFO] Event [ eventId = 31 ] je promenio Stanje u Zakazan.
+18 09 2021 21:08:29 EventServiceConnection [INFO] Uspesno povezan na Event servis.
+18 09 2021 21:08:29 LoginViewModel [INFO] Korisnik [ admin ] uspesno ulogovan.
+18 09 2021 21:09:02 LoginServiceConnection [INFO] Uspesno povezan na Login service.
+18 09 2021 21:09:03 LoginViewModel [ERROR] Pokusaj logovanja na vec ulogovan nalog.
+18 09 2021 21:09:08 LoginServiceConnection [INFO] Uspesno povezan na Login service.
+18 09 2021 21:09:08 PlanerServiceConnection [INFO] Uspesno povezan na Planer servis.
+18 09 2021 21:09:08 Sync [INFO] Uspesno pokrenut Sync servis
+18 09 2021 21:09:08 EventState [INFO] Event [ eventId = 31 ] je promenio Stanje u Zakazan.
+18 09 2021 21:09:08 EventServiceConnection [INFO] Uspesno povezan na Event servis.
+18 09 2021 21:09:08 LoginViewModel [INFO] Korisnik [ korisnik1 ] uspesno ulogovan.
+18 09 2021 21:12:11 LoginServiceConnection [INFO] Uspesno povezan na Login service.
+18 09 2021 21:12:12 PlanerServiceConnection [INFO] Uspesno povezan na Planer servis.
+18 09 2021 21:12:12 Sync [INFO] Uspesno pokrenut Sync servis
+18 09 2021 21:12:12 EventState [INFO] Event [ eventId = 31 ] je promenio Stanje u Zakazan.
+18 09 2021 21:12:12 EventServiceConnection [INFO] Uspesno povezan na Event servis.
+18 09 2021 21:12:12 LoginViewModel [INFO] Korisnik [ admin ] uspesno ulogovan.
+18 09 2021 21:17:59 LoginServiceConnection [INFO] Uspesno povezan na Login service.
+18 09 2021 21:18:00 PlanerServiceConnection [INFO] Uspesno povezan na Planer servis.
+18 09 2021 21:18:00 Sync [INFO] Uspesno pokrenut Sync servis
+18 09 2021 21:18:00 EventState [INFO] Event [ eventId = 31 ] je promenio Stanje u Zakazan.
+18 09 2021 21:18:00 EventServiceConnection [INFO] Uspesno povezan na Event servis.
+18 09 2021 21:18:00 LoginViewModel [INFO] Korisnik [ admin ] uspesno ulogovan.
+18 09 2021 21:19:39 LoginServiceConnection [INFO] Uspesno povezan na Login service.
+18 09 2021 21:19:39 PlanerServiceConnection [INFO] Uspesno povezan na Planer servis.
+18 09 2021 21:19:40 Sync [INFO] Uspesno pokrenut Sync servis
+18 09 2021 21:19:40 EventState [INFO] Event [ eventId = 31 ] je promenio Stanje u Zakazan.
+18 09 2021 21:19:40 EventServiceConnection [INFO] Uspesno povezan na Event servis.
+18 09 2021 21:19:40 LoginViewModel [INFO] Korisnik [ admin ] uspesno ulogovan.
+18 09 2021 21:21:34 LoginServiceConnection [INFO] Uspesno povezan na Login service.
+18 09 2021 21:21:34 PlanerServiceConnection [INFO] Uspesno povezan na Planer servis.
+18 09 2021 21:21:34 Sync [INFO] Uspesno pokrenut Sync servis
+18 09 2021 21:21:34 EventState [INFO] Event [ eventId = 31 ] je promenio Stanje u Zakazan.
+18 09 2021 21:21:34 EventServiceConnection [INFO] Uspesno povezan na Event servis.
+18 09 2021 21:21:34 LoginViewModel [INFO] Korisnik [ admin ] uspesno ulogovan.
+18 09 2021 21:24:22 LoginServiceConnection [INFO] Uspesno povezan na Login service.
+18 09 2021 21:24:22 PlanerServiceConnection [INFO] Uspesno povezan na Planer servis.
+18 09 2021 21:24:22 Sync [INFO] Uspesno pokrenut Sync servis
+18 09 2021 21:24:22 EventState [INFO] Event [ eventId = 31 ] je promenio Stanje u Zakazan.
+18 09 2021 21:24:22 EventServiceConnection [INFO] Uspesno povezan na Event servis.
+18 09 2021 21:24:22 LoginViewModel [INFO] Korisnik [ admin ] uspesno ulogovan.
+18 09 2021 21:25:14 LoginServiceConnection [INFO] Uspesno povezan na Login service.
+18 09 2021 21:25:14 PlanerServiceConnection [INFO] Uspesno povezan na Planer servis.
+18 09 2021 21:25:15 Sync [INFO] Uspesno pokrenut Sync servis
+18 09 2021 21:25:15 EventState [INFO] Event [ eventId = 31 ] je promenio Stanje u Zakazan.
+18 09 2021 21:25:15 EventServiceConnection [INFO] Uspesno povezan na Event servis.
+18 09 2021 21:25:15 LoginViewModel [INFO] Korisnik [ admin ] uspesno ulogovan.
+18 09 2021 21:29:05 LoginServiceConnection [INFO] Uspesno povezan na Login service.
+18 09 2021 21:29:05 PlanerServiceConnection [INFO] Uspesno povezan na Planer servis.
+18 09 2021 21:29:05 Sync [INFO] Uspesno pokrenut Sync servis
+18 09 2021 21:29:05 EventState [INFO] Event [ eventId = 31 ] je promenio Stanje u Zakazan.
+18 09 2021 21:29:05 EventServiceConnection [INFO] Uspesno povezan na Event servis.
+18 09 2021 21:29:05 LoginViewModel [INFO] Korisnik [ admin ] uspesno ulogovan.
+18 09 2021 21:29:24 LoginServiceConnection [INFO] Uspesno povezan na Login service.
+18 09 2021 21:29:24 PlanerServiceConnection [INFO] Uspesno povezan na Planer servis.
+18 09 2021 21:29:24 Sync [INFO] Uspesno pokrenut Sync servis
+18 09 2021 21:29:24 EventState [INFO] Event [ eventId = 31 ] je promenio Stanje u Zakazan.
+18 09 2021 21:29:24 EventServiceConnection [INFO] Uspesno povezan na Event servis.
+18 09 2021 21:29:24 LoginViewModel [INFO] Korisnik [ admin ] uspesno ulogovan.
+18 09 2021 21:30:32 LoginServiceConnection [INFO] Uspesno povezan na Login service.
+18 09 2021 21:30:33 PlanerServiceConnection [INFO] Uspesno povezan na Planer servis.
+18 09 2021 21:30:33 Sync [INFO] Uspesno pokrenut Sync servis
+18 09 2021 21:30:33 EventState [INFO] Event [ eventId = 31 ] je promenio Stanje u Zakazan.
+18 09 2021 21:30:33 EventServiceConnection [INFO] Uspesno povezan na Event servis.
+18 09 2021 21:30:33 LoginViewModel [INFO] Korisnik [ admin ] uspesno ulogovan.
+18 09 2021 21:31:20 LoginServiceConnection [INFO] Uspesno povezan na Login service.
+18 09 2021 21:31:20 PlanerServiceConnection [INFO] Uspesno povezan na Planer servis.
+18 09 2021 21:31:21 Sync [INFO] Uspesno pokrenut Sync servis
+18 09 2021 21:31:21 EventState [INFO] Event [ eventId = 31 ] je promenio Stanje u Zakazan.
+18 09 2021 21:31:21 EventServiceConnection [INFO] Uspesno povezan na Event servis.
+18 09 2021 21:31:21 LoginViewModel [INFO] Korisnik [ admin ] uspesno ulogovan.
+18 09 2021 21:32:22 LoginServiceConnection [INFO] Uspesno povezan na Login service.
+18 09 2021 21:32:23 PlanerServiceConnection [INFO] Uspesno povezan na Planer servis.
+18 09 2021 21:32:23 Sync [INFO] Uspesno pokrenut Sync servis
+18 09 2021 21:32:23 EventState [INFO] Event [ eventId = 31 ] je promenio Stanje u Zakazan.
+18 09 2021 21:32:23 EventServiceConnection [INFO] Uspesno povezan na Event servis.
+18 09 2021 21:32:23 LoginViewModel [INFO] Korisnik [ admin ] uspesno ulogovan.
+18 09 2021 21:32:44 LoginServiceConnection [INFO] Uspesno povezan na Login service.
+18 09 2021 21:32:44 PlanerServiceConnection [INFO] Uspesno povezan na Planer servis.
+18 09 2021 21:32:44 Sync [INFO] Uspesno pokrenut Sync servis
+18 09 2021 21:32:44 EventState [INFO] Event [ eventId = 31 ] je promenio Stanje u Zakazan.
+18 09 2021 21:32:44 EventServiceConnection [INFO] Uspesno povezan na Event servis.
+18 09 2021 21:32:44 LoginViewModel [INFO] Korisnik [ admin ] uspesno ulogovan.
+18 09 2021 21:33:06 LoginServiceConnection [INFO] Uspesno povezan na Login service.
+18 09 2021 21:33:06 PlanerServiceConnection [INFO] Uspesno povezan na Planer servis.
+18 09 2021 21:33:07 Sync [INFO] Uspesno pokrenut Sync servis
+18 09 2021 21:33:07 EventState [INFO] Event [ eventId = 31 ] je promenio Stanje u Zakazan.
+18 09 2021 21:33:07 EventServiceConnection [INFO] Uspesno povezan na Event servis.
+18 09 2021 21:33:07 LoginViewModel [INFO] Korisnik [ admin ] uspesno ulogovan.
+18 09 2021 21:35:24 LoginServiceConnection [INFO] Uspesno povezan na Login service.
+18 09 2021 21:35:24 PlanerServiceConnection [INFO] Uspesno povezan na Planer servis.
+18 09 2021 21:35:25 Sync [INFO] Uspesno pokrenut Sync servis
+18 09 2021 21:35:25 EventState [INFO] Event [ eventId = 31 ] je promenio Stanje u Zakazan.
+18 09 2021 21:35:25 EventServiceConnection [INFO] Uspesno povezan na Event servis.
+18 09 2021 21:35:25 LoginViewModel [INFO] Korisnik [ admin ] uspesno ulogovan.
+18 09 2021 21:38:47 LoginServiceConnection [INFO] Uspesno povezan na Login service.
+18 09 2021 21:38:48 PlanerServiceConnection [INFO] Uspesno povezan na Planer servis.
+18 09 2021 21:38:48 Sync [INFO] Uspesno pokrenut Sync servis
+18 09 2021 21:38:48 EventState [INFO] Event [ eventId = 31 ] je promenio Stanje u Zakazan.
+18 09 2021 21:38:48 EventServiceConnection [INFO] Uspesno povezan na Event servis.
+18 09 2021 21:38:48 LoginViewModel [INFO] Korisnik [ admin ] uspesno ulogovan.
