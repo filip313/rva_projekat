@@ -15,6 +15,13 @@ namespace Client.ViewModels
         private static readonly log4net.ILog log = log4net.LogManager.GetLogger("LoginViewModel");
         private string _username;
 
+        private LogViewModel LogView;
+
+        public LoginViewModel()
+        {
+            LogView = new LogViewModel();
+        }
+
         public string Username
         {
             get { return _username; }
@@ -56,12 +63,13 @@ namespace Client.ViewModels
                 LoginServiceConnection connection = new LoginServiceConnection();
                 int id = connection.loginProxy.Login(Username, Password);
                 if (id > 0)
-                {
+                {   
                     Error = String.Empty;
                     IWindowManager manager = new WindowManager();
-                    manager.ShowWindowAsync(new PlanerViewModel(new Models.UserModel() { UserId = id }, new Models.PlanerModel(), connection));
-
+                    var planer = new PlanerViewModel(new Models.UserModel() { UserId = id }, new Models.PlanerModel(), connection);
+                    manager.ShowWindowAsync(new ShellViewModel(planer, LogView));
                     log.Info($"Korisnik [ {Username} ] uspesno ulogovan.");
+                    LogViewModel.AddLog(DateTime.Now, "INFO", $"Korisnik [ {Username} ] uspesno ulogovan.");
 
                     this.TryCloseAsync();
                 }

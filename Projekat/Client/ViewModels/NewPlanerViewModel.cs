@@ -55,6 +55,8 @@ namespace Client.ViewModels
             if (!User.AddAndExecute(new NapraviPlaner(DatumPocetka, DatumZavrsetka, Naziv, Opis, User.UserId, PlanerModel)))
             {
                 log.Error($"Doslo je do greske prilikom pokusaja kreiranja novog Planera.");
+                ViewModels.LogViewModel.AddLog(DateTime.Now, "ERROR", $"Doslo je do greske prilikom pokusaja kreiranja novog Planera.");
+
                 MessageBox.Show("Doslo je do greske prilikom kreiranja novog planera!", "Novi Planer Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
 
@@ -69,6 +71,8 @@ namespace Client.ViewModels
                 if(!User.AddAndExecute(new IzmeniPlaner(PlanerId, DatumPocetka, DatumZavrsetka, Naziv, Opis, PlanerModel)))
                 {
                     log.Error($"Doslo je do greske prilikom pokusaja izmen Planera [ planerId = {PlanerId} ].");
+                    ViewModels.LogViewModel.AddLog(DateTime.Now, "ERROR", $"Doslo je do greske prilikom pokusaja izmen Planera [ planerId = {PlanerId} ].");
+
                     MessageBox.Show("Doslo je do greske prilikom izmene podataka planera!", "Izmeni Planer Error", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
                 this.TryCloseAsync();

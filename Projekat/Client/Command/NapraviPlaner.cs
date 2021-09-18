@@ -47,6 +47,8 @@ namespace Client.Command {
             PrethodniPlaner.PlannerId = planerId;
             PlanerModel.Planers.Add(PrethodniPlaner);
             log.Info($"Uspesno izvrsena komanda kreiranja novog planera [ planerId = {planerId} ].");
+            Client.ViewModels.LogViewModel.AddLog(DateTime.Now, "INFO", $"Uspesno izvrsena komanda kreiranja novog planera [ planerId = {planerId} ].");
+
             return true;
         }
 
@@ -58,10 +60,14 @@ namespace Client.Command {
                 PlanerId = PrethodniPlaner.PlannerId;
                 PlanerModel.Planers.Remove(PrethodniPlaner);
                 log.Info($"Uspesno izvrseno ponistavanja komande kreiranja novog Planer [ planerId = {PlanerId} ].");
+                Client.ViewModels.LogViewModel.AddLog(DateTime.Now, "INFO", $"Uspesno izvrseno ponistavanja komande kreiranja novog Planer [ planerId = {PlanerId} ].");
+
             }
             else
             {
                 log.Error($"Doslo je do greske prilikom ponistavanja komande kreiranja novog Planera [ planerId = {PlanerId} ].");
+                Client.ViewModels.LogViewModel.AddLog(DateTime.Now, "ERROR", $"Doslo je do greske prilikom ponistavanja komande kreiranja novog Planera [ planerId = {PlanerId} ].");
+
             }
 
             return ret;

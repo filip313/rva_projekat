@@ -69,10 +69,14 @@ namespace Client.ViewModels
                 {
                     Events.Remove(SelectedEvent);
                     log.Info($"Event [ eventId = {SelectedEvent.Event.EventId} ] uspesno obrisan.");
+                    ViewModels.LogViewModel.AddLog(DateTime.Now, "INFO", $"Event [ eventId = {SelectedEvent.Event.EventId} ] uspesno obrisan.");
+
                 }
                 else
                 {
                     log.Error($"Doslo je do greske prilikom pokusaja brisanja Eventa [ eventId = {SelectedEvent.Event.EventId} ].");
+                    ViewModels.LogViewModel.AddLog(DateTime.Now, "ERROR", $"Doslo je do greske prilikom pokusaja brisanja Eventa [ eventId = {SelectedEvent.Event.EventId} ].");
+
                     MessageBox.Show("NIJE moguce obrisati event (event je obrisan)!", "Izbrisi Event Error", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
             }

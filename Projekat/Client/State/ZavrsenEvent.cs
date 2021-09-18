@@ -17,6 +17,8 @@ namespace Client.State
             IsEditable = false;
             IsRemovable = false;
             log.Info($"Event [ eventId = {Model.Event.EventId} ] je promenio Stanje u Zavrsen.");
+            ViewModels.LogViewModel.AddLog(DateTime.Now, "INFO", $"Event [ eventId = {Model.Event.EventId} ] je promenio Stanje u Zavrsen.");
+
 
         }
 

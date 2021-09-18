@@ -320,3 +320,9 @@ C:\Users\Filip\Documents\faks\RVA\RVAPROJEKAT\Projekat\Client\obj\Debug\Views\Ev
 C:\Users\Filip\Documents\faks\RVA\RVAPROJEKAT\Projekat\Client\obj\Debug\Views\EventView.baml
 C:\Users\Filip\Documents\faks\RVA\RVAPROJEKAT\Projekat\Client\bin\Debug\log4net.dll
 C:\Users\Filip\Documents\faks\RVA\RVAPROJEKAT\Projekat\Client\bin\Debug\log4net.xml
+C:\Users\Filip\Documents\faks\RVA\RVAPROJEKAT\Projekat\Client\obj\Debug\Views\ShellView.g.cs
+C:\Users\Filip\Documents\faks\RVA\RVAPROJEKAT\Projekat\Client\obj\Debug\Views\ShellView.baml
+C:\Users\Filip\Documents\faks\RVA\RVAPROJEKAT\Projekat\Client\obj\Debug\Views\PlanerView2.g.cs
+C:\Users\Filip\Documents\faks\RVA\RVAPROJEKAT\Projekat\Client\obj\Debug\Views\PlanerView2.baml
+C:\Users\Filip\Documents\faks\RVA\RVAPROJEKAT\Projekat\Client\obj\Debug\Views\LogView.g.cs
+C:\Users\Filip\Documents\faks\RVA\RVAPROJEKAT\Projekat\Client\obj\Debug\Views\LogView.baml

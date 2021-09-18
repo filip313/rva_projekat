@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace Client.Views
 {
     /// <summary>
-    /// Interaction logic for PlanerView.xaml
+    /// Interaction logic for LogView.xaml
     /// </summary>
-    public partial class PlanerView : UserControl
+    public partial class LogView : UserControl
     {
-        public PlanerView()
+        public LogView()
         {
             InitializeComponent();
         }

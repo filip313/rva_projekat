@@ -19,6 +19,8 @@ namespace Client.State
             IsEditable = false;
             CheckState();
             log.Info($"Event [ eventId = {Model.Event.EventId} ] je promenio Stanje U Aktivan.");
+            ViewModels.LogViewModel.AddLog(DateTime.Now, "INFO", $"Event [ eventId = {Model.Event.EventId} ] je promenio Stanje U Aktivan.");
+
         }
 
         public override void CheckState()

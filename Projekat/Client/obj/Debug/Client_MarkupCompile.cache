@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\Filip\Documents\faks\RVA\RVAPROJEKAT\Projekat\Client\App.xaml
-6-159745698
+9-1124842640
 
-40-1673478710
+461991774863
 137217181704
-Views\EventView.xaml;Views\LoginView.xaml;Views\NewEventView.xaml;Views\NewPlanerView.xaml;Views\NewUserView.xaml;Views\PlanerView.xaml;
+Views\EventView.xaml;Views\LoginView.xaml;Views\LogView.xaml;Views\NewEventView.xaml;Views\NewPlanerView.xaml;Views\NewUserView.xaml;Views\PlanerView.xaml;Views\PlanerView2.xaml;Views\ShellView.xaml;
 
 False
 

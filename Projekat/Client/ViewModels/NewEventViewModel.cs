@@ -68,6 +68,8 @@ namespace Client.ViewModels
                 Events.Add(new EventModel(ubacenEvent));
                 MessageBox.Show("Uspesno kreiran Event", "Kreiraj novi Event", MessageBoxButton.OK, MessageBoxImage.Information);
                 log.Info($"Uspesno kreiran novi Event [ eventId = {ubacenEvent.EventId} ].");
+                ViewModels.LogViewModel.AddLog(DateTime.Now, "INFO", $"Uspesno kreiran novi Event [ eventId = {ubacenEvent.EventId} ].");
+
                 this.TryCloseAsync();
             }
 
@@ -89,10 +91,14 @@ namespace Client.ViewModels
                     Events.Refresh();
 
                     log.Info($"Uspesno izmenjen Event [ eventId = {EventId} ].");
+                    ViewModels.LogViewModel.AddLog(DateTime.Now, "INFO", $"Uspesno izmenjen Event [ eventId = {EventId} ].");
+
                     this.TryCloseAsync();
                 }
 
                 log.Error($"Doslo je do greske prilikom pokusaja izmene Eventa [ eventId = {EventId} ].");
+                ViewModels.LogViewModel.AddLog(DateTime.Now, "ERROR", $"Doslo je do greske prilikom pokusaja izmene Eventa [ eventId = {EventId} ].");
+
             }
 
             this.TryCloseAsync();

@@ -18,6 +18,8 @@ namespace Client.State
             IsRemovable = true;
             CheckState();
             log.Info($"Event [ eventId = {Model.Event.EventId} ] je promenio Stanje u Zakazan.");
+            ViewModels.LogViewModel.AddLog(DateTime.Now, "INFO", $"Event [ eventId = {Model.Event.EventId} ] je promenio Stanje u Zakazan.");
+
 
         }
         public override void CheckState()

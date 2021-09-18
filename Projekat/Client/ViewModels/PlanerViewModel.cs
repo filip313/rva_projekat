@@ -20,7 +20,7 @@ namespace Client.ViewModels
         public UserModel User { get; set; }
         public PlanerModel PlanerModel { get; set; }
         public Common.Models.Planner SelectedPlaner { get; set; }
-        LoginServiceConnection connection;
+        public LoginServiceConnection connection;
         public Sync server;
         IWindowManager manager;
 

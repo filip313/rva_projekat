@@ -99,12 +99,15 @@ namespace Client.ViewModels
                 if (connection.userServiceProxy.AddNewUser(userFactory.CreateUser(Username, Password, Ime, Prezime, Email)))
                 {
                     log.Info($"Korisnik [ {Username} ] uspesno kreiran.");
+                    ViewModels.LogViewModel.AddLog(DateTime.Now, "INFO", $"Korisnik [ {Username} ] uspesno kreiran.");
+
                     MessageBox.Show("Korisnik uspesno kreiran!", "Create New User", MessageBoxButton.OK, MessageBoxImage.Information);
                     this.TryCloseAsync();
                 }
                 else
                 {
                     log.Error($"Doslo je do greske prilikom pokusaja kreiranja korisnika [ {Username}].");
+                    ViewModels.LogViewModel.AddLog(DateTime.Now, "ERROR", $"Doslo je do greske prilikom pokusaja kreiranja korisnika [ {Username}].");
                     MessageBox.Show("Korisnik sa odabranim korisnickim imenom vec postoji!", "Create New User", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
 
@@ -125,10 +128,14 @@ namespace Client.ViewModels
                     if(connection.userServiceProxy.ChangeUserData(id, Ime, Prezime, Email))
                     {
                         log.Info($"Uspena izmenjeni podaci korisnika [ userID = {id} ].");
+                        ViewModels.LogViewModel.AddLog(DateTime.Now, "INFO", $"Uspena izmenjeni podaci korisnika [ userID = {id} ].");
+
                     }
                     else
                     {
                         log.Error($"Doslo je do greske prilikom pokusaja izmene podataka korisnika [ userID = {id} ].");
+                        ViewModels.LogViewModel.AddLog(DateTime.Now, "ERROR", $"Doslo je do greske prilikom pokusaja izmene podataka korisnika [ userID = {id} ].");
+
                     }
                     this.TryCloseAsync();
                 }

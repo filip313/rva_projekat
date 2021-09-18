@@ -24,6 +24,8 @@ namespace Client.Connections
             ChannelFactory<IUserService> cf = new ChannelFactory<IUserService>(binding, new EndpointAddress("net.tcp://localhost:6001/UserServiceProvider"));
             userServiceProxy = cf.CreateChannel();
             log.Info("Usepesno povezan na User servis.");
+            ViewModels.LogViewModel.AddLog(DateTime.Now, "INFO", "Usepesno povezan na User servis.");
+
         }
     }
 }

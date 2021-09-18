@@ -118,6 +118,7 @@
     <Compile Include="Connections\SyncServiceProvider.cs" />
     <Compile Include="Connections\UserServiceConnection.cs" />
     <Compile Include="Models\EventModel.cs" />
+    <Compile Include="Models\LogModel.cs" />
     <Compile Include="Models\PlanerModel.cs" />
     <Compile Include="Models\UserModel.cs" />
     <Compile Include="Command\NapraviPlaner.cs" />
@@ -128,11 +129,16 @@
     <Compile Include="State\ZakazanEvent.cs" />
     <Compile Include="State\ZavrsenEvent.cs" />
     <Compile Include="ViewModels\EventViewModel.cs" />
+    <Compile Include="ViewModels\LogViewModel.cs" />
     <Compile Include="ViewModels\NewEventViewModel.cs" />
     <Compile Include="ViewModels\NewPlanerViewModel.cs" />
     <Compile Include="ViewModels\NewUserViewModel.cs" />
+    <Compile Include="ViewModels\ShellViewModel.cs" />
     <Compile Include="Views\EventView.xaml.cs">
       <DependentUpon>EventView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LogView.xaml.cs">
+      <DependentUpon>LogView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\NewEventView.xaml.cs">
       <DependentUpon>NewEventView.xaml</DependentUpon>
@@ -145,6 +151,9 @@
     </Compile>
     <Compile Include="Views\PlanerView.xaml.cs">
       <DependentUpon>PlanerView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ShellView.xaml.cs">
+      <DependentUpon>ShellView.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -191,6 +200,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\LogView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\NewEventView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -204,6 +217,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\PlanerView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ShellView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

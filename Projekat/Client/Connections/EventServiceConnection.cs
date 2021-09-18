@@ -25,6 +25,7 @@ namespace Client.Connections
             ChannelFactory<IEventService> cf = new ChannelFactory<IEventService>(binding, new EndpointAddress("net.tcp://localhost:6003/EventServiceProvider"));
             eventServiceProxy = cf.CreateChannel();
             log.Info("Uspesno povezan na Event servis.");
+            ViewModels.LogViewModel.AddLog(DateTime.Now, "INFO", "Uspesno povezan na Event servis.");
         }
     }
 }

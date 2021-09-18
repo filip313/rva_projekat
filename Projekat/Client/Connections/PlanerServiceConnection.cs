@@ -24,6 +24,8 @@ namespace Client.Connections
             ChannelFactory<IPlanerService> cf = new ChannelFactory<IPlanerService>(binding, new EndpointAddress("net.tcp://localhost:6002/PlanerServiceProvider"));
             planerServiceProxy = cf.CreateChannel();
             log.Info("Uspesno povezan na Planer servis.");
+            ViewModels.LogViewModel.AddLog(DateTime.Now, "INFO", "Uspesno povezan na Planer servis.");
+
         }
     }
 }

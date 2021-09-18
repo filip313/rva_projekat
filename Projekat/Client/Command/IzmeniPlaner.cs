@@ -53,6 +53,8 @@ namespace Client.Command
                     PlanerModel.Planers.Refresh();
                     PlanerModel.connection.planerServiceProxy.SaveChanges(planer);
                     log.Info($"Usepesno izvrsena komanda izmene Planera [ planerId = {PlanerId} ].");
+                    Client.ViewModels.LogViewModel.AddLog(DateTime.Now, "INFO", $"Usepesno izvrsena komanda izmene Planera [ planerId = {PlanerId} ].");
+
                     break;
                 }
             }
@@ -73,6 +75,8 @@ namespace Client.Command
                     PlanerModel.Planers.Refresh();
                     PlanerModel.connection.planerServiceProxy.SaveChanges(PrethodniPlaner);
                     log.Info($"Uspesno ponistena komanda izmene Planera [ planerId = {PlanerId} ].");
+                    Client.ViewModels.LogViewModel.AddLog(DateTime.Now, "INFO", $"Uspesno ponistena komanda izmene Planera [ planerId = {PlanerId} ].");
+
                     break;
                 }
             }

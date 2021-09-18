@@ -39,12 +39,16 @@ namespace Client.Command {
                         PlanerModel.Planers.Remove(planer);
                         PlanerModel.Planers.Refresh();
                         log.Info($"Uspensno izvrsena komanda brisanja Planera [ planerId = {planer.PlannerId} ].");
+                        Client.ViewModels.LogViewModel.AddLog(DateTime.Now, "INFO", $"Uspensno izvrsena komanda brisanja Planera [ planerId = {planer.PlannerId} ].");
+
                     }
                     return ret;
                 }
             }
 
             log.Error($"Doslo je do greske prilikom pokusaja izvrsavanje komande brsianja Planera.");
+            Client.ViewModels.LogViewModel.AddLog(DateTime.Now, "ERROR", $"Doslo je do greske prilikom pokusaja izvrsavanje komande brsianja Planera.");
+
             return false;
         }
 
@@ -55,6 +59,8 @@ namespace Client.Command {
             PlanerModel.Planers.Refresh();
 
             log.Info($"Usepeno je izvrseno ponistavanja komande brisanja Planera [ planerId = {planerId} ].");
+            Client.ViewModels.LogViewModel.AddLog(DateTime.Now, "INFO", $"Usepeno je izvrseno ponistavanja komande brisanja Planera [ planerId = {planerId} ].");
+
             return true;
         }
 

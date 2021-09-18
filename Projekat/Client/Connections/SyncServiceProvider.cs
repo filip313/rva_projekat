@@ -52,6 +52,8 @@ namespace Client.Connections
             PlanerModel._planers.Refresh();
 
             log.Info("Osvezena lista planera");
+            ViewModels.LogViewModel.AddLog(DateTime.Now, "INFO", "Osvezena lista planera");
+
         }
 
         public void PingEvent(int planerId)
@@ -98,6 +100,8 @@ namespace Client.Connections
                 ViewModels.EventViewModel._events.Refresh();
 
                 log.Info("Osvezeni planeri");
+                ViewModels.LogViewModel.AddLog(DateTime.Now, "INFO", "Osvezeni planeri");
+
             }
         }
     }

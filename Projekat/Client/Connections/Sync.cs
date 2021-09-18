@@ -31,10 +31,12 @@ namespace Client.Connections
             {
                 syncServiceHost.Open();
                 log.Info("Uspesno pokrenut Sync servis");
+                ViewModels.LogViewModel.AddLog(DateTime.Now, "INFO", "Uspesno pokrenut Sync servis");
             }
-            catch(Exception e)
+            catch (Exception e)
             {
-                log.Error("Doslo je do greske prilikom pokretanja Sync servisa.", e);
+                log.Fatal("Doslo je do greske prilikom pokretanja Sync servisa.", e);
+                ViewModels.LogViewModel.AddLog(DateTime.Now, "FATAL", "Doslo je do greske prilikom pokretanja Sync servisa.\n" + e.Message);
             }
         }
     }

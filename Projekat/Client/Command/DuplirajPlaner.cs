@@ -37,9 +37,12 @@ namespace Client.Command {
                 PrethodniPlaner = noviPlaner;
                 PlanerModel.Planers.Refresh();
                 log.Info($"Uspesno je izvrsena komanda dupliranja Planera [ planerId = {planerId} ].");
+                Client.ViewModels.LogViewModel.AddLog(DateTime.Now, "INFO", $"Uspesno je izvrsena komanda dupliranja Planera [ planerId = {planerId} ].");
                 return true;
             }
             log.Error($"Doslo je do greske prilikom izvrsavanja komande dupliranja Planera [ planerId = {PrethodniPlaner.PlannerId} ].");
+            Client.ViewModels.LogViewModel.AddLog(DateTime.Now, "ERROR", $"Doslo je do greske prilikom izvrsavanja komande dupliranja Planera [ planerId = {PrethodniPlaner.PlannerId} ].");
+
             return false;
         }
 
@@ -50,10 +53,14 @@ namespace Client.Command {
                 PlanerModel.Planers.Remove(PrethodniPlaner);
                 PlanerModel.Planers.Refresh();
                 log.Info($"Uspesno ponistavanje komande dupliranja Planera [ planerId = {PrethodniPlaner.PlannerId} ].");
+                Client.ViewModels.LogViewModel.AddLog(DateTime.Now, "INFO", $"Uspesno ponistavanje komande dupliranja Planera [ planerId = {PrethodniPlaner.PlannerId} ].");
+
             }
             else
             {
                 log.Error($"Doslo je do greske prilikom pokusaja ponistavanja komande dupliranja Planera [ planerId = {PrethodniPlaner.PlannerId} ].");
+                Client.ViewModels.LogViewModel.AddLog(DateTime.Now, "ERROR", $"Doslo je do greske prilikom pokusaja ponistavanja komande dupliranja Planera [ planerId = {PrethodniPlaner.PlannerId} ].");
+
             }
             return ret;
         }

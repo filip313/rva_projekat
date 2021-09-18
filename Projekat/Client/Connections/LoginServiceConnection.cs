@@ -24,6 +24,8 @@ namespace Client
             ChannelFactory<ILogin> cf = new ChannelFactory<ILogin>(binding, new EndpointAddress("net.tcp://localhost:6000/LoginServiceProvider"));
             loginProxy = cf.CreateChannel();
             log.Info("Uspesno povezan na Login service.");
+            ViewModels.LogViewModel.AddLog(DateTime.Now, "INFO", "Uspesno povezan na Login service.");
+
         }
     }
 }
