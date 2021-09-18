@@ -10,15 +10,14 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Client.Views
 {
     /// <summary>
-    /// Interaction logic for PlanerView2.xaml
+    /// Interaction logic for PlanerView.xaml
     /// </summary>
-    public partial class PlanerView : UserControl
+    public partial class PlanerView : Window
     {
         public PlanerView()
         {

@@ -131,7 +131,6 @@
     <Compile Include="ViewModels\NewEventViewModel.cs" />
     <Compile Include="ViewModels\NewPlanerViewModel.cs" />
     <Compile Include="ViewModels\NewUserViewModel.cs" />
-    <Compile Include="ViewModels\ShellViewModel.cs" />
     <Compile Include="Views\EventView.xaml.cs">
       <DependentUpon>EventView.xaml</DependentUpon>
     </Compile>
@@ -144,14 +143,8 @@
     <Compile Include="Views\NewUserView.xaml.cs">
       <DependentUpon>NewUserView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\PlanerView3.xaml.cs">
-      <DependentUpon>PlanerView3.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Views\PlanerView.xaml.cs">
       <DependentUpon>PlanerView.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\ShellView.xaml.cs">
-      <DependentUpon>ShellView.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -210,15 +203,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\PlanerView3.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Views\PlanerView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Views\ShellView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

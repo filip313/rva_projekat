@@ -59,9 +59,7 @@ namespace Client.ViewModels
                 {
                     Error = String.Empty;
                     IWindowManager manager = new WindowManager();
-                    var planer = new PlanerViewModel(new Models.UserModel() { UserId = id }, new Models.PlanerModel(), connection);
-                    manager.ShowWindowAsync(planer, new EventViewModel(planer.PlanerModel.Planers[0].Events, 0, DateTime.Now, DateTime.Now));
-
+                    manager.ShowWindowAsync(new PlanerViewModel(new Models.UserModel() { UserId = id }, new Models.PlanerModel(), connection));
 
                     log.Info($"Korisnik [ {Username} ] uspesno ulogovan.");
 
