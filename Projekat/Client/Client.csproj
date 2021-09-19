@@ -133,6 +133,7 @@
     <Compile Include="ViewModels\NewEventViewModel.cs" />
     <Compile Include="ViewModels\NewPlanerViewModel.cs" />
     <Compile Include="ViewModels\NewUserViewModel.cs" />
+    <Compile Include="ViewModels\Pretraga.cs" />
     <Compile Include="ViewModels\ShellViewModel.cs" />
     <Compile Include="Views\EventView.xaml.cs">
       <DependentUpon>EventView.xaml</DependentUpon>

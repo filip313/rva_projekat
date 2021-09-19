@@ -53,11 +53,15 @@
                                     </Button.Background>
                                     <Button.Style>
                                         <Style TargetType="{x:Type Button}">
-                                            <Setter Property="IsEnabled" Value="{Binding EventState.IsEditable}" />
+                                            <Style.Triggers>
+                                                <DataTrigger Binding="{Binding Path=EventState.IsEditable}" Value="True">
+                                                    <Setter Property="IsEnabled" Value="False" />
+                                                </DataTrigger>
+                                            </Style.Triggers>
                                         </Style>
                                     </Button.Style>
                                 </Button>
-                                <Button x:Name="RemoveEvent" Content="Remove" cal:Bind.Model="{Binding DataContext, RelativeSource={RelativeSource AncestorType=DataGrid}}" cal:Message.Attach="RemoveButton" IsEnabled="{Binding Path=EventState.IsRemovable, Mode=OneWay}" Margin="0 5 5 5">
+                                <Button x:Name="RemoveEvent" Content="Remove" cal:Bind.Model="{Binding DataContext, RelativeSource={RelativeSource AncestorType=DataGrid}}" cal:Message.Attach="RemoveButton" IsEnabled="{Binding EventState.IsRemovable, Mode=OneWay}" Margin="0 5 5 5">
                                     <Button.Background>
                                         <SolidColorBrush Color="#FFF04124" Opacity="0.6"/>
                                     </Button.Background>

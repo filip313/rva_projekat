@@ -96,11 +96,17 @@ namespace Client.Connections
                     }
                 }
 
-                PlanerModel._planers.Refresh();
-                ViewModels.EventViewModel._events.Refresh();
+                if(PlanerModel._planers != null)
+                {
+                    PlanerModel._planers.Refresh();
+                }
+                if(ViewModels.EventViewModel._events != null)
+                {
+                    ViewModels.EventViewModel._events.Refresh();
+                }
 
                 log.Info("Osvezeni planeri");
-                ViewModels.LogViewModel.AddLog(DateTime.Now, "INFO", "Osvezeni planeri");
+                ViewModels.LogViewModel.AddLog(DateTime.Now, "INFO", "Osvezeni Eventovi");
 
             }
         }

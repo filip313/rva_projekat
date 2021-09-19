@@ -19,9 +19,25 @@
         </Grid.RowDefinitions>
 
         <DataGrid Grid.Row="0" Grid.Column="1" x:Name="Logs" AutoGenerateColumns="False" CanUserAddRows="False">
+            <DataGrid.CellStyle>
+                <Style TargetType="DataGridCell">
+                    <Setter Property="TextBlock.TextAlignment" Value="Center"/>
+                </Style>
+            </DataGrid.CellStyle>
+            <DataGrid.ColumnHeaderStyle>
+                <Style TargetType="DataGridColumnHeader">
+                    <Setter Property="Label.HorizontalContentAlignment" Value="Center"/>
+                </Style>
+            </DataGrid.ColumnHeaderStyle>
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Time Stamp" Binding="{Binding Path=TimeStamp, Mode=OneWay}"/>
-                <DataGridTextColumn Header="Level" Binding="{Binding Path=Level, Mode=OneWay}"/>
+                <DataGridTextColumn Header="Level" Binding="{Binding Path=Level, Mode=OneWay}" MinWidth="80">
+                    <DataGridTextColumn.CellStyle>
+                        <Style TargetType="DataGridCell">
+                            <Setter Property="Background" Value="{Binding Path=BackgroundColor}"/>
+                        </Style>
+                    </DataGridTextColumn.CellStyle>
+                </DataGridTextColumn>
                 <DataGridTextColumn Header="Message" Binding="{Binding Path=Message, Mode=OneWay}" Width="*"/>
             </DataGrid.Columns>
         </DataGrid>

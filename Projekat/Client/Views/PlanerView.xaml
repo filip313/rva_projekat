@@ -106,29 +106,29 @@
                     <StackPanel>
                         <TextBlock TextAlignment="Center" Text="Pretraga:"/>
                         <TextBlock Text="Naizv:" Margin="0 5"/>
-                        <TextBox x:Name="PretragaNaziv"/>
+                        <TextBox x:Name="Pretraga_PretragaNaziv"/>
                         <TextBlock Text="Opis:" />
-                        <TextBox x:Name="PretragaOpis" Margin="0 0 0 10"/>
+                    <TextBox x:Name="Pretraga_PretragaOpis" Margin="0 0 0 10"/>
                         <TextBlock Text="Datum pocetka :" />
                         <StackPanel Orientation="Horizontal" Margin="0 0 0 5">
                             <TextBlock Text="Od:" Margin="0 0 10 0"/>
-                            <DatePickerTextBox x:Name="PretragaPocetakOd" />
+                        <DatePickerTextBox x:Name="Pretraga_PretragaPocetakOd" />
                         </StackPanel>
                         <StackPanel Orientation="Horizontal" Margin="0 0 0 10">
                             <TextBlock Text="Do:" Margin="0 0 10 0"/>
-                            <DatePickerTextBox x:Name="PretragaPocetakDo" />
+                        <DatePickerTextBox x:Name="Pretraga_PretragaPocetakDo" />
                         </StackPanel>
                         <TextBlock Text="Datum zavrsetka:" />
                         <StackPanel Orientation="Horizontal" Margin="0 0 0 5">
                             <TextBlock Text="Od:" Margin="0 0 10 0"/>
-                            <DatePickerTextBox x:Name="PretragaKrajOd" />
+                        <DatePickerTextBox x:Name="Pretraga_PretragaKrajOd" />
                         </StackPanel>
                         <StackPanel Orientation="Horizontal" Margin="0 0 0 10">
                             <TextBlock Text="Do:" Margin="0 0 10 0"/>
-                            <DatePickerTextBox x:Name="PretragaKrajDo"/>
+                            <DatePickerTextBox x:Name="Pretraga_PretragaKrajDo"/>
                         </StackPanel>
                         <Button Content="Pretrazi" Margin="0 10" x:Name="Pretrazi" cal:Bind.Model="{Binding DataContext, RelativeSource={RelativeSource AncestorType=StackPanel}}" Background="#5bc0de" BorderBrush="#008cba"/>
-                        <Button Content="Ponisti pretragu" x:Name="PonistiPretragu" IsEnabled="{Binding Path=CanPonisti}" Background="#5bc0de" BorderBrush="#008cba"/>
+                    <Button Content="Ponisti pretragu" x:Name="PonistiPretragu" IsEnabled="{Binding Path=CanPonisti, Mode=OneWay}" Background="#5bc0de" BorderBrush="#008cba"/>
                     </StackPanel>
                 </Border>
             </StackPanel>

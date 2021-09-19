@@ -15,6 +15,7 @@ namespace Client.ViewModels
     public class PlanerViewModel : Conductor<object>
     {
         private static readonly log4net.ILog log = log4net.LogManager.GetLogger("PlanerViewModel");
+        public ShellViewModel Shell { get; set; }
 
 
         public UserModel User { get; set; }
@@ -46,14 +47,13 @@ namespace Client.ViewModels
             connection.loginProxy.Logout(User.UserId);
             manager.ShowWindowAsync(new LoginViewModel());
             log.Info("Korisnik se uspesno odjavio sa sistema.");
-            this.TryCloseAsync();
+            Shell.TryCloseAsync();
         }
 
-        public PlanerViewModel(UserModel user, PlanerModel planerModel, LoginServiceConnection connection)
+        public PlanerViewModel(UserModel user, PlanerModel planerModel, LoginServiceConnection connection, ShellViewModel shell)
         {
-            CanPonisti = false;
-            PretragaNaziv = string.Empty;
-            PretragaOpis = string.Empty;
+            this.Shell = shell;
+            Pretraga = new Pretraga();
             this.User = user;
             this.PlanerModel = planerModel;
             this.connection = connection;
@@ -136,136 +136,35 @@ namespace Client.ViewModels
             ActivateItemAsync(new EventViewModel(SelectedPlaner.Events, SelectedPlaner.PlannerId, SelectedPlaner.DatumZavrsetka, SelectedPlaner.DatumPocetka));
         }
 
-        public void OnClose(CancelEventArgs args)
-        {
-            connection.loginProxy.Logout(User.UserId);
-            this.TryCloseAsync();
-        }
-
-        public string PretragaOpis { get; set; }
-        public string PretragaNaziv { get; set; }
-        public DateTime PretragaPocetakOd { get; set; }
-        public DateTime PretragaPocetakDo { get; set; }
-        public DateTime PretragaKrajOd { get; set; }
-        public DateTime PretragaKrajDo { get; set; }
+        public Pretraga Pretraga { get; set; }
         public bool CanPonisti { get; set; }
 
-        public List<Common.Models.Planner> temp { get; set; }
 
         public void Pretrazi()
         {
 
-            PopuniListu();
-            temp = new List<Common.Models.Planner>();
-            foreach(var item in PlanerModel.Planers)
-            {
-                temp.Add(item);
-            }
-            int planerCnt = PlanerModel.Planers.Count;
-            for(int i = 0; i < planerCnt; i++)
-            {
-                if (!PlanerModel.Planers[i].Naziv.Contains(PretragaNaziv))
-                {
-                    PlanerModel.Planers.RemoveAt(i);
-                    i--;
-                    planerCnt--;
-            CanPonisti = true;
-                    continue;
-                }
-                if (!PlanerModel.Planers[i].Opis.Contains(PretragaOpis))
-                {
-                    PlanerModel.Planers.RemoveAt(i);
-                    i--;
-                    planerCnt--;
-            CanPonisti = true;
-                    continue;
-                }
-                if(PretragaPocetakOd != DateTime.MinValue)
-                {
-                    if(PlanerModel.Planers[i].DatumPocetka < PretragaPocetakOd)
-                    {
-                        PlanerModel.Planers.RemoveAt(i);
-                        i--;
-                        planerCnt--;
-            CanPonisti = true;
-                        continue;
-                    }
-                }
-                if(PretragaPocetakDo != DateTime.MinValue)
-                {
-                    if(PlanerModel.Planers[i].DatumPocetka > PretragaPocetakDo)
-                    {
-                        PlanerModel.Planers.RemoveAt(i);
-                        i--;
-                        planerCnt--;
-            CanPonisti = true;
-                        continue;
-                    }
-                }
-                if (PretragaKrajOd != DateTime.MinValue)
-                {
-                    if(PlanerModel.Planers[i].DatumZavrsetka < PretragaKrajOd)
-                    {
-                        PlanerModel.Planers.RemoveAt(i);
-                        i--;
-                        planerCnt--;
-            CanPonisti = true;
-                        continue;
-                    }
-                }
-                if (PretragaKrajDo != DateTime.MinValue)
-                {
-                    if(PlanerModel.Planers[i].DatumZavrsetka > PretragaKrajDo)
-                    {
-                        PlanerModel.Planers.RemoveAt(i);
-                        i--;
-                        planerCnt--;
-            CanPonisti = true;
-                        continue;
-                    }
-                }
-            }
+            CanPonisti = Pretraga.Pretrazi(PlanerModel);
             NotifyOfPropertyChange(() => CanPonisti);
         }
 
         public void PonistiPretragu()
         {
-            CanPonisti = false;
+            CanPonisti = Pretraga.PonistiPretragu(PlanerModel);
             NotifyOfPropertyChange(() => CanPonisti);
 
-            PopuniListu();
+            NotifyOfPropertyChange(() => Pretraga.PretragaNaziv);
 
-            PretragaNaziv = string.Empty;
-            NotifyOfPropertyChange(() => PretragaNaziv);
+            NotifyOfPropertyChange(() => Pretraga.PretragaOpis);
 
-            PretragaOpis = string.Empty;
-            NotifyOfPropertyChange(() => PretragaOpis);
+            NotifyOfPropertyChange(() => Pretraga.PretragaKrajDo);
 
-            PretragaKrajDo = DateTime.MinValue;
-            NotifyOfPropertyChange(() => PretragaKrajDo);
+            NotifyOfPropertyChange(() => Pretraga.PretragaKrajOd);
 
-            PretragaKrajOd = DateTime.MinValue;
-            NotifyOfPropertyChange(() => PretragaKrajOd);
+            NotifyOfPropertyChange(() => Pretraga.PretragaPocetakDo);
 
-            PretragaPocetakDo = DateTime.MinValue;
-            NotifyOfPropertyChange(() => PretragaPocetakDo);
-
-            PretragaPocetakOd = DateTime.MinValue;
-            NotifyOfPropertyChange(() => PretragaPocetakOd);
+            NotifyOfPropertyChange(() => Pretraga.PretragaPocetakOd);
 
             PlanerModel.Planers.Refresh();
-        }
-
-        private void PopuniListu()
-        {
-            if(temp != null)
-            {
-                PlanerModel.Planers.Clear();
-                foreach (var item in temp)
-                {
-                    PlanerModel.Planers.Add(item);
-                }
-            }
         }
     }
 }

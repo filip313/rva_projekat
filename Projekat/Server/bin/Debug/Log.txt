@@ -184,3 +184,634 @@
 18 09 2021 23:40:25 SyncConnection [INFO] Uspesno povezan Sync sa klijentom na portu 7006
 18 09 2021 23:40:25 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
 18 09 2021 23:40:25 PlanerServiceProvider [INFO] Uspesno pingovan Korisnik [ userid = 6 ] za osvezavanje planera.
+19 09 2021 15:49:31 ServiceProvider [INFO] Login servis uspesno podignut.
+19 09 2021 15:49:31 ServiceProvider [INFO] User servis uspesno podignut
+19 09 2021 15:49:31 ServiceProvider [INFO] Podzianje Planer servisa uspesno.
+19 09 2021 15:49:32 ServiceProvider [INFO] Event servis uspesno podignut
+19 09 2021 15:49:32 LoginServisProvider [INFO] Korisniki [ admin ] uspesno prijavljen.
+19 09 2021 15:49:32 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 15:49:32 LoginServisProvider [INFO] Uspesno dobavljen tip priavljenog korisnika.
+19 09 2021 15:51:30 ServiceProvider [INFO] Login servis uspesno podignut.
+19 09 2021 15:51:31 ServiceProvider [INFO] User servis uspesno podignut
+19 09 2021 15:51:31 ServiceProvider [INFO] Podzianje Planer servisa uspesno.
+19 09 2021 15:51:31 ServiceProvider [INFO] Event servis uspesno podignut
+19 09 2021 15:51:33 LoginServisProvider [INFO] Korisniki [ admin ] uspesno prijavljen.
+19 09 2021 15:51:33 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 15:51:34 LoginServisProvider [INFO] Uspesno dobavljen tip priavljenog korisnika.
+19 09 2021 15:52:38 ServiceProvider [INFO] Login servis uspesno podignut.
+19 09 2021 15:52:38 ServiceProvider [INFO] User servis uspesno podignut
+19 09 2021 15:52:38 ServiceProvider [INFO] Podzianje Planer servisa uspesno.
+19 09 2021 15:52:38 ServiceProvider [INFO] Event servis uspesno podignut
+19 09 2021 15:52:41 LoginServisProvider [INFO] Korisniki [ admin ] uspesno prijavljen.
+19 09 2021 15:52:41 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 15:52:41 LoginServisProvider [INFO] Uspesno dobavljen tip priavljenog korisnika.
+19 09 2021 15:55:52 ServiceProvider [INFO] Login servis uspesno podignut.
+19 09 2021 15:55:52 ServiceProvider [INFO] User servis uspesno podignut
+19 09 2021 15:55:52 ServiceProvider [INFO] Podzianje Planer servisa uspesno.
+19 09 2021 15:55:52 ServiceProvider [INFO] Event servis uspesno podignut
+19 09 2021 15:55:53 LoginServisProvider [INFO] Korisniki [ admin ] uspesno prijavljen.
+19 09 2021 15:55:54 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 15:55:54 LoginServisProvider [INFO] Uspesno dobavljen tip priavljenog korisnika.
+19 09 2021 15:57:48 ServiceProvider [INFO] Login servis uspesno podignut.
+19 09 2021 15:57:48 ServiceProvider [INFO] User servis uspesno podignut
+19 09 2021 15:57:48 ServiceProvider [INFO] Podzianje Planer servisa uspesno.
+19 09 2021 15:57:48 ServiceProvider [INFO] Event servis uspesno podignut
+19 09 2021 15:57:49 LoginServisProvider [INFO] Korisniki [ admin ] uspesno prijavljen.
+19 09 2021 15:57:49 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 15:57:50 LoginServisProvider [INFO] Uspesno dobavljen tip priavljenog korisnika.
+19 09 2021 15:58:02 LoginServisProvider [INFO] Korisnik uspesno odjavljen.
+19 09 2021 16:02:16 ServiceProvider [INFO] Login servis uspesno podignut.
+19 09 2021 16:02:16 ServiceProvider [INFO] User servis uspesno podignut
+19 09 2021 16:02:16 ServiceProvider [INFO] Podzianje Planer servisa uspesno.
+19 09 2021 16:02:16 ServiceProvider [INFO] Event servis uspesno podignut
+19 09 2021 16:02:18 LoginServisProvider [INFO] Korisniki [ admin ] uspesno prijavljen.
+19 09 2021 16:02:18 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 16:02:18 LoginServisProvider [INFO] Uspesno dobavljen tip priavljenog korisnika.
+19 09 2021 16:10:05 ServiceProvider [INFO] Login servis uspesno podignut.
+19 09 2021 16:10:05 ServiceProvider [INFO] User servis uspesno podignut
+19 09 2021 16:10:05 ServiceProvider [INFO] Podzianje Planer servisa uspesno.
+19 09 2021 16:10:05 ServiceProvider [INFO] Event servis uspesno podignut
+19 09 2021 16:10:06 LoginServisProvider [INFO] Korisniki [ admin ] uspesno prijavljen.
+19 09 2021 16:10:06 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 16:10:06 LoginServisProvider [INFO] Uspesno dobavljen tip priavljenog korisnika.
+19 09 2021 16:10:08 LoginServisProvider [INFO] Korisnik uspesno odjavljen.
+19 09 2021 16:10:27 ServiceProvider [INFO] Login servis uspesno podignut.
+19 09 2021 16:10:27 ServiceProvider [INFO] User servis uspesno podignut
+19 09 2021 16:10:27 ServiceProvider [INFO] Podzianje Planer servisa uspesno.
+19 09 2021 16:10:27 ServiceProvider [INFO] Event servis uspesno podignut
+19 09 2021 16:10:30 LoginServisProvider [INFO] Korisniki [ admin ] uspesno prijavljen.
+19 09 2021 16:10:31 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 16:10:31 LoginServisProvider [INFO] Uspesno dobavljen tip priavljenog korisnika.
+19 09 2021 16:10:33 LoginServisProvider [INFO] Korisnik uspesno odjavljen.
+19 09 2021 16:13:15 ServiceProvider [INFO] Login servis uspesno podignut.
+19 09 2021 16:13:15 ServiceProvider [INFO] User servis uspesno podignut
+19 09 2021 16:13:15 ServiceProvider [INFO] Podzianje Planer servisa uspesno.
+19 09 2021 16:13:15 ServiceProvider [INFO] Event servis uspesno podignut
+19 09 2021 16:13:16 LoginServisProvider [INFO] Korisniki [ admin ] uspesno prijavljen.
+19 09 2021 16:13:17 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 16:13:17 LoginServisProvider [INFO] Uspesno dobavljen tip priavljenog korisnika.
+19 09 2021 16:13:18 LoginServisProvider [INFO] Korisnik uspesno odjavljen.
+19 09 2021 16:22:27 ServiceProvider [INFO] Login servis uspesno podignut.
+19 09 2021 16:22:27 ServiceProvider [INFO] User servis uspesno podignut
+19 09 2021 16:22:28 ServiceProvider [INFO] Podzianje Planer servisa uspesno.
+19 09 2021 16:22:28 ServiceProvider [INFO] Event servis uspesno podignut
+19 09 2021 16:22:29 LoginServisProvider [INFO] Korisniki [ admin ] uspesno prijavljen.
+19 09 2021 16:22:29 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 16:22:30 LoginServisProvider [INFO] Uspesno dobavljen tip priavljenog korisnika.
+19 09 2021 16:22:32 LoginServisProvider [INFO] Korisnik uspesno odjavljen.
+19 09 2021 16:22:32 LoginServisProvider [ERROR] Doslo je do greske prilikom pokusaja odjavljivana korisnika.
+19 09 2021 16:22:32 LoginServisProvider [ERROR] Doslo je do greske prilikom pokusaja odjavljivana korisnika.
+19 09 2021 16:22:38 LoginServisProvider [INFO] Korisniki [ korisnik1 ] uspesno prijavljen.
+19 09 2021 16:22:38 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 16:22:38 LoginServisProvider [INFO] Uspesno dobavljen tip priavljenog korisnika.
+19 09 2021 16:22:40 LoginServisProvider [INFO] Korisnik uspesno odjavljen.
+19 09 2021 16:22:40 LoginServisProvider [ERROR] Doslo je do greske prilikom pokusaja odjavljivana korisnika.
+19 09 2021 16:22:40 LoginServisProvider [ERROR] Doslo je do greske prilikom pokusaja odjavljivana korisnika.
+19 09 2021 16:34:04 ServiceProvider [INFO] Login servis uspesno podignut.
+19 09 2021 16:34:04 ServiceProvider [INFO] User servis uspesno podignut
+19 09 2021 16:34:04 ServiceProvider [INFO] Podzianje Planer servisa uspesno.
+19 09 2021 16:34:04 ServiceProvider [INFO] Event servis uspesno podignut
+19 09 2021 16:34:11 LoginServisProvider [INFO] Korisniki [ admin ] uspesno prijavljen.
+19 09 2021 16:34:11 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 16:34:11 LoginServisProvider [INFO] Uspesno dobavljen tip priavljenog korisnika.
+19 09 2021 16:44:23 ServiceProvider [INFO] Login servis uspesno podignut.
+19 09 2021 16:44:24 ServiceProvider [INFO] User servis uspesno podignut
+19 09 2021 16:44:24 ServiceProvider [INFO] Podzianje Planer servisa uspesno.
+19 09 2021 16:44:24 ServiceProvider [INFO] Event servis uspesno podignut
+19 09 2021 16:44:27 LoginServisProvider [INFO] Korisniki [ admin ] uspesno prijavljen.
+19 09 2021 16:44:27 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 16:44:27 LoginServisProvider [INFO] Uspesno dobavljen tip priavljenog korisnika.
+19 09 2021 17:02:51 ServiceProvider [INFO] Login servis uspesno podignut.
+19 09 2021 17:02:51 ServiceProvider [INFO] User servis uspesno podignut
+19 09 2021 17:02:51 ServiceProvider [INFO] Podzianje Planer servisa uspesno.
+19 09 2021 17:02:51 ServiceProvider [INFO] Event servis uspesno podignut
+19 09 2021 17:02:52 LoginServisProvider [INFO] Korisniki [ admin ] uspesno prijavljen.
+19 09 2021 17:02:53 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 17:02:53 LoginServisProvider [INFO] Uspesno dobavljen tip priavljenog korisnika.
+19 09 2021 17:05:40 ServiceProvider [INFO] Login servis uspesno podignut.
+19 09 2021 17:05:40 ServiceProvider [INFO] User servis uspesno podignut
+19 09 2021 17:05:40 ServiceProvider [INFO] Podzianje Planer servisa uspesno.
+19 09 2021 17:05:40 ServiceProvider [INFO] Event servis uspesno podignut
+19 09 2021 17:05:41 LoginServisProvider [INFO] Korisniki [ admin ] uspesno prijavljen.
+19 09 2021 17:05:41 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 17:05:41 LoginServisProvider [INFO] Uspesno dobavljen tip priavljenog korisnika.
+19 09 2021 17:06:58 ServiceProvider [INFO] Login servis uspesno podignut.
+19 09 2021 17:06:58 ServiceProvider [INFO] User servis uspesno podignut
+19 09 2021 17:06:58 ServiceProvider [INFO] Podzianje Planer servisa uspesno.
+19 09 2021 17:06:58 ServiceProvider [INFO] Event servis uspesno podignut
+19 09 2021 17:07:52 ServiceProvider [INFO] Login servis uspesno podignut.
+19 09 2021 17:07:52 ServiceProvider [INFO] User servis uspesno podignut
+19 09 2021 17:07:52 ServiceProvider [INFO] Podzianje Planer servisa uspesno.
+19 09 2021 17:07:52 ServiceProvider [INFO] Event servis uspesno podignut
+19 09 2021 17:07:54 LoginServisProvider [INFO] Korisniki [ admin ] uspesno prijavljen.
+19 09 2021 17:07:54 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 17:07:54 LoginServisProvider [INFO] Uspesno dobavljen tip priavljenog korisnika.
+19 09 2021 17:14:11 ServiceProvider [INFO] Login servis uspesno podignut.
+19 09 2021 17:14:11 ServiceProvider [INFO] User servis uspesno podignut
+19 09 2021 17:14:11 ServiceProvider [INFO] Podzianje Planer servisa uspesno.
+19 09 2021 17:14:11 ServiceProvider [INFO] Event servis uspesno podignut
+19 09 2021 17:14:14 LoginServisProvider [INFO] Korisniki [ admin ] uspesno prijavljen.
+19 09 2021 17:14:14 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 17:14:15 LoginServisProvider [INFO] Uspesno dobavljen tip priavljenog korisnika.
+19 09 2021 17:29:33 ServiceProvider [INFO] Login servis uspesno podignut.
+19 09 2021 17:29:33 ServiceProvider [INFO] User servis uspesno podignut
+19 09 2021 17:29:33 ServiceProvider [INFO] Podzianje Planer servisa uspesno.
+19 09 2021 17:29:33 ServiceProvider [INFO] Event servis uspesno podignut
+19 09 2021 17:29:34 LoginServisProvider [INFO] Korisniki [ admin ] uspesno prijavljen.
+19 09 2021 17:29:34 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 17:29:34 LoginServisProvider [INFO] Uspesno dobavljen tip priavljenog korisnika.
+19 09 2021 17:30:39 ServiceProvider [INFO] Login servis uspesno podignut.
+19 09 2021 17:30:39 ServiceProvider [INFO] User servis uspesno podignut
+19 09 2021 17:30:39 ServiceProvider [INFO] Podzianje Planer servisa uspesno.
+19 09 2021 17:30:39 ServiceProvider [INFO] Event servis uspesno podignut
+19 09 2021 17:30:41 LoginServisProvider [INFO] Korisniki [ admin ] uspesno prijavljen.
+19 09 2021 17:30:41 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 17:30:41 LoginServisProvider [INFO] Uspesno dobavljen tip priavljenog korisnika.
+19 09 2021 17:32:24 ServiceProvider [INFO] Login servis uspesno podignut.
+19 09 2021 17:32:24 ServiceProvider [INFO] User servis uspesno podignut
+19 09 2021 17:32:24 ServiceProvider [INFO] Podzianje Planer servisa uspesno.
+19 09 2021 17:32:24 ServiceProvider [INFO] Event servis uspesno podignut
+19 09 2021 17:32:26 LoginServisProvider [INFO] Korisniki [ admin ] uspesno prijavljen.
+19 09 2021 17:32:26 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 17:32:27 LoginServisProvider [INFO] Uspesno dobavljen tip priavljenog korisnika.
+19 09 2021 18:19:29 ServiceProvider [INFO] Login servis uspesno podignut.
+19 09 2021 18:19:29 ServiceProvider [INFO] User servis uspesno podignut
+19 09 2021 18:19:29 ServiceProvider [INFO] Podzianje Planer servisa uspesno.
+19 09 2021 18:19:29 ServiceProvider [INFO] Event servis uspesno podignut
+19 09 2021 18:19:30 LoginServisProvider [INFO] Korisniki [ admin ] uspesno prijavljen.
+19 09 2021 18:19:30 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 18:19:30 LoginServisProvider [INFO] Uspesno dobavljen tip priavljenog korisnika.
+19 09 2021 18:19:43 LoginServisProvider [INFO] Korisniki [ korisnik1 ] uspesno prijavljen.
+19 09 2021 18:19:43 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 18:19:43 LoginServisProvider [INFO] Uspesno dobavljen tip priavljenog korisnika.
+19 09 2021 18:20:11 PlanerServiceProvider [INFO] Uspesno izbrisan Planer [ planerId = 4 ] iz baze podataka.
+19 09 2021 18:20:12 SyncConnection [INFO] Uspesno povezan Sync sa klijentom na portu 7005
+19 09 2021 18:20:12 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 18:20:12 PlanerServiceProvider [INFO] Uspesno pingovan Korisnik [ userid = 5 ] za osvezavanje planera.
+19 09 2021 18:20:12 SyncConnection [INFO] Uspesno povezan Sync sa klijentom na portu 7006
+19 09 2021 18:20:12 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 18:20:12 PlanerServiceProvider [INFO] Uspesno pingovan Korisnik [ userid = 6 ] za osvezavanje planera.
+19 09 2021 18:20:14 PlanerServiceProvider [INFO] Novi Planer [ planerId = 4 ] uspesno dodat u bazu podataka.
+19 09 2021 18:20:14 SyncConnection [INFO] Uspesno povezan Sync sa klijentom na portu 7005
+19 09 2021 18:20:14 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 18:20:14 PlanerServiceProvider [INFO] Uspesno pingovan Korisnik [ userid = 5 ] za osvezavanje planera.
+19 09 2021 18:20:14 SyncConnection [INFO] Uspesno povezan Sync sa klijentom na portu 7006
+19 09 2021 18:20:14 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 18:20:14 PlanerServiceProvider [INFO] Uspesno pingovan Korisnik [ userid = 6 ] za osvezavanje planera.
+19 09 2021 18:20:18 PlanerServiceProvider [INFO] Uspesno izbrisan Planer [ planerId = 4 ] iz baze podataka.
+19 09 2021 18:20:19 SyncConnection [INFO] Uspesno povezan Sync sa klijentom na portu 7005
+19 09 2021 18:20:19 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 18:20:19 PlanerServiceProvider [INFO] Uspesno pingovan Korisnik [ userid = 5 ] za osvezavanje planera.
+19 09 2021 18:20:19 SyncConnection [INFO] Uspesno povezan Sync sa klijentom na portu 7006
+19 09 2021 18:20:19 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 18:20:19 PlanerServiceProvider [INFO] Uspesno pingovan Korisnik [ userid = 6 ] za osvezavanje planera.
+19 09 2021 18:20:35 EventServiceProvider [INFO] Dodat novi Event [ eventId = 35 ] u bazu podataka.
+19 09 2021 18:20:36 SyncConnection [INFO] Uspesno povezan Sync sa klijentom na portu 7005
+19 09 2021 18:20:36 EventServiceProvider [INFO] Preuzeti Event-ovi iz baze podatka.
+19 09 2021 18:20:36 EventServiceProvider [INFO] Uspesno pingovan Korisnik [ userId = 5 ] za osvezavanje eventova.
+19 09 2021 18:20:36 SyncConnection [INFO] Uspesno povezan Sync sa klijentom na portu 7006
+19 09 2021 18:20:36 EventServiceProvider [INFO] Preuzeti Event-ovi iz baze podatka.
+19 09 2021 18:20:36 EventServiceProvider [INFO] Uspesno pingovan Korisnik [ userId = 6 ] za osvezavanje eventova.
+19 09 2021 18:20:50 EventServiceProvider [INFO] Izbrisan Event [ eventId = 35 ] iz baze podataka.
+19 09 2021 18:21:54 ServiceProvider [INFO] Login servis uspesno podignut.
+19 09 2021 18:21:54 ServiceProvider [INFO] User servis uspesno podignut
+19 09 2021 18:21:54 ServiceProvider [INFO] Podzianje Planer servisa uspesno.
+19 09 2021 18:21:54 ServiceProvider [INFO] Event servis uspesno podignut
+19 09 2021 18:21:56 LoginServisProvider [INFO] Korisniki [ admin ] uspesno prijavljen.
+19 09 2021 18:21:56 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 18:21:56 LoginServisProvider [INFO] Uspesno dobavljen tip priavljenog korisnika.
+19 09 2021 18:22:08 LoginServisProvider [INFO] Korisniki [ korisnik1 ] uspesno prijavljen.
+19 09 2021 18:22:08 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 18:22:08 LoginServisProvider [INFO] Uspesno dobavljen tip priavljenog korisnika.
+19 09 2021 18:22:20 EventServiceProvider [INFO] Dodat novi Event [ eventId = 36 ] u bazu podataka.
+19 09 2021 18:22:20 SyncConnection [INFO] Uspesno povezan Sync sa klijentom na portu 7005
+19 09 2021 18:22:21 EventServiceProvider [INFO] Preuzeti Event-ovi iz baze podatka.
+19 09 2021 18:22:21 EventServiceProvider [INFO] Uspesno pingovan Korisnik [ userId = 5 ] za osvezavanje eventova.
+19 09 2021 18:22:21 SyncConnection [INFO] Uspesno povezan Sync sa klijentom na portu 7006
+19 09 2021 18:22:21 EventServiceProvider [INFO] Preuzeti Event-ovi iz baze podatka.
+19 09 2021 18:22:21 EventServiceProvider [INFO] Uspesno pingovan Korisnik [ userId = 6 ] za osvezavanje eventova.
+19 09 2021 18:22:34 EventServiceProvider [INFO] Izbrisan Event [ eventId = 36 ] iz baze podataka.
+19 09 2021 18:22:34 SyncConnection [INFO] Uspesno povezan Sync sa klijentom na portu 7005
+19 09 2021 18:22:34 EventServiceProvider [INFO] Preuzeti Event-ovi iz baze podatka.
+19 09 2021 18:22:34 EventServiceProvider [INFO] Uspesno pingovan Korisnik [ userId = 5 ] za osvezavanje eventova.
+19 09 2021 18:22:34 SyncConnection [INFO] Uspesno povezan Sync sa klijentom na portu 7006
+19 09 2021 18:22:34 EventServiceProvider [INFO] Preuzeti Event-ovi iz baze podatka.
+19 09 2021 18:22:34 EventServiceProvider [INFO] Uspesno pingovan Korisnik [ userId = 6 ] za osvezavanje eventova.
+19 09 2021 18:24:40 ServiceProvider [INFO] Login servis uspesno podignut.
+19 09 2021 18:24:40 ServiceProvider [INFO] User servis uspesno podignut
+19 09 2021 18:24:40 ServiceProvider [INFO] Podzianje Planer servisa uspesno.
+19 09 2021 18:24:40 ServiceProvider [INFO] Event servis uspesno podignut
+19 09 2021 18:24:41 LoginServisProvider [INFO] Korisniki [ admin ] uspesno prijavljen.
+19 09 2021 18:24:41 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 18:24:42 LoginServisProvider [INFO] Uspesno dobavljen tip priavljenog korisnika.
+19 09 2021 18:24:55 LoginServisProvider [INFO] Korisniki [ korisnik1 ] uspesno prijavljen.
+19 09 2021 18:24:55 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 18:24:56 LoginServisProvider [INFO] Uspesno dobavljen tip priavljenog korisnika.
+19 09 2021 18:25:10 EventServiceProvider [INFO] Dodat novi Event [ eventId = 37 ] u bazu podataka.
+19 09 2021 18:25:11 SyncConnection [INFO] Uspesno povezan Sync sa klijentom na portu 7005
+19 09 2021 18:25:19 EventServiceProvider [INFO] Preuzeti Event-ovi iz baze podatka.
+19 09 2021 18:25:52 EventServiceProvider [INFO] Uspesno pingovan Korisnik [ userId = 5 ] za osvezavanje eventova.
+19 09 2021 18:25:52 SyncConnection [INFO] Uspesno povezan Sync sa klijentom na portu 7006
+19 09 2021 18:26:01 EventServiceProvider [INFO] Preuzeti Event-ovi iz baze podatka.
+19 09 2021 18:26:01 EventServiceProvider [INFO] Uspesno pingovan Korisnik [ userId = 6 ] za osvezavanje eventova.
+19 09 2021 18:26:34 PlanerServiceProvider [INFO] Uspesno izmenjen Planer [ planerId = 3 ].
+19 09 2021 18:26:35 SyncConnection [INFO] Uspesno povezan Sync sa klijentom na portu 7005
+19 09 2021 18:26:35 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 18:26:35 PlanerServiceProvider [INFO] Uspesno pingovan Korisnik [ userid = 5 ] za osvezavanje planera.
+19 09 2021 18:26:35 SyncConnection [INFO] Uspesno povezan Sync sa klijentom na portu 7006
+19 09 2021 18:26:35 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 18:26:35 PlanerServiceProvider [INFO] Uspesno pingovan Korisnik [ userid = 6 ] za osvezavanje planera.
+19 09 2021 18:26:46 EventServiceProvider [INFO] Uspesno izemenjen Event [ eventId = 33 ].
+19 09 2021 18:26:46 SyncConnection [INFO] Uspesno povezan Sync sa klijentom na portu 7005
+19 09 2021 18:26:48 EventServiceProvider [INFO] Preuzeti Event-ovi iz baze podatka.
+19 09 2021 18:26:48 EventServiceProvider [INFO] Uspesno pingovan Korisnik [ userId = 5 ] za osvezavanje eventova.
+19 09 2021 18:26:48 SyncConnection [INFO] Uspesno povezan Sync sa klijentom na portu 7006
+19 09 2021 18:26:48 EventServiceProvider [INFO] Preuzeti Event-ovi iz baze podatka.
+19 09 2021 18:26:48 EventServiceProvider [INFO] Uspesno pingovan Korisnik [ userId = 6 ] za osvezavanje eventova.
+19 09 2021 18:27:35 PlanerServiceProvider [INFO] Uspesno izmenjen Planer [ planerId = 3 ].
+19 09 2021 18:27:35 SyncConnection [INFO] Uspesno povezan Sync sa klijentom na portu 7005
+19 09 2021 18:27:35 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 18:27:35 PlanerServiceProvider [INFO] Uspesno pingovan Korisnik [ userid = 5 ] za osvezavanje planera.
+19 09 2021 18:27:35 SyncConnection [INFO] Uspesno povezan Sync sa klijentom na portu 7006
+19 09 2021 18:27:35 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 18:27:35 PlanerServiceProvider [INFO] Uspesno pingovan Korisnik [ userid = 6 ] za osvezavanje planera.
+19 09 2021 18:27:46 PlanerServiceProvider [INFO] Uspesno izmenjen Planer [ planerId = 3 ].
+19 09 2021 18:27:47 SyncConnection [INFO] Uspesno povezan Sync sa klijentom na portu 7005
+19 09 2021 18:27:47 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 18:27:47 PlanerServiceProvider [INFO] Uspesno pingovan Korisnik [ userid = 5 ] za osvezavanje planera.
+19 09 2021 18:27:47 SyncConnection [INFO] Uspesno povezan Sync sa klijentom na portu 7006
+19 09 2021 18:27:47 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 18:27:47 PlanerServiceProvider [INFO] Uspesno pingovan Korisnik [ userid = 6 ] za osvezavanje planera.
+19 09 2021 18:27:48 PlanerServiceProvider [INFO] Uspesno izmenjen Planer [ planerId = 3 ].
+19 09 2021 18:27:48 PlanerServiceProvider [INFO] Uspesno izmenjen Planer [ planerId = 3 ].
+19 09 2021 18:27:48 SyncConnection [INFO] Uspesno povezan Sync sa klijentom na portu 7005
+19 09 2021 18:27:48 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 18:27:48 PlanerServiceProvider [INFO] Uspesno pingovan Korisnik [ userid = 5 ] za osvezavanje planera.
+19 09 2021 18:27:48 SyncConnection [INFO] Uspesno povezan Sync sa klijentom na portu 7006
+19 09 2021 18:27:48 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 18:27:48 PlanerServiceProvider [INFO] Uspesno pingovan Korisnik [ userid = 6 ] za osvezavanje planera.
+19 09 2021 18:27:48 SyncConnection [INFO] Uspesno povezan Sync sa klijentom na portu 7005
+19 09 2021 18:27:48 PlanerServiceProvider [INFO] Uspesno izmenjen Planer [ planerId = 3 ].
+19 09 2021 18:27:48 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 18:27:48 PlanerServiceProvider [INFO] Uspesno pingovan Korisnik [ userid = 5 ] za osvezavanje planera.
+19 09 2021 18:27:48 SyncConnection [INFO] Uspesno povezan Sync sa klijentom na portu 7006
+19 09 2021 18:27:49 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 18:27:49 PlanerServiceProvider [INFO] Uspesno pingovan Korisnik [ userid = 6 ] za osvezavanje planera.
+19 09 2021 18:27:49 SyncConnection [INFO] Uspesno povezan Sync sa klijentom na portu 7005
+19 09 2021 18:27:49 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 18:27:49 PlanerServiceProvider [INFO] Uspesno pingovan Korisnik [ userid = 5 ] za osvezavanje planera.
+19 09 2021 18:27:49 SyncConnection [INFO] Uspesno povezan Sync sa klijentom na portu 7006
+19 09 2021 18:27:49 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 18:27:49 PlanerServiceProvider [INFO] Uspesno pingovan Korisnik [ userid = 6 ] za osvezavanje planera.
+19 09 2021 18:27:50 PlanerServiceProvider [INFO] Uspesno izmenjen Planer [ planerId = 3 ].
+19 09 2021 18:27:50 SyncConnection [INFO] Uspesno povezan Sync sa klijentom na portu 7005
+19 09 2021 18:27:50 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 18:27:50 PlanerServiceProvider [INFO] Uspesno pingovan Korisnik [ userid = 5 ] za osvezavanje planera.
+19 09 2021 18:27:50 SyncConnection [INFO] Uspesno povezan Sync sa klijentom na portu 7006
+19 09 2021 18:27:50 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 18:27:50 PlanerServiceProvider [INFO] Uspesno pingovan Korisnik [ userid = 6 ] za osvezavanje planera.
+19 09 2021 18:27:54 PlanerServiceProvider [INFO] Trazeni Planer [ planerId = 2 ] nije pronadjen.
+19 09 2021 18:27:54 PlanerServiceProvider [INFO] Novi Planer [ planerId = 4 ] uspesno dodat u bazu podataka.
+19 09 2021 18:27:54 SyncConnection [INFO] Uspesno povezan Sync sa klijentom na portu 7005
+19 09 2021 18:27:54 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 18:27:54 PlanerServiceProvider [INFO] Uspesno pingovan Korisnik [ userid = 5 ] za osvezavanje planera.
+19 09 2021 18:27:54 SyncConnection [INFO] Uspesno povezan Sync sa klijentom na portu 7006
+19 09 2021 18:27:54 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 18:27:54 PlanerServiceProvider [INFO] Uspesno pingovan Korisnik [ userid = 6 ] za osvezavanje planera.
+19 09 2021 18:27:56 PlanerServiceProvider [INFO] Uspesno izbrisan Planer [ planerId = 4 ] iz baze podataka.
+19 09 2021 18:27:56 SyncConnection [INFO] Uspesno povezan Sync sa klijentom na portu 7005
+19 09 2021 18:27:56 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 18:27:56 PlanerServiceProvider [INFO] Uspesno pingovan Korisnik [ userid = 5 ] za osvezavanje planera.
+19 09 2021 18:27:56 SyncConnection [INFO] Uspesno povezan Sync sa klijentom na portu 7006
+19 09 2021 18:27:57 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 18:27:57 PlanerServiceProvider [INFO] Uspesno pingovan Korisnik [ userid = 6 ] za osvezavanje planera.
+19 09 2021 18:27:57 PlanerServiceProvider [INFO] Uspesno nadjen Planer [ planerId = 4 ].
+19 09 2021 18:28:08 PlanerServiceProvider [ERROR] Doslo je do greske prilikom pokusaja brisanje Planera [ planerId = 4 ] iz baze podataka.
+19 09 2021 18:28:08 PlanerServiceProvider [INFO] Uspesno nadjen Planer [ planerId = 4 ].
+19 09 2021 18:28:08 PlanerServiceProvider [ERROR] Doslo je do greske prilikom pokusaja brisanje Planera [ planerId = 4 ] iz baze podataka.
+19 09 2021 18:28:09 PlanerServiceProvider [INFO] Uspesno nadjen Planer [ planerId = 4 ].
+19 09 2021 18:28:09 PlanerServiceProvider [ERROR] Doslo je do greske prilikom pokusaja brisanje Planera [ planerId = 4 ] iz baze podataka.
+19 09 2021 18:28:09 PlanerServiceProvider [INFO] Uspesno nadjen Planer [ planerId = 4 ].
+19 09 2021 18:28:10 PlanerServiceProvider [ERROR] Doslo je do greske prilikom pokusaja brisanje Planera [ planerId = 4 ] iz baze podataka.
+19 09 2021 18:28:10 PlanerServiceProvider [INFO] Uspesno nadjen Planer [ planerId = 4 ].
+19 09 2021 18:29:24 ServiceProvider [INFO] Login servis uspesno podignut.
+19 09 2021 18:29:24 ServiceProvider [INFO] User servis uspesno podignut
+19 09 2021 18:29:24 ServiceProvider [INFO] Podzianje Planer servisa uspesno.
+19 09 2021 18:29:24 ServiceProvider [INFO] Event servis uspesno podignut
+19 09 2021 18:29:27 LoginServisProvider [INFO] Korisniki [ admin ] uspesno prijavljen.
+19 09 2021 18:29:27 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 18:29:27 LoginServisProvider [INFO] Uspesno dobavljen tip priavljenog korisnika.
+19 09 2021 18:29:33 PlanerServiceProvider [INFO] Trazeni Planer [ planerId = 3 ] nije pronadjen.
+19 09 2021 18:29:33 PlanerServiceProvider [INFO] Novi Planer [ planerId = 4 ] uspesno dodat u bazu podataka.
+19 09 2021 18:29:34 SyncConnection [INFO] Uspesno povezan Sync sa klijentom na portu 7005
+19 09 2021 18:29:34 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 18:29:34 PlanerServiceProvider [INFO] Uspesno pingovan Korisnik [ userid = 5 ] za osvezavanje planera.
+19 09 2021 18:29:36 PlanerServiceProvider [INFO] Uspesno izbrisan Planer [ planerId = 4 ] iz baze podataka.
+19 09 2021 18:29:37 SyncConnection [INFO] Uspesno povezan Sync sa klijentom na portu 7005
+19 09 2021 18:29:37 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 18:29:37 PlanerServiceProvider [INFO] Uspesno pingovan Korisnik [ userid = 5 ] za osvezavanje planera.
+19 09 2021 18:29:43 PlanerServiceProvider [INFO] Uspesno nadjen Planer [ planerId = 4 ].
+19 09 2021 18:30:26 ServiceProvider [INFO] Login servis uspesno podignut.
+19 09 2021 18:30:26 ServiceProvider [INFO] User servis uspesno podignut
+19 09 2021 18:30:26 ServiceProvider [INFO] Podzianje Planer servisa uspesno.
+19 09 2021 18:30:26 ServiceProvider [INFO] Event servis uspesno podignut
+19 09 2021 18:30:29 LoginServisProvider [INFO] Korisniki [ admin ] uspesno prijavljen.
+19 09 2021 18:30:29 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 18:30:29 LoginServisProvider [INFO] Uspesno dobavljen tip priavljenog korisnika.
+19 09 2021 18:30:36 PlanerServiceProvider [INFO] Trazeni Planer [ planerId = 3 ] nije pronadjen.
+19 09 2021 18:30:36 PlanerServiceProvider [INFO] Novi Planer [ planerId = 4 ] uspesno dodat u bazu podataka.
+19 09 2021 18:30:37 SyncConnection [INFO] Uspesno povezan Sync sa klijentom na portu 7005
+19 09 2021 18:30:37 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 18:30:37 PlanerServiceProvider [INFO] Uspesno pingovan Korisnik [ userid = 5 ] za osvezavanje planera.
+19 09 2021 18:31:13 PlanerServiceProvider [INFO] Uspesno izbrisan Planer [ planerId = 4 ] iz baze podataka.
+19 09 2021 18:31:18 SyncConnection [INFO] Uspesno povezan Sync sa klijentom na portu 7005
+19 09 2021 18:31:23 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 18:31:23 PlanerServiceProvider [INFO] Uspesno pingovan Korisnik [ userid = 5 ] za osvezavanje planera.
+19 09 2021 18:31:45 PlanerServiceProvider [INFO] Uspesno nadjen Planer [ planerId = 4 ].
+19 09 2021 18:52:28 ServiceProvider [INFO] Login servis uspesno podignut.
+19 09 2021 18:52:28 ServiceProvider [INFO] User servis uspesno podignut
+19 09 2021 18:52:28 ServiceProvider [INFO] Podzianje Planer servisa uspesno.
+19 09 2021 18:52:28 ServiceProvider [INFO] Event servis uspesno podignut
+19 09 2021 18:52:31 LoginServisProvider [INFO] Korisniki [ admin ] uspesno prijavljen.
+19 09 2021 18:52:31 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 18:52:32 LoginServisProvider [INFO] Uspesno dobavljen tip priavljenog korisnika.
+19 09 2021 18:52:38 PlanerServiceProvider [INFO] Trazeni Planer [ planerId = 3 ] nije pronadjen.
+19 09 2021 18:52:38 PlanerServiceProvider [INFO] Novi Planer [ planerId = 4 ] uspesno dodat u bazu podataka.
+19 09 2021 18:52:39 SyncConnection [INFO] Uspesno povezan Sync sa klijentom na portu 7005
+19 09 2021 18:52:39 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 18:52:39 PlanerServiceProvider [INFO] Uspesno pingovan Korisnik [ userid = 5 ] za osvezavanje planera.
+19 09 2021 18:52:49 PlanerServiceProvider [INFO] Uspesno izbrisan Planer [ planerId = 4 ] iz baze podataka.
+19 09 2021 18:52:53 SyncConnection [INFO] Uspesno povezan Sync sa klijentom na portu 7005
+19 09 2021 18:52:53 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 18:52:53 PlanerServiceProvider [INFO] Uspesno pingovan Korisnik [ userid = 5 ] za osvezavanje planera.
+19 09 2021 18:55:11 PlanerServiceProvider [INFO] Uspesno nadjen Planer [ planerId = 4 ].
+19 09 2021 18:56:40 ServiceProvider [INFO] Login servis uspesno podignut.
+19 09 2021 18:56:40 ServiceProvider [INFO] User servis uspesno podignut
+19 09 2021 18:56:40 ServiceProvider [INFO] Podzianje Planer servisa uspesno.
+19 09 2021 18:56:40 ServiceProvider [INFO] Event servis uspesno podignut
+19 09 2021 18:56:45 LoginServisProvider [INFO] Korisniki [ admin ] uspesno prijavljen.
+19 09 2021 18:56:45 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 18:56:45 LoginServisProvider [INFO] Uspesno dobavljen tip priavljenog korisnika.
+19 09 2021 18:57:08 PlanerServiceProvider [INFO] Trazeni Planer [ planerId = 3 ] nije pronadjen.
+19 09 2021 18:57:10 PlanerServiceProvider [INFO] Novi Planer [ planerId = 4 ] uspesno dodat u bazu podataka.
+19 09 2021 18:57:10 SyncConnection [INFO] Uspesno povezan Sync sa klijentom na portu 7005
+19 09 2021 18:57:11 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 18:57:11 PlanerServiceProvider [INFO] Uspesno pingovan Korisnik [ userid = 5 ] za osvezavanje planera.
+19 09 2021 18:57:19 PlanerServiceProvider [INFO] Uspesno izbrisan Planer [ planerId = 4 ] iz baze podataka.
+19 09 2021 18:57:20 SyncConnection [INFO] Uspesno povezan Sync sa klijentom na portu 7005
+19 09 2021 18:57:20 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 18:57:20 PlanerServiceProvider [INFO] Uspesno pingovan Korisnik [ userid = 5 ] za osvezavanje planera.
+19 09 2021 18:58:47 ServiceProvider [INFO] Login servis uspesno podignut.
+19 09 2021 18:58:47 ServiceProvider [INFO] User servis uspesno podignut
+19 09 2021 18:58:47 ServiceProvider [INFO] Podzianje Planer servisa uspesno.
+19 09 2021 18:58:47 ServiceProvider [INFO] Event servis uspesno podignut
+19 09 2021 18:58:48 LoginServisProvider [INFO] Korisniki [ admin ] uspesno prijavljen.
+19 09 2021 18:58:48 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 18:58:49 LoginServisProvider [INFO] Uspesno dobavljen tip priavljenog korisnika.
+19 09 2021 18:58:56 PlanerServiceProvider [INFO] Uspesno nadjen Planer [ planerId = 3 ].
+19 09 2021 18:59:23 ServiceProvider [INFO] Login servis uspesno podignut.
+19 09 2021 18:59:23 ServiceProvider [INFO] User servis uspesno podignut
+19 09 2021 18:59:23 ServiceProvider [INFO] Podzianje Planer servisa uspesno.
+19 09 2021 18:59:23 ServiceProvider [INFO] Event servis uspesno podignut
+19 09 2021 18:59:26 LoginServisProvider [INFO] Korisniki [ admin ] uspesno prijavljen.
+19 09 2021 18:59:26 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 18:59:26 LoginServisProvider [INFO] Uspesno dobavljen tip priavljenog korisnika.
+19 09 2021 18:59:33 PlanerServiceProvider [INFO] Uspesno nadjen Planer [ planerId = 3 ].
+19 09 2021 18:59:33 PlanerServiceProvider [INFO] Novi Planer [ planerId = 4 ] uspesno dodat u bazu podataka.
+19 09 2021 18:59:33 SyncConnection [INFO] Uspesno povezan Sync sa klijentom na portu 7005
+19 09 2021 18:59:34 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 18:59:34 PlanerServiceProvider [INFO] Uspesno pingovan Korisnik [ userid = 5 ] za osvezavanje planera.
+19 09 2021 18:59:39 PlanerServiceProvider [INFO] Uspesno izbrisan Planer [ planerId = 4 ] iz baze podataka.
+19 09 2021 18:59:39 SyncConnection [INFO] Uspesno povezan Sync sa klijentom na portu 7005
+19 09 2021 18:59:39 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 18:59:39 PlanerServiceProvider [INFO] Uspesno pingovan Korisnik [ userid = 5 ] za osvezavanje planera.
+19 09 2021 18:59:44 PlanerServiceProvider [INFO] Trazeni Planer [ planerId = 4 ] nije pronadjen.
+19 09 2021 19:05:09 ServiceProvider [INFO] Login servis uspesno podignut.
+19 09 2021 19:05:09 ServiceProvider [INFO] User servis uspesno podignut
+19 09 2021 19:05:09 ServiceProvider [INFO] Podzianje Planer servisa uspesno.
+19 09 2021 19:05:09 ServiceProvider [INFO] Event servis uspesno podignut
+19 09 2021 19:05:10 LoginServisProvider [INFO] Korisniki [ admin ] uspesno prijavljen.
+19 09 2021 19:05:11 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 19:05:11 LoginServisProvider [INFO] Uspesno dobavljen tip priavljenog korisnika.
+19 09 2021 19:05:14 PlanerServiceProvider [INFO] Uspesno nadjen Planer [ planerId = 3 ].
+19 09 2021 19:05:14 PlanerServiceProvider [INFO] Novi Planer [ planerId = 4 ] uspesno dodat u bazu podataka.
+19 09 2021 19:05:14 SyncConnection [INFO] Uspesno povezan Sync sa klijentom na portu 7005
+19 09 2021 19:05:14 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 19:05:14 PlanerServiceProvider [INFO] Uspesno pingovan Korisnik [ userid = 5 ] za osvezavanje planera.
+19 09 2021 19:05:15 PlanerServiceProvider [INFO] Uspesno izbrisan Planer [ planerId = 4 ] iz baze podataka.
+19 09 2021 19:05:16 SyncConnection [INFO] Uspesno povezan Sync sa klijentom na portu 7005
+19 09 2021 19:05:16 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 19:05:16 PlanerServiceProvider [INFO] Uspesno pingovan Korisnik [ userid = 5 ] za osvezavanje planera.
+19 09 2021 19:05:16 PlanerServiceProvider [INFO] Uspesno nadjen Planer [ planerId = 3 ].
+19 09 2021 19:05:16 PlanerServiceProvider [INFO] Novi Planer [ planerId = 4 ] uspesno dodat u bazu podataka.
+19 09 2021 19:05:17 SyncConnection [INFO] Uspesno povezan Sync sa klijentom na portu 7005
+19 09 2021 19:05:17 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 19:05:17 PlanerServiceProvider [INFO] Uspesno pingovan Korisnik [ userid = 5 ] za osvezavanje planera.
+19 09 2021 19:05:18 PlanerServiceProvider [INFO] Uspesno izbrisan Planer [ planerId = 4 ] iz baze podataka.
+19 09 2021 19:05:18 SyncConnection [INFO] Uspesno povezan Sync sa klijentom na portu 7005
+19 09 2021 19:05:18 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 19:05:18 PlanerServiceProvider [INFO] Uspesno pingovan Korisnik [ userid = 5 ] za osvezavanje planera.
+19 09 2021 19:05:18 PlanerServiceProvider [INFO] Uspesno nadjen Planer [ planerId = 3 ].
+19 09 2021 19:05:18 PlanerServiceProvider [INFO] Novi Planer [ planerId = 4 ] uspesno dodat u bazu podataka.
+19 09 2021 19:05:19 SyncConnection [INFO] Uspesno povezan Sync sa klijentom na portu 7005
+19 09 2021 19:05:19 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 19:05:19 PlanerServiceProvider [INFO] Uspesno pingovan Korisnik [ userid = 5 ] za osvezavanje planera.
+19 09 2021 19:05:31 PlanerServiceProvider [INFO] Uspesno izbrisan Planer [ planerId = 4 ] iz baze podataka.
+19 09 2021 19:05:32 SyncConnection [INFO] Uspesno povezan Sync sa klijentom na portu 7005
+19 09 2021 19:05:32 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 19:05:32 PlanerServiceProvider [INFO] Uspesno pingovan Korisnik [ userid = 5 ] za osvezavanje planera.
+19 09 2021 19:05:32 PlanerServiceProvider [INFO] Novi Planer [ planerId = 4 ] uspesno dodat u bazu podataka.
+19 09 2021 19:05:33 SyncConnection [INFO] Uspesno povezan Sync sa klijentom na portu 7005
+19 09 2021 19:05:33 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 19:05:33 PlanerServiceProvider [INFO] Uspesno pingovan Korisnik [ userid = 5 ] za osvezavanje planera.
+19 09 2021 19:05:33 PlanerServiceProvider [INFO] Uspesno izbrisan Planer [ planerId = 4 ] iz baze podataka.
+19 09 2021 19:05:34 SyncConnection [INFO] Uspesno povezan Sync sa klijentom na portu 7005
+19 09 2021 19:05:34 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 19:05:34 PlanerServiceProvider [INFO] Uspesno pingovan Korisnik [ userid = 5 ] za osvezavanje planera.
+19 09 2021 19:05:41 PlanerServiceProvider [INFO] Uspesno izmenjen Planer [ planerId = 3 ].
+19 09 2021 19:05:41 SyncConnection [INFO] Uspesno povezan Sync sa klijentom na portu 7005
+19 09 2021 19:05:41 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 19:05:41 PlanerServiceProvider [INFO] Uspesno pingovan Korisnik [ userid = 5 ] za osvezavanje planera.
+19 09 2021 19:05:43 PlanerServiceProvider [INFO] Uspesno izmenjen Planer [ planerId = 3 ].
+19 09 2021 19:05:43 SyncConnection [INFO] Uspesno povezan Sync sa klijentom na portu 7005
+19 09 2021 19:05:43 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 19:05:43 PlanerServiceProvider [INFO] Uspesno pingovan Korisnik [ userid = 5 ] za osvezavanje planera.
+19 09 2021 19:05:44 PlanerServiceProvider [INFO] Uspesno izmenjen Planer [ planerId = 3 ].
+19 09 2021 19:05:44 SyncConnection [INFO] Uspesno povezan Sync sa klijentom na portu 7005
+19 09 2021 19:05:44 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 19:05:44 PlanerServiceProvider [INFO] Uspesno pingovan Korisnik [ userid = 5 ] za osvezavanje planera.
+19 09 2021 19:06:02 LoginServisProvider [INFO] Korisniki [ korisnik1 ] uspesno prijavljen.
+19 09 2021 19:06:02 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 19:06:03 LoginServisProvider [INFO] Uspesno dobavljen tip priavljenog korisnika.
+19 09 2021 19:06:17 PlanerServiceProvider [INFO] Novi Planer [ planerId = 4 ] uspesno dodat u bazu podataka.
+19 09 2021 19:06:17 SyncConnection [INFO] Uspesno povezan Sync sa klijentom na portu 7005
+19 09 2021 19:06:17 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 19:06:17 PlanerServiceProvider [INFO] Uspesno pingovan Korisnik [ userid = 5 ] za osvezavanje planera.
+19 09 2021 19:06:17 SyncConnection [INFO] Uspesno povezan Sync sa klijentom na portu 7006
+19 09 2021 19:06:17 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 19:06:17 PlanerServiceProvider [INFO] Uspesno pingovan Korisnik [ userid = 6 ] za osvezavanje planera.
+19 09 2021 19:06:32 EventServiceProvider [INFO] Dodat novi Event [ eventId = 57 ] u bazu podataka.
+19 09 2021 19:06:33 SyncConnection [INFO] Uspesno povezan Sync sa klijentom na portu 7005
+19 09 2021 19:06:33 EventServiceProvider [INFO] Preuzeti Event-ovi iz baze podatka.
+19 09 2021 19:06:33 EventServiceProvider [INFO] Uspesno pingovan Korisnik [ userId = 5 ] za osvezavanje eventova.
+19 09 2021 19:06:33 SyncConnection [INFO] Uspesno povezan Sync sa klijentom na portu 7006
+19 09 2021 19:06:33 EventServiceProvider [INFO] Preuzeti Event-ovi iz baze podatka.
+19 09 2021 19:07:33 EventServiceProvider [ERROR] Doslo je do greske prilikom pokusaja pingovanje Korisnika [ userId = 6 ] za osvezavanje eventova
+19 09 2021 19:08:30 LoginServisProvider [INFO] Korisnik uspesno odjavljen.
+19 09 2021 19:08:30 LoginServisProvider [ERROR] Doslo je do greske prilikom pokusaja odjavljivana korisnika.
+19 09 2021 19:08:38 ServiceProvider [INFO] Login servis uspesno podignut.
+19 09 2021 19:08:38 ServiceProvider [INFO] User servis uspesno podignut
+19 09 2021 19:08:38 ServiceProvider [INFO] Podzianje Planer servisa uspesno.
+19 09 2021 19:08:38 ServiceProvider [INFO] Event servis uspesno podignut
+19 09 2021 19:08:40 LoginServisProvider [INFO] Korisniki [ admin ] uspesno prijavljen.
+19 09 2021 19:08:40 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 19:08:40 LoginServisProvider [INFO] Uspesno dobavljen tip priavljenog korisnika.
+19 09 2021 19:08:45 PlanerServiceProvider [INFO] Uspesno izbrisan Planer [ planerId = 4 ] iz baze podataka.
+19 09 2021 19:08:46 SyncConnection [INFO] Uspesno povezan Sync sa klijentom na portu 7005
+19 09 2021 19:08:46 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 19:08:46 PlanerServiceProvider [INFO] Uspesno pingovan Korisnik [ userid = 5 ] za osvezavanje planera.
+19 09 2021 19:09:00 LoginServisProvider [ERROR] Neuspelo prijavljivanje korisnika.
+19 09 2021 19:09:05 LoginServisProvider [INFO] Korisniki [ korisnik1 ] uspesno prijavljen.
+19 09 2021 19:09:05 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 19:09:06 LoginServisProvider [INFO] Uspesno dobavljen tip priavljenog korisnika.
+19 09 2021 19:09:22 PlanerServiceProvider [INFO] Novi Planer [ planerId = 4 ] uspesno dodat u bazu podataka.
+19 09 2021 19:09:22 SyncConnection [INFO] Uspesno povezan Sync sa klijentom na portu 7005
+19 09 2021 19:09:22 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 19:09:22 PlanerServiceProvider [INFO] Uspesno pingovan Korisnik [ userid = 5 ] za osvezavanje planera.
+19 09 2021 19:09:22 SyncConnection [INFO] Uspesno povezan Sync sa klijentom na portu 7006
+19 09 2021 19:09:23 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 19:09:23 PlanerServiceProvider [INFO] Uspesno pingovan Korisnik [ userid = 6 ] za osvezavanje planera.
+19 09 2021 19:09:38 EventServiceProvider [INFO] Dodat novi Event [ eventId = 58 ] u bazu podataka.
+19 09 2021 19:09:39 SyncConnection [INFO] Uspesno povezan Sync sa klijentom na portu 7005
+19 09 2021 19:09:39 EventServiceProvider [INFO] Preuzeti Event-ovi iz baze podatka.
+19 09 2021 19:09:39 EventServiceProvider [INFO] Uspesno pingovan Korisnik [ userId = 5 ] za osvezavanje eventova.
+19 09 2021 19:09:39 SyncConnection [INFO] Uspesno povezan Sync sa klijentom na portu 7006
+19 09 2021 19:09:39 EventServiceProvider [INFO] Preuzeti Event-ovi iz baze podatka.
+19 09 2021 19:09:39 EventServiceProvider [INFO] Uspesno pingovan Korisnik [ userId = 6 ] za osvezavanje eventova.
+19 09 2021 19:09:47 EventServiceProvider [INFO] Izbrisan Event [ eventId = 58 ] iz baze podataka.
+19 09 2021 19:09:48 SyncConnection [INFO] Uspesno povezan Sync sa klijentom na portu 7005
+19 09 2021 19:09:48 EventServiceProvider [INFO] Preuzeti Event-ovi iz baze podatka.
+19 09 2021 19:09:48 EventServiceProvider [INFO] Uspesno pingovan Korisnik [ userId = 5 ] za osvezavanje eventova.
+19 09 2021 19:09:48 SyncConnection [INFO] Uspesno povezan Sync sa klijentom na portu 7006
+19 09 2021 19:09:48 EventServiceProvider [INFO] Preuzeti Event-ovi iz baze podatka.
+19 09 2021 19:09:48 EventServiceProvider [INFO] Uspesno pingovan Korisnik [ userId = 6 ] za osvezavanje eventova.
+19 09 2021 19:10:06 EventServiceProvider [ERROR] Doslo je do greske prilikom pokusaja brisanja Eventa [ eventId = 58 ] iz baze podataka.
+19 09 2021 19:12:07 ServiceProvider [INFO] Login servis uspesno podignut.
+19 09 2021 19:12:07 ServiceProvider [INFO] User servis uspesno podignut
+19 09 2021 19:12:07 ServiceProvider [INFO] Podzianje Planer servisa uspesno.
+19 09 2021 19:12:07 ServiceProvider [INFO] Event servis uspesno podignut
+19 09 2021 19:12:10 LoginServisProvider [INFO] Korisniki [ admin ] uspesno prijavljen.
+19 09 2021 19:12:10 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 19:12:10 LoginServisProvider [INFO] Uspesno dobavljen tip priavljenog korisnika.
+19 09 2021 19:12:21 LoginServisProvider [INFO] Korisniki [ korisnik1 ] uspesno prijavljen.
+19 09 2021 19:12:21 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 19:12:21 LoginServisProvider [INFO] Uspesno dobavljen tip priavljenog korisnika.
+19 09 2021 19:12:45 EventServiceProvider [INFO] Dodat novi Event [ eventId = 59 ] u bazu podataka.
+19 09 2021 19:12:46 SyncConnection [INFO] Uspesno povezan Sync sa klijentom na portu 7005
+19 09 2021 19:12:46 EventServiceProvider [INFO] Preuzeti Event-ovi iz baze podatka.
+19 09 2021 19:12:46 EventServiceProvider [INFO] Uspesno pingovan Korisnik [ userId = 5 ] za osvezavanje eventova.
+19 09 2021 19:12:46 SyncConnection [INFO] Uspesno povezan Sync sa klijentom na portu 7006
+19 09 2021 19:12:46 EventServiceProvider [INFO] Preuzeti Event-ovi iz baze podatka.
+19 09 2021 19:12:46 EventServiceProvider [INFO] Uspesno pingovan Korisnik [ userId = 6 ] za osvezavanje eventova.
+19 09 2021 19:12:57 EventServiceProvider [INFO] Izbrisan Event [ eventId = 59 ] iz baze podataka.
+19 09 2021 19:12:57 SyncConnection [INFO] Uspesno povezan Sync sa klijentom na portu 7005
+19 09 2021 19:12:57 EventServiceProvider [INFO] Preuzeti Event-ovi iz baze podatka.
+19 09 2021 19:12:57 EventServiceProvider [INFO] Uspesno pingovan Korisnik [ userId = 5 ] za osvezavanje eventova.
+19 09 2021 19:12:57 SyncConnection [INFO] Uspesno povezan Sync sa klijentom na portu 7006
+19 09 2021 19:12:57 EventServiceProvider [INFO] Preuzeti Event-ovi iz baze podatka.
+19 09 2021 19:12:57 EventServiceProvider [INFO] Uspesno pingovan Korisnik [ userId = 6 ] za osvezavanje eventova.
+19 09 2021 19:13:01 EventServiceProvider [ERROR] Doslo je do greske prilikom pokusaja brisanja Eventa [ eventId = 59 ] iz baze podataka.
+19 09 2021 19:13:07 EventServiceProvider [ERROR] Doslo je do greske prilikom pokusaja brisanja Eventa [ eventId = 59 ] iz baze podataka.
+19 09 2021 19:13:19 LoginServisProvider [INFO] Korisnik uspesno odjavljen.
+19 09 2021 19:13:19 LoginServisProvider [ERROR] Doslo je do greske prilikom pokusaja odjavljivana korisnika.
+19 09 2021 19:13:20 LoginServisProvider [INFO] Korisnik uspesno odjavljen.
+19 09 2021 19:13:20 LoginServisProvider [ERROR] Doslo je do greske prilikom pokusaja odjavljivana korisnika.
+19 09 2021 19:16:49 ServiceProvider [INFO] Login servis uspesno podignut.
+19 09 2021 19:16:49 ServiceProvider [INFO] User servis uspesno podignut
+19 09 2021 19:16:49 ServiceProvider [INFO] Podzianje Planer servisa uspesno.
+19 09 2021 19:16:49 ServiceProvider [INFO] Event servis uspesno podignut
+19 09 2021 19:16:51 LoginServisProvider [INFO] Korisniki [ admin ] uspesno prijavljen.
+19 09 2021 19:16:51 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 19:16:51 LoginServisProvider [INFO] Uspesno dobavljen tip priavljenog korisnika.
+19 09 2021 19:17:02 LoginServisProvider [ERROR] Neuspelo prijavljivanje korisnika.
+19 09 2021 19:17:03 LoginServisProvider [INFO] Korisniki [ korisnik1 ] uspesno prijavljen.
+19 09 2021 19:17:03 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 19:17:04 LoginServisProvider [INFO] Uspesno dobavljen tip priavljenog korisnika.
+19 09 2021 19:17:18 EventServiceProvider [INFO] Dodat novi Event [ eventId = 60 ] u bazu podataka.
+19 09 2021 19:17:18 SyncConnection [INFO] Uspesno povezan Sync sa klijentom na portu 7005
+19 09 2021 19:17:18 EventServiceProvider [INFO] Preuzeti Event-ovi iz baze podatka.
+19 09 2021 19:17:18 EventServiceProvider [INFO] Uspesno pingovan Korisnik [ userId = 5 ] za osvezavanje eventova.
+19 09 2021 19:17:18 SyncConnection [INFO] Uspesno povezan Sync sa klijentom na portu 7006
+19 09 2021 19:17:18 EventServiceProvider [INFO] Preuzeti Event-ovi iz baze podatka.
+19 09 2021 19:17:18 EventServiceProvider [INFO] Uspesno pingovan Korisnik [ userId = 6 ] za osvezavanje eventova.
+19 09 2021 19:17:27 EventServiceProvider [INFO] Izbrisan Event [ eventId = 60 ] iz baze podataka.
+19 09 2021 19:17:28 SyncConnection [INFO] Uspesno povezan Sync sa klijentom na portu 7005
+19 09 2021 19:17:28 EventServiceProvider [INFO] Preuzeti Event-ovi iz baze podatka.
+19 09 2021 19:17:28 EventServiceProvider [INFO] Uspesno pingovan Korisnik [ userId = 5 ] za osvezavanje eventova.
+19 09 2021 19:17:28 SyncConnection [INFO] Uspesno povezan Sync sa klijentom na portu 7006
+19 09 2021 19:17:28 EventServiceProvider [INFO] Preuzeti Event-ovi iz baze podatka.
+19 09 2021 19:17:28 EventServiceProvider [INFO] Uspesno pingovan Korisnik [ userId = 6 ] za osvezavanje eventova.
+19 09 2021 19:17:31 EventServiceProvider [ERROR] Doslo je do greske prilikom pokusaja brisanja Eventa [ eventId = 60 ] iz baze podataka.
+19 09 2021 19:17:49 EventServiceProvider [INFO] Dodat novi Event [ eventId = 61 ] u bazu podataka.
+19 09 2021 19:17:49 SyncConnection [INFO] Uspesno povezan Sync sa klijentom na portu 7005
+19 09 2021 19:17:49 EventServiceProvider [INFO] Preuzeti Event-ovi iz baze podatka.
+19 09 2021 19:17:49 EventServiceProvider [INFO] Uspesno pingovan Korisnik [ userId = 5 ] za osvezavanje eventova.
+19 09 2021 19:17:49 SyncConnection [INFO] Uspesno povezan Sync sa klijentom na portu 7006
+19 09 2021 19:17:49 EventServiceProvider [INFO] Preuzeti Event-ovi iz baze podatka.
+19 09 2021 19:17:49 EventServiceProvider [INFO] Uspesno pingovan Korisnik [ userId = 6 ] za osvezavanje eventova.
+19 09 2021 19:17:55 EventServiceProvider [INFO] Izbrisan Event [ eventId = 61 ] iz baze podataka.
+19 09 2021 19:17:55 SyncConnection [INFO] Uspesno povezan Sync sa klijentom na portu 7005
+19 09 2021 19:17:55 EventServiceProvider [INFO] Preuzeti Event-ovi iz baze podatka.
+19 09 2021 19:17:55 EventServiceProvider [INFO] Uspesno pingovan Korisnik [ userId = 5 ] za osvezavanje eventova.
+19 09 2021 19:17:55 SyncConnection [INFO] Uspesno povezan Sync sa klijentom na portu 7006
+19 09 2021 19:17:55 EventServiceProvider [INFO] Preuzeti Event-ovi iz baze podatka.
+19 09 2021 19:17:55 EventServiceProvider [INFO] Uspesno pingovan Korisnik [ userId = 6 ] za osvezavanje eventova.
+19 09 2021 19:18:15 EventServiceProvider [ERROR] Doslo je do greske prilikom pokusaja brisanja Eventa [ eventId = 61 ] iz baze podataka.
+19 09 2021 19:29:41 ServiceProvider [INFO] Login servis uspesno podignut.
+19 09 2021 19:29:41 ServiceProvider [INFO] User servis uspesno podignut
+19 09 2021 19:29:41 ServiceProvider [INFO] Podzianje Planer servisa uspesno.
+19 09 2021 19:29:41 ServiceProvider [INFO] Event servis uspesno podignut
+19 09 2021 19:29:43 LoginServisProvider [ERROR] Neuspelo prijavljivanje korisnika.
+19 09 2021 19:29:45 LoginServisProvider [INFO] Korisniki [ admin ] uspesno prijavljen.
+19 09 2021 19:29:45 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 19:29:46 LoginServisProvider [INFO] Uspesno dobavljen tip priavljenog korisnika.
+19 09 2021 19:29:54 PlanerServiceProvider [INFO] Uspesno izmenjen Planer [ planerId = 4 ].
+19 09 2021 19:29:54 SyncConnection [INFO] Uspesno povezan Sync sa klijentom na portu 7005
+19 09 2021 19:29:54 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 19:29:54 PlanerServiceProvider [INFO] Uspesno pingovan Korisnik [ userid = 5 ] za osvezavanje planera.
+19 09 2021 19:30:01 PlanerServiceProvider [INFO] Uspesno izmenjen Planer [ planerId = 4 ].
+19 09 2021 19:30:02 SyncConnection [INFO] Uspesno povezan Sync sa klijentom na portu 7005
+19 09 2021 19:30:02 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 19:30:02 PlanerServiceProvider [INFO] Uspesno pingovan Korisnik [ userid = 5 ] za osvezavanje planera.
+19 09 2021 19:30:05 PlanerServiceProvider [INFO] Uspesno izbrisan Planer [ planerId = 4 ] iz baze podataka.
+19 09 2021 19:30:05 SyncConnection [INFO] Uspesno povezan Sync sa klijentom na portu 7005
+19 09 2021 19:30:05 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 19:30:05 PlanerServiceProvider [INFO] Uspesno pingovan Korisnik [ userid = 5 ] za osvezavanje planera.
+19 09 2021 19:30:06 PlanerServiceProvider [INFO] Novi Planer [ planerId = 4 ] uspesno dodat u bazu podataka.
+19 09 2021 19:30:07 SyncConnection [INFO] Uspesno povezan Sync sa klijentom na portu 7005
+19 09 2021 19:30:07 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 19:30:07 PlanerServiceProvider [INFO] Uspesno pingovan Korisnik [ userid = 5 ] za osvezavanje planera.
+19 09 2021 19:30:07 PlanerServiceProvider [INFO] Uspesno izmenjen Planer [ planerId = 4 ].
+19 09 2021 19:30:07 SyncConnection [INFO] Uspesno povezan Sync sa klijentom na portu 7005
+19 09 2021 19:30:07 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 19:30:07 PlanerServiceProvider [INFO] Uspesno pingovan Korisnik [ userid = 5 ] za osvezavanje planera.
+19 09 2021 19:30:13 PlanerServiceProvider [INFO] Uspesno izmenjen Planer [ planerId = 4 ].
+19 09 2021 19:30:13 SyncConnection [INFO] Uspesno povezan Sync sa klijentom na portu 7005
+19 09 2021 19:30:13 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 19:30:13 PlanerServiceProvider [INFO] Uspesno pingovan Korisnik [ userid = 5 ] za osvezavanje planera.
+19 09 2021 19:30:16 PlanerServiceProvider [INFO] Uspesno izmenjen Planer [ planerId = 4 ].
+19 09 2021 19:30:16 SyncConnection [INFO] Uspesno povezan Sync sa klijentom na portu 7005
+19 09 2021 19:30:16 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 19:30:16 PlanerServiceProvider [INFO] Uspesno pingovan Korisnik [ userid = 5 ] za osvezavanje planera.
+19 09 2021 19:30:17 PlanerServiceProvider [INFO] Uspesno izmenjen Planer [ planerId = 4 ].
+19 09 2021 19:30:17 SyncConnection [INFO] Uspesno povezan Sync sa klijentom na portu 7005
+19 09 2021 19:30:17 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 19:30:17 PlanerServiceProvider [INFO] Uspesno pingovan Korisnik [ userid = 5 ] za osvezavanje planera.
+19 09 2021 19:30:17 PlanerServiceProvider [INFO] Uspesno izmenjen Planer [ planerId = 4 ].
+19 09 2021 19:30:18 PlanerServiceProvider [INFO] Uspesno izmenjen Planer [ planerId = 4 ].
+19 09 2021 19:30:18 SyncConnection [INFO] Uspesno povezan Sync sa klijentom na portu 7005
+19 09 2021 19:30:18 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 19:30:18 PlanerServiceProvider [INFO] Uspesno pingovan Korisnik [ userid = 5 ] za osvezavanje planera.
+19 09 2021 19:30:18 SyncConnection [INFO] Uspesno povezan Sync sa klijentom na portu 7005
+19 09 2021 19:30:18 PlanerServiceProvider [INFO] Uspesno dobavljeni Planeri iz baze podataka.
+19 09 2021 19:30:18 PlanerServiceProvider [INFO] Uspesno pingovan Korisnik [ userid = 5 ] za osvezavanje planera.

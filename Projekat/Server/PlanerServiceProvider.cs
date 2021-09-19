@@ -106,7 +106,7 @@ namespace Server
             using (var context = new DataContext())
             {
                 var temp = context.Planers.Where(x => x.PlannerId == planerId).FirstOrDefault();
-                if(temp == null)
+                if(temp != null)
                 {
                     log.Info($"Uspesno nadjen Planer [ planerId = {planerId} ].");
                     return false;

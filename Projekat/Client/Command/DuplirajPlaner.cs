@@ -18,6 +18,7 @@ using Client.Models;
 namespace Client.Command {
 	public class DuplirajPlaner : PlanerCommand {
 
+        private Planner noviPlaner;
 		public DuplirajPlaner(Planner planer, PlanerModel planerModel){
             PrethodniPlaner = planer;
             PlanerModel = planerModel;
@@ -28,29 +29,28 @@ namespace Client.Command {
 		}
 
 		public override bool Redo(){
-            if (PlanerModel.connection.planerServiceProxy.Exists(PrethodniPlaner.PlannerId))
+            if (!PlanerModel.connection.planerServiceProxy.Exists(PrethodniPlaner.PlannerId))
             {
-                var noviPlaner = PrethodniPlaner.Clone() as Planner;
+                noviPlaner = PrethodniPlaner.Clone() as Planner;
                 int planerId = PlanerModel.connection.planerServiceProxy.SavePlaner(noviPlaner);
                 noviPlaner.PlannerId = planerId;
                 PlanerModel.Planers.Add(noviPlaner);
-                PrethodniPlaner = noviPlaner;
                 PlanerModel.Planers.Refresh();
-                log.Info($"Uspesno je izvrsena komanda dupliranja Planera [ planerId = {planerId} ].");
-                Client.ViewModels.LogViewModel.AddLog(DateTime.Now, "INFO", $"Uspesno je izvrsena komanda dupliranja Planera [ planerId = {planerId} ].");
+                log.Info($"Uspesno je izvrsena komanda dupliranja Planera [ planerId = {PrethodniPlaner.PlannerId} ].");
+                Client.ViewModels.LogViewModel.AddLog(DateTime.Now, "INFO", $"Uspesno je izvrsena komanda dupliranja Planera [ planerId = {PrethodniPlaner.PlannerId} ].");
                 return true;
             }
-            log.Error($"Doslo je do greske prilikom izvrsavanja komande dupliranja Planera [ planerId = {PrethodniPlaner.PlannerId} ].");
+                log.Error($"Doslo je do greske prilikom izvrsavanja komande dupliranja Planera [ planerId = {PrethodniPlaner.PlannerId} ].");
             Client.ViewModels.LogViewModel.AddLog(DateTime.Now, "ERROR", $"Doslo je do greske prilikom izvrsavanja komande dupliranja Planera [ planerId = {PrethodniPlaner.PlannerId} ].");
 
             return false;
         }
 
 		public override bool Undo(){
-            var ret = PlanerModel.connection.planerServiceProxy.RemovePlaner(PrethodniPlaner);
+            var ret = PlanerModel.connection.planerServiceProxy.RemovePlaner(noviPlaner);
             if (ret)
             {
-                PlanerModel.Planers.Remove(PrethodniPlaner);
+                PlanerModel.Planers.Remove(noviPlaner);
                 PlanerModel.Planers.Refresh();
                 log.Info($"Uspesno ponistavanje komande dupliranja Planera [ planerId = {PrethodniPlaner.PlannerId} ].");
                 Client.ViewModels.LogViewModel.AddLog(DateTime.Now, "INFO", $"Uspesno ponistavanje komande dupliranja Planera [ planerId = {PrethodniPlaner.PlannerId} ].");

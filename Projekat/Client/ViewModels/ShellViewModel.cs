@@ -30,10 +30,8 @@ namespace Client.ViewModels
         }
 
 
-        public ShellViewModel(PlanerViewModel planer, LogViewModel log)
+        public ShellViewModel()
         {
-            Log = log;
-            Planers = planer;
         }
 
         public void OnClose(CancelEventArgs args)

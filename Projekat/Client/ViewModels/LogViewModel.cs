@@ -25,7 +25,19 @@ namespace Client.ViewModels
 
         public static void AddLog(DateTime timeStamp, string level, string message)
         {
-            logs.Insert(0, new LogModel() { TimeStamp = timeStamp, Level = level, Message = message });
+            string color = "";
+            if (level == "FATAL")
+            {
+                color = "#d34a4a";
+            } else if(level == "ERROR")
+            {
+                color = "#fcad46";
+            }
+            else if(level == "INFO")
+            {
+                color = "#6bd672";
+            }
+            logs.Insert(0, new LogModel() { TimeStamp = timeStamp, Level = level, Message = message, BackgroundColor = color });
         }
     }
 }

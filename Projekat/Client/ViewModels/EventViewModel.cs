@@ -50,6 +50,8 @@ namespace Client.ViewModels
                 var tempModel = new EventModel(item);
                 tempModel.EventState.CheckState();
                 temp.Add(tempModel);
+                NotifyOfPropertyChange(() => tempModel.EventState.IsEditable);
+                NotifyOfPropertyChange(() => tempModel.EventState.IsRemovable);
             }
 
             this.Events = new BindableCollection<EventModel>(temp);
@@ -67,17 +69,16 @@ namespace Client.ViewModels
             {
                 if (Connection.eventServiceProxy.RemoveEvent(SelectedEvent.Event))
                 {
-                    Events.Remove(SelectedEvent);
                     log.Info($"Event [ eventId = {SelectedEvent.Event.EventId} ] uspesno obrisan.");
                     ViewModels.LogViewModel.AddLog(DateTime.Now, "INFO", $"Event [ eventId = {SelectedEvent.Event.EventId} ] uspesno obrisan.");
+                    Events.Remove(SelectedEvent);
 
                 }
                 else
                 {
                     log.Error($"Doslo je do greske prilikom pokusaja brisanja Eventa [ eventId = {SelectedEvent.Event.EventId} ].");
                     ViewModels.LogViewModel.AddLog(DateTime.Now, "ERROR", $"Doslo je do greske prilikom pokusaja brisanja Eventa [ eventId = {SelectedEvent.Event.EventId} ].");
-
-                    MessageBox.Show("NIJE moguce obrisati event (event je obrisan)!", "Izbrisi Event Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                    MessageBox.Show("NIJE moguce obrisati event (event je obrisan)!\n Osvezite prikaz kako biste videli izmene.", "Izbrisi Event Error", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
             }
         }

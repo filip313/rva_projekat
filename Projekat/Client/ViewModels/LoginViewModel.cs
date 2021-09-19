@@ -66,8 +66,13 @@ namespace Client.ViewModels
                 {   
                     Error = String.Empty;
                     IWindowManager manager = new WindowManager();
-                    var planer = new PlanerViewModel(new Models.UserModel() { UserId = id }, new Models.PlanerModel(), connection);
-                    manager.ShowWindowAsync(new ShellViewModel(planer, LogView));
+
+                    var shell = new ShellViewModel();
+                    var planer = new PlanerViewModel(new Models.UserModel() { UserId = id }, new Models.PlanerModel(), connection, shell);
+                    shell.Planers = planer;
+                    shell.Log = new LogViewModel();
+                    
+                    manager.ShowWindowAsync(shell);
                     log.Info($"Korisnik [ {Username} ] uspesno ulogovan.");
                     LogViewModel.AddLog(DateTime.Now, "INFO", $"Korisnik [ {Username} ] uspesno ulogovan.");
 
